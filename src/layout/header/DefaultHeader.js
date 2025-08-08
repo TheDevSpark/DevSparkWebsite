@@ -14,6 +14,9 @@ const DefaultHeader = ({ singleMenu, dark }) => {
                 <Link legacyBehavior href="/">
                   <a>
                     <img
+                      style={{
+                        width: 100,
+                      }}
                       src={
                         dark
                           ? "assets/images/logos/logo-white.png"

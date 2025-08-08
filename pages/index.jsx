@@ -1,5 +1,8 @@
 import Layout from "@/src/layout/Layout";
 import { sliderProps } from "@/src/sliderProps";
+import Advertise from "@/utils/home/Advertise";
+import Hero from "@/utils/home/Hero";
+import Skills from "@/utils/home/Skills";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,178 +15,13 @@ const Index = () => {
   return (
     <Layout footer={2} dark>
       {/* Hero Section Start */}
-      <section
-        className="hero-area-two pt-220 rpt-150 pb-80 rpb-50 rel z-1"
-        style={{ backgroundImage: "url(assets/images/hero/hero-two-bg.png)" }}
-      >
-        <div className="container">
-          <h1 className="hero-title mb-100 rmb-50 wow fadeInUp delay-0-2s">
-            Website
-            <span className="arrow">
-              <img
-                className="wow fadeInLeft delay-0-6s"
-                src="assets/images/hero/title-arrow.png"
-                alt="Arrow"
-              />
-            </span>
-            Develop Agency
-          </h1>
-          <div className="row align-items-center justify-content-between">
-            <div className="col-xl-3 col-lg-4">
-              <div className="hero-two-content mb-50 wow fadeInRight delay-0-2s">
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error voluptatem
-                  accusantium doloremque laudantium totam reme aperiam eaque
-                  abillo inventore
-                </p>
-                <img
-                  className="mt-20"
-                  src="assets/images/hero/arrow.png"
-                  alt="Arrow"
-                />
-                <div className="authors-text mt-45">
-                  <img src="assets/images/hero/author1.png" alt="Author" />
-                  <img src="assets/images/hero/author2.png" alt="Author" />
-                  <img src="assets/images/hero/author3.png" alt="Author" />
-                  <img src="assets/images/hero/author4.png" alt="Author" />
-                  <i className="fal fa-plus" />
-                  <span className="text">100+ Popular Clients</span>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <div className="hero-two-image mb-50 wow zoomIn delay-0-2s">
-                <img src="assets/images/hero/hero-two.jpg" alt="Hero" />
-              </div>
-            </div>
-            <div className="col-lg-2">
-              <div className="hero-two-btn mb-50 wow fadeInLeft delay-0-2s">
-                <Link legacyBehavior href="/about">
-                  <a className="explore-more">
-                    <i className="fas fa-arrow-right" />{" "}
-                    <span>Explore more</span>
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero />
       {/* Hero Section End */}
       {/* Advertise Area Start */}
-      <section className="advertise-banner-area rel z-1">
-        <div className="container container-1290">
-          <div className="row">
-            <div className="col-lg-7 wow fadeInUp delay-0-2s">
-              <div
-                className="advertise-banner style-one bgc-primary"
-                style={{
-                  backgroundImage:
-                    "url(assets/images/banner/add-banner-bg.png)",
-                }}
-              >
-                <div className="image">
-                  <img src="assets/images/banner/add-banner.png" alt="Banner" />
-                </div>
-                <div className="content mt-20">
-                  <span className="number">150+</span>
-                  <h6>Project Complete</h6>
-                  <hr />
-                  <p>Quis autem vel eum reprehe voluptate velit esse quam</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-5 wow fadeInUp delay-0-4s">
-              <div
-                className="advertise-banner style-two bg-white"
-                style={{
-                  backgroundImage: "url(assets/images/banner/star-vector.png)",
-                }}
-              >
-                <h3>Innovative Web Development Solutions</h3>
-                <hr className="mb-35" />
-                <div className="authors-text">
-                  <img src="assets/images/hero/author1.png" alt="Author" />
-                  <img src="assets/images/hero/author2.png" alt="Author" />
-                  <img src="assets/images/hero/author3.png" alt="Author" />
-                  <img src="assets/images/hero/author4.png" alt="Author" />
-                  <i className="fal fa-plus" />
-                  <span className="text">
-                    We denounce indignatione dislike mende charms
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Advertise />
       {/* Advertise Area End */}
       {/* Skills Area Start */}
-      <section className="skills-area pt-100 rpt-70 rel z-1">
-        <div className="container container-1590">
-          <div className="row justify-content-center">
-            <div className="col-lg-6">
-              <div className="section-title text-center mb-60 wow fadeInUp delay-0-2s">
-                <h2>Here are Numerous Topics That Will Enhance Your Skills</h2>
-              </div>
-            </div>
-          </div>
-          <div className="skills-wrap">
-            <div className="skill-item">
-              <img src="assets/images/skills/skill1.png" alt="Skill Icon" />
-              <span className="text">Bootstrap</span>
-            </div>
-            <div className="skill-item">
-              <img src="assets/images/skills/skill2.png" alt="Skill Icon" />
-              <span className="text">HTML</span>
-            </div>
-            <div className="skill-item">
-              <img src="assets/images/skills/skill3.png" alt="Skill Icon" />
-              <span className="text">CSS</span>
-            </div>
-            <div className="skill-item">
-              <img src="assets/images/skills/skill4.png" alt="Skill Icon" />
-              <span className="text">javascript</span>
-            </div>
-            <div className="skill-item">
-              <img src="assets/images/skills/skill5.png" alt="Skill Icon" />
-              <span className="text">React</span>
-            </div>
-            <div className="skill-item">
-              <img src="assets/images/skills/skill6.png" alt="Skill Icon" />
-              <span className="text">WordPress</span>
-            </div>
-            <div className="skill-item">
-              <img src="assets/images/skills/skill7.png" alt="Skill Icon" />
-              <span className="text">php</span>
-            </div>
-            <div className="skill-item">
-              <img src="assets/images/skills/skill8.png" alt="Skill Icon" />
-              <span className="text">node.js</span>
-            </div>
-            <div className="skill-item">
-              <img src="assets/images/skills/skill9.png" alt="Skill Icon" />
-              <span className="text">Sass</span>
-            </div>
-            <div className="skill-item">
-              <img src="assets/images/skills/skill10.png" alt="Skill Icon" />
-              <span className="text">Angular</span>
-            </div>
-            <div className="skill-item">
-              <img src="assets/images/skills/skill11.png" alt="Skill Icon" />
-              <span className="text">Shopify</span>
-            </div>
-            <div className="skill-item">
-              <img src="assets/images/skills/skill12.png" alt="Skill Icon" />
-              <span className="text">Elementor</span>
-            </div>
-            <div className="skill-item">
-              <img src="assets/images/skills/skill13.png" alt="Skill Icon" />
-              <span className="text">Vue.js</span>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Skills />
       {/* Skills Area End */}
       {/* About Us Area start */}
       <section className="about-area pt-100 rpt-70 rel z-1">
