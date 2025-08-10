@@ -483,7 +483,7 @@ const Index = () => {
       </section>
       {/* Project Timeline Two Area end */}
       {/* Team Area start */}
-      <section className="team-area pt-75 rpt-45">
+      {/* <section className="team-area pt-75 rpt-45">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-9">
@@ -691,7 +691,7 @@ const Index = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Team Area end */}
       {/* Why Choose Us start */}
       <section className="demo-area pt-100 rpt-70 rel z-1">
