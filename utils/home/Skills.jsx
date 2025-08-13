@@ -1,6 +1,23 @@
 import React from "react";
 
 function Skills() {
+  const skills = [
+    { img: "assets/images/skills/skill2.png", name: "HTML" },
+    { img: "assets/images/skills/skill3.png", name: "CSS" },
+    { img: "assets/images/skills/skill4.png", name: "Javascript" },
+    { img: "assets/images/skills/skill5.png", name: "React" },
+    { img: "assets/images/skills/skill14.png", name: "Next.js" },
+    { img: "assets/images/skills/skill1.png", name: "Bootstrap" },
+    { img: "assets/images/skills/skill15.png", name: "Tailwind" },
+    { img: "assets/images/skills/skill8.png", name: "Node.js" },
+    { img: "assets/images/skills/skill9.png", name: "Sass" },
+    { img: "assets/images/skills/skill6.png", name: "WordPress" },
+    { img: "assets/images/skills/skill12.png", name: "Elementor" },
+    { img: "assets/images/skills/skill7.png", name: "php" },
+    { img: "assets/images/skills/skill16.png", name: "Laravel" },
+    { img: "assets/images/skills/skill11.png", name: "Shopify" },
+  ];
+
   return (
     <section className="skills-area pt-100 rpt-70 rel z-1">
       <div className="container container-1590">
@@ -12,58 +29,12 @@ function Skills() {
           </div>
         </div>
         <div className="skills-wrap">
-          <div className="skill-item">
-            <img src="assets/images/skills/skill1.png" alt="Skill Icon" />
-            <span className="text">Bootstrap</span>
-          </div>
-          <div className="skill-item">
-            <img src="assets/images/skills/skill2.png" alt="Skill Icon" />
-            <span className="text">HTML</span>
-          </div>
-          <div className="skill-item">
-            <img src="assets/images/skills/skill3.png" alt="Skill Icon" />
-            <span className="text">CSS</span>
-          </div>
-          <div className="skill-item">
-            <img src="assets/images/skills/skill4.png" alt="Skill Icon" />
-            <span className="text">javascript</span>
-          </div>
-          <div className="skill-item">
-            <img src="assets/images/skills/skill5.png" alt="Skill Icon" />
-            <span className="text">React</span>
-          </div>
-          <div className="skill-item">
-            <img src="assets/images/skills/skill6.png" alt="Skill Icon" />
-            <span className="text">WordPress</span>
-          </div>
-          <div className="skill-item">
-            <img src="assets/images/skills/skill7.png" alt="Skill Icon" />
-            <span className="text">php</span>
-          </div>
-          <div className="skill-item">
-            <img src="assets/images/skills/skill8.png" alt="Skill Icon" />
-            <span className="text">node.js</span>
-          </div>
-          <div className="skill-item">
-            <img src="assets/images/skills/skill9.png" alt="Skill Icon" />
-            <span className="text">Sass</span>
-          </div>
-          <div className="skill-item">
-            <img src="assets/images/skills/skill10.png" alt="Skill Icon" />
-            <span className="text">Angular</span>
-          </div>
-          <div className="skill-item">
-            <img src="assets/images/skills/skill11.png" alt="Skill Icon" />
-            <span className="text">Shopify</span>
-          </div>
-          <div className="skill-item">
-            <img src="assets/images/skills/skill12.png" alt="Skill Icon" />
-            <span className="text">Elementor</span>
-          </div>
-          <div className="skill-item">
-            <img src="assets/images/skills/skill13.png" alt="Skill Icon" />
-            <span className="text">Vue.js</span>
-          </div>
+          {skills.map((skill, index) => (
+            <div className="skill-item" key={index}>
+              <img src={skill.img} alt={`${skill.name} Icon`} />
+              <span className="text">{skill.name}</span>
+            </div>
+          ))}
         </div>
       </div>
     </section>
