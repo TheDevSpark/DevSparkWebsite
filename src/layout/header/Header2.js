@@ -9,7 +9,7 @@ const Header2 = ({ singleMenu, dark }) => {
         <div className="container container-1620 clearfix">
           <div className="header-inner rpy-10 rel d-flex align-items-center">
             <div className="logo-outer">
-              <div className="logo">
+              <div className="logo" style={{ width: '100px' }} >
                 <Link legacyBehavior href="/">
                   <a>
                     <img
