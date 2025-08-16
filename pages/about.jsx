@@ -19,7 +19,8 @@ const About = () => {
           <div className="row">
             <div className="col-xl-10 col-lg-11">
               <h1 className="hero-title mb-100 rmb-50 wow fadeInUp delay-0-2s">
-                We’re Digital Web
+                {/* Dev Spark: Building Solutions That Matter */}
+                Dev Spark: Building
                 <img
                   className="mxw-20"
                   src="assets/images/banner/inside-title1.png"
@@ -30,7 +31,7 @@ const About = () => {
                   src="assets/images/banner/inside-title2.png"
                   alt="title"
                 />
-                Development Agency
+                Solutions That Matter
                 <span className="arrow">
                   <img
                     className="wow fadeInLeft delay-0-6s"
@@ -62,9 +63,21 @@ const About = () => {
           <div className="row">
             <div className="col-lg-6 wow fadeInLeft delay-0-2s">
               <div className="client-text text-lg-start text-center mt-40 pb-50">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptat
-                emey accusantium doloremque laudantium totam aperiam eaque
-                quabillo inventore veritatisey quasi architecto beatae dictasunt
+                Established with a clear vision to empower businesses through
+                cutting-edge technology, Dev Spark has evolved from a humble
+                startup into a renowned leader in web and software development.
+                Over the years, we have successfully delivered more than 100
+                projects spanning diverse industries, consistently exceeding
+                client expectations. Our portfolio includes bespoke websites,
+                robust mobile applications, custom software solutions, and
+                strategic digital marketing initiatives. Through unwavering
+                dedication to quality, innovation, and client satisfaction, we
+                have built lasting partnerships and a reputation for excellence.
+                Continuously embracing the latest industry trends and
+                technologies, Dev Spark remains committed to driving sustainable
+                growth and delivering measurable results. We take pride in
+                transforming complex ideas into elegant, impactful solutions
+                that shape the future of businesses worldwide.
               </div>
               <div className="row">
                 <div className="col-xl-10">
@@ -118,7 +131,7 @@ const About = () => {
             <div className="col-lg-7">
               <div className="section-title text-center mb-70 wow fadeInUp delay-0-2s">
                 <span className="sub-title mb-15">Who We Are</span>
-                <h2>We are Professional and Experience Team </h2>
+                <h2>Skilled Teams, Seamless Web, Apps, and Branding</h2>
               </div>
             </div>
           </div>
@@ -127,11 +140,12 @@ const About = () => {
               <div className="why-choose-item style-two wow fadeInUp delay-0-2s">
                 <div className="why-choose-header">
                   <i className="flaticon-creativity" />
-                  <h5>Customize your site</h5>
+                  <h5>Bridging Technology Gaps</h5>
                 </div>
                 <p>
-                  At vero eos et accusamus iusto dignissim ducimuse blanditiis
-                  praesentiue
+                  We simplify complex tech challenges to deliver seamless
+                  digital solutions. Our experts ensure your business stays
+                  ahead with the latest innovations.
                 </p>
               </div>
             </div>
@@ -139,11 +153,12 @@ const About = () => {
               <div className="why-choose-item style-two wow fadeInUp delay-0-4s">
                 <div className="why-choose-header">
                   <i className="flaticon-mobile-banking" />
-                  <h5>Edit your mobile view</h5>
+                  <h5> Committed to Quality</h5>
                 </div>
                 <p>
-                  Ut enim ad minima veniam, quis nostrum exercitationem ullam
-                  corporis suscipit
+                  Every project meets the highest standards of performance and
+                  reliability. We focus on precision and excellence to exceed
+                  your expectations.
                 </p>
               </div>
             </div>
@@ -151,11 +166,51 @@ const About = () => {
               <div className="why-choose-item style-two wow fadeInUp delay-0-6s">
                 <div className="why-choose-header">
                   <i className="flaticon-optimization-1" />
-                  <h5>Optimize search engines</h5>
+                  <h5>Client-Centric Approach</h5>
                 </div>
                 <p>
-                  Quis autem vel eum iure reprehenderi qui ea voluptate velit
-                  esse quam nihile
+                  Your goals drive our strategies, ensuring solutions tailored
+                  to your needs. We build strong partnerships through
+                  transparent communication.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="why-choose-item style-two wow fadeInUp delay-0-2s">
+                <div className="why-choose-header">
+                  <i className="flaticon-creativity" />
+                  <h5>Agile and Adaptive</h5>
+                </div>
+                <p>
+                  Our flexible processes allow us to respond quickly to changing
+                  market demands. We prioritize agility to keep your projects on
+                  time and on budget
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="why-choose-item style-two wow fadeInUp delay-0-4s">
+                <div className="why-choose-header">
+                  <i className="flaticon-mobile-banking" />
+                  <h5>Innovative Problem Solvers</h5>
+                </div>
+                <p>
+                  Creativity and critical thinking fuel our approach to complex
+                  challenges. We develop solutions that are not just functional,
+                  but game-changing
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="why-choose-item style-two wow fadeInUp delay-0-6s">
+                <div className="why-choose-header">
+                  <i className="flaticon-optimization-1" />
+                  <h5>End-to-End Expertise</h5>
+                </div>
+                <p>
+                  From concept to deployment, we handle all aspects of your
+                  project lifecycle. Our multidisciplinary team ensures cohesive
+                  and integrated outcomes
                 </p>
               </div>
             </div>
@@ -209,207 +264,6 @@ const About = () => {
         </div>
       </div>
       {/* Headline Area end */}
-      {/* Team Area start */}
-      <section className="team-area pt-130 rpt-100">
-        <div className="container-fluid">
-          <div className="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
-            <div className="col">
-              <div className="team-member wow fadeInUp delay-0-2s">
-                <div className="image">
-                  <img src="assets/images/team/member6.jpg" alt="Team Member" />
-                </div>
-                <div className="content">
-                  <h4>Patrick V. Schroeder</h4>
-                  <span>UI/UX Designer</span>
-                  <Link legacyBehavior href="/team-details">
-                    <a className="read-more">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-                <div className="btn-social">
-                  <Link legacyBehavior href="/team-details">
-                    <a className="read-more">
-                      <span>View Details</span>{" "}
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                  <div className="social-style-two">
-                    <a href="#">
-                      <i className="fab fa-facebook-f" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-twitter" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-instagram" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="team-member wow fadeInUp delay-0-3s">
-                <div className="image">
-                  <img src="assets/images/team/member7.jpg" alt="Team Member" />
-                </div>
-                <div className="content">
-                  <h4>Michael A. Braun</h4>
-                  <span>UI/UX Designer</span>
-                  <Link legacyBehavior href="/team-details">
-                    <a className="read-more">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-                <div className="btn-social">
-                  <Link legacyBehavior href="/team-details">
-                    <a className="read-more">
-                      <span>View Details</span>{" "}
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                  <div className="social-style-two">
-                    <a href="#">
-                      <i className="fab fa-facebook-f" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-twitter" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-instagram" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="team-member wow fadeInUp delay-0-4s">
-                <div className="image">
-                  <img src="assets/images/team/member8.jpg" alt="Team Member" />
-                </div>
-                <div className="content">
-                  <h4>James V. Decastro</h4>
-                  <span>Senior Marketer</span>
-                  <Link legacyBehavior href="/team-details">
-                    <a className="read-more">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-                <div className="btn-social">
-                  <Link legacyBehavior href="/team-details">
-                    <a className="read-more">
-                      <span>View Details</span>{" "}
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                  <div className="social-style-two">
-                    <a href="#">
-                      <i className="fab fa-facebook-f" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-twitter" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-instagram" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="team-member wow fadeInUp delay-0-5s">
-                <div className="image">
-                  <img src="assets/images/team/member9.jpg" alt="Team Member" />
-                </div>
-                <div className="content">
-                  <h4>Troy V. Richardson</h4>
-                  <span>Web Designer</span>
-                  <Link legacyBehavior href="/team-details">
-                    <a className="read-more">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-                <div className="btn-social">
-                  <Link legacyBehavior href="/team-details">
-                    <a className="read-more">
-                      <span>View Details</span>{" "}
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                  <div className="social-style-two">
-                    <a href="#">
-                      <i className="fab fa-facebook-f" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-twitter" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-instagram" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="team-member wow fadeInUp delay-0-6s">
-                <div className="image">
-                  <img
-                    src="assets/images/team/member10.jpg"
-                    alt="Team Member"
-                  />
-                </div>
-                <div className="content">
-                  <h4>Michael A. Braun</h4>
-                  <span>Apps Designer</span>
-                  <Link legacyBehavior href="/team-details">
-                    <a className="read-more">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-                <div className="btn-social">
-                  <Link legacyBehavior href="/team-details">
-                    <a className="read-more">
-                      <span>View Details</span>{" "}
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                  <div className="social-style-two">
-                    <a href="#">
-                      <i className="fab fa-facebook-f" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-twitter" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-instagram" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* Team Area end */}
       {/* Statistics Area start */}
       <div
         className="statistics-area pt-100 rpt-70 rel z-1"
