@@ -9,7 +9,7 @@ function Hero() {
     >
       <div className="container">
         <h1 className="hero-title mb-100 rmb-50 wow fadeInUp delay-0-2s">
-          Website
+          Digital Solutions
           <span className="arrow">
             <img
               className="wow fadeInLeft delay-0-6s"
@@ -17,15 +17,16 @@ function Hero() {
               alt="Arrow"
             />
           </span>
-          Develop Agency
+          That Spark Success
         </h1>
         <div className="row align-items-center justify-content-between">
           <div className="col-xl-3 col-lg-4">
             <div className="hero-two-content mb-50 wow fadeInRight delay-0-2s">
               <p>
-                Sed ut perspiciatis unde omnis iste natus error voluptatem
-                accusantium doloremque laudantium totam reme aperiam eaque
-                abillo inventore
+                Dev Spark transforms your vision into high-performance websites,
+                apps, and software. Our expert team blends creativity with
+                technology to deliver results that grow your business. Let’s
+                ignite your brand’s online presence and turn ideas into reality.
               </p>
               <img
                 className="mt-20"

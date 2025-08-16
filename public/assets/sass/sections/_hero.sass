@@ -86,9 +86,9 @@
     font-size: 150px
     font-family: $font-primary
     +res-bl(xxl)
-        font-size: 140px
+        font-size: 75px
     +res-bl(xl)
-        font-size: 110px
+        font-size: 75px
     +res-bl(lg)
         font-size: 85px
         line-height: 1.2
@@ -108,7 +108,7 @@
         display: inline-block
         &:before
             content: ''
-            left: 28%
+            left: 50%
             +size(130px)
             position: absolute
             border-radius: 50%
@@ -117,6 +117,7 @@
             animation: rotated_circle linear 10s infinite
             border-color: $color-primary $color-primary transparent transparent
             +res-bl(lg)
+                left: 35%   
                 +size(100px)
                 border-width: 22px
             +res-bl(lg)

@@ -12,7 +12,6 @@ import Testimonial from "@/utils/home/Testimonial";
 import WhyUs from "@/utils/home/WhyUs";
 import dynamic from "next/dynamic";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 const Counter = dynamic(() => import("@/src/components/Counter"), {
   ssr: false,
 });
