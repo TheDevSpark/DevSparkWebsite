@@ -12,7 +12,7 @@ const Footer2 = ({ dark }) => {
         <div className="row gp-100 pb-20 align-items-center justify-content-between">
           <div className="col-xl-6 col-lg-7">
             <div className="footer-left-title mb-35 wow fadeInLeft delay-0-2s">
-              Get Ready to Build Your Website
+              Your Vision, Our Spark — Together We Create
             </div>
           </div>
           <div className="col-lg-5 col-sm-7 col-6 col-small wow fadeInRight delay-0-2s">

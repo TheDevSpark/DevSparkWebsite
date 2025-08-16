@@ -24,7 +24,7 @@ function Skills() {
         <div className="row justify-content-center">
           <div className="col-lg-6">
             <div className="section-title text-center mb-60 wow fadeInUp delay-0-2s">
-              <h2>Here are Numerous Topics That Will Enhance Your Skills</h2>
+              <h2>Expertise That Turns your Ideas into Reality</h2>
             </div>
           </div>
         </div>

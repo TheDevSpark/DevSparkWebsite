@@ -15,7 +15,7 @@ function Pricing() {
           <div className="col-xl-8 col-lg-10">
             <div className="section-title text-center mb-60 wow fadeInUp delay-0-2s">
               <span className="sub-title mb-20">Pricing Package</span>
-              <h2>Best Pricing Package For All Web Design Solutions</h2>
+              <h2>Transparent Pricing. Exceptional Value</h2>
             </div>
           </div>
         </div>

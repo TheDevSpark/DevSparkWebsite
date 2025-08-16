@@ -10,14 +10,16 @@ function About() {
             <div className="about-content">
               <div className="section-title mb-40 wow fadeInUp delay-0-2s">
                 <span className="sub-title mb-15">About Company</span>
-                <h2>We’re Award-winning Web Development Agency</h2>
+                <h2>Trusted Experts Delivering Excellence in Every Project</h2>
               </div>
               <div className="text-left-border mt-60 mb-65 wow fadeInUp delay-0-2s">
                 <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptat
-                  emey accusantium doloremque laudantium totam aperiam eaque
-                  quabillo inventore veritatisey quasi architecto beatae
-                  dictasunt
+                  At Dev Spark, we believe quality speaks louder than promises.
+                  With 100+ successful projects, we’ve earned the trust of
+                  businesses worldwide. Our team blends innovation, skill, and
+                  dedication to craft solutions that exceed expectations. From
+                  the first idea to the final launch, excellence is our
+                  standard.
                 </p>
               </div>
               <div className="about-counter">

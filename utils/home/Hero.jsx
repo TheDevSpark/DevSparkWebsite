@@ -4,7 +4,7 @@ import React from "react";
 function Hero() {
   return (
     <section
-      className="hero-area-two pt-220 rpt-150 pb-80 rpb-50 rel z-1"
+      className="hero-area-two pt-150 rpt-120 pb-80 rpb-50 rel z-1"
       style={{ backgroundImage: "url(assets/images/hero/hero-two-bg.png)" }}
     >
       <div className="container">

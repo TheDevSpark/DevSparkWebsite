@@ -12,7 +12,7 @@ function Service() {
           <div className="col-lg-7">
             <div className="section-title text-center mb-60 wow fadeInUp delay-0-2s">
               <span className="sub-title mb-15">Popular Services</span>
-              <h2>We Provide Amazing Web Design Solutions</h2>
+              <h2>Our Most In-Demand Solutions for Your Business Growth</h2>
             </div>
           </div>
         </div>

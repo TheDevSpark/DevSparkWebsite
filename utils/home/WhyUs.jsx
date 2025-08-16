@@ -9,18 +9,20 @@ function WhyUs() {
             <div className="why-choose-us-content">
               <div className="section-title mb-60 wow fadeInUp delay-0-2s">
                 <span className="sub-title mb-15">Why Choose Us</span>
-                <h2>Web Design Company That You Can Trust</h2>
+                <h2>
+                  Why Choose Dev Spark – Where Innovation Meets Reliability
+                </h2>
               </div>
               <div className="row gap-60">
                 <div className="col-md-6">
                   <div className="why-choose-item wow fadeInUp delay-0-2s">
                     <div className="why-choose-header">
                       <i className="far fa-chevron-right" />
-                      <h5>Competitive rates</h5>
+                      <h5>Proven Excellence</h5>
                     </div>
                     <p>
-                      We use strategic marketing tactics that have been proven
-                      programming
+                      Over 100+ projects delivered with precision, innovation,
+                      and measurable business results.
                     </p>
                   </div>
                 </div>
@@ -28,11 +30,11 @@ function WhyUs() {
                   <div className="why-choose-item wow fadeInUp delay-0-3s">
                     <div className="why-choose-header">
                       <i className="far fa-chevron-right" />
-                      <h5>Premium Development</h5>
+                      <h5>Masters of the Craft</h5>
                     </div>
                     <p>
-                      Sed perspiciatis unde omnie natue site voluptatem accusan
-                      doloremque
+                      A handpicked team of developers, designers, and marketers
+                      dedicated to turning visions into reality.
                     </p>
                   </div>
                 </div>
@@ -40,11 +42,11 @@ function WhyUs() {
                   <div className="why-choose-item wow fadeInUp delay-0-2s">
                     <div className="why-choose-header">
                       <i className="far fa-chevron-right" />
-                      <h5>No contracts needed</h5>
+                      <h5>Solutions That Fit Like a Glove</h5>
                     </div>
                     <p>
-                      You can increase, pause or stop our services at any time
-                      leaving
+                      Every project is uniquely designed around your goals,
+                      audience, and growth potential.
                     </p>
                   </div>
                 </div>
@@ -52,11 +54,11 @@ function WhyUs() {
                   <div className="why-choose-item wow fadeInUp delay-0-3s">
                     <div className="why-choose-header">
                       <i className="far fa-chevron-right" />
-                      <h5>Retina Ready &amp; Flexible</h5>
+                      <h5>Quality Without Compromise</h5>
                     </div>
                     <p>
-                      Devices show more pixels square inch resulting sharperes
-                      images Content
+                      We set the bar high—every line of code, every design
+                      element, every campaign is perfected.
                     </p>
                   </div>
                 </div>

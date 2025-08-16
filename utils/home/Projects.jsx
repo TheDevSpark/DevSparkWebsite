@@ -9,7 +9,7 @@ function Projects() {
           <div className="col-xl-6 col-lg-8">
             <div className="section-title mb-70 rmb-30 wow fadeInUp delay-0-2s">
               <span className="sub-title mb-15">Recent Works Gallery</span>
-              <h2>Lat’s Look Our Recent Project Gallery</h2>
+              <h2>Projects That Turned Ideas into Success Stories</h2>
             </div>
           </div>
           <div className="col-xl-6 col-lg-4 text-lg-end">
