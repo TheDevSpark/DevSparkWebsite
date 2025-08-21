@@ -1,6 +1,21 @@
 import Link from "next/link";
 import { Fragment, useState } from "react";
-
+const technologies = [
+  { name: "HTML" },
+  { name: "CSS" },
+  { name: "Javascript" },
+  { name: "React" },
+  { name: "Next.js" },
+  { name: "Bootstrap" },
+  { name: "Tailwind" },
+  { name: "Node.js" },
+  { name: "Sass" },
+  { name: "WordPress" },
+  { name: "Elementor" },
+  { name: "php" },
+  { name: "Laravel" },
+  { name: "Shopify" },
+];
 const Menu = ({ singleMenu }) => {
   return (
     <Fragment>
@@ -113,6 +128,21 @@ const DaskTopMenu = () => {
         </div>
       </li>
       <li className="dropdown">
+        <a href="#">Technologies</a>
+        <ul className="tech-dropdown">
+          {technologies.map((tech, index) => (
+            <li key={index}>
+              <Link legacyBehavior href={tech.name}>
+                {tech.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <div className="dropdown-btn">
+          <span className="far fa-arrow-right hover-arrow-down" />
+        </div>
+      </li>
+      <li className="dropdown">
         <a href="#">Projects</a>
         <ul>
           <li>
@@ -128,29 +158,6 @@ const DaskTopMenu = () => {
           <li>
             <Link legacyBehavior href="project-details">
               Project Details
-            </Link>
-          </li>
-        </ul>
-        <div className="dropdown-btn">
-          <span className="far fa-arrow-right hover-arrow-down" />
-        </div>
-      </li>
-      <li className="dropdown ">
-        <a href="#">blog</a>
-        <ul>
-          <li>
-            <Link legacyBehavior href="blog">
-              blog Grid
-            </Link>
-          </li>
-          <li>
-            <Link legacyBehavior href="blog-standard">
-              blog standard
-            </Link>
-          </li>
-          <li>
-            <Link legacyBehavior href="blog-details">
-              blog details
             </Link>
           </li>
         </ul>
