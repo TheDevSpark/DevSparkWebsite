@@ -10,9 +10,10 @@ const Nav = ({ singleMenu }) => {
             <Link legacyBehavior href="/">
               <a>
                 <img
-                  src="assets/images/logos/logo.png"
+                  src="assets/images/logos/logo-white.png"
                   alt="Logo"
                   title="Logo"
+                  className="mobile-image"
                 />
               </a>
             </Link>

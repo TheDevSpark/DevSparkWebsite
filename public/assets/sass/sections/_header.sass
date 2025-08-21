@@ -12,6 +12,11 @@
     position: relative
     transition: all 500ms ease
     padding: 20px 0
+  
+  .mobile-image
+    width: 8rem
+    +res-bl(sm)
+      width: 6rem
 
   .logo-outer
     flex: none
@@ -39,6 +44,14 @@
     +res-ab(lg)
       .main-menu .navbar-collapse > ul > li
         padding: 10px 0
+
+  // Hover arrow down effect - changed to trigger on li hover
+  .hover-arrow-down
+    transition: transform 0.3s ease
+
+  li.dropdown:hover
+    .hover-arrow-down
+      transform: rotate(90deg)
 
 
 // Responsive Nav
@@ -85,7 +98,6 @@
             color: $color-primary
             transform: translateX(-50%) rotate(-45deg)
 
-
           &:hover:before
             opacity: 1
 
@@ -109,7 +121,6 @@
         display: block
         padding: 0 15px
         border-top: 1px solid $color-border
-        margin: 0 10px
 
       &.dropdown
         .dropdown-btn

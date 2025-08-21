@@ -1,6 +1,6 @@
 import Link from "next/link";
-
 import { Fragment, useState } from "react";
+
 const Menu = ({ singleMenu }) => {
   return (
     <Fragment>
@@ -58,7 +58,7 @@ const DaskTopMenu = () => {
               </li>
             </ul>
             <div className="dropdown-btn">
-              <span className="far fa-plus" />
+              <span className="far fa-arrow-right hover-arrow-down" />
             </div>
           </li>
           <li className="dropdown">
@@ -96,12 +96,12 @@ const DaskTopMenu = () => {
               </li>
             </ul>
             <div className="dropdown-btn">
-              <span className="far fa-plus" />
+              <span className="far fa-arrow-right hover-arrow-down" />
             </div>
           </li>
         </ul>
         <div className="dropdown-btn">
-          <span className="far fa-plus" />
+          <span className="far fa-arrow-right hover-arrow-down" />
         </div>
       </li>
       <li>
@@ -132,7 +132,7 @@ const DaskTopMenu = () => {
               </li>
             </ul>
             <div className="dropdown-btn">
-              <span className="far fa-plus" />
+              <span className="far fa-arrow-right hover-arrow-down" />
             </div>
           </li>
           <li className="dropdown">
@@ -150,7 +150,7 @@ const DaskTopMenu = () => {
               </li>
             </ul>
             <div className="dropdown-btn">
-              <span className="far fa-plus" />
+              <span className="far fa-arrow-right hover-arrow-down" />
             </div>
           </li>
           <li>
@@ -170,7 +170,7 @@ const DaskTopMenu = () => {
           </li>
         </ul>
         <div className="dropdown-btn">
-          <span className="far fa-plus" />
+          <span className="far fa-arrow-right hover-arrow-down" />
         </div>
       </li>
       <li className="dropdown">
@@ -193,7 +193,7 @@ const DaskTopMenu = () => {
           </li>
         </ul>
         <div className="dropdown-btn">
-          <span className="far fa-plus" />
+          <span className="far fa-arrow-right hover-arrow-down" />
         </div>
       </li>
       <li className="dropdown">
@@ -216,7 +216,7 @@ const DaskTopMenu = () => {
           </li>
         </ul>
         <div className="dropdown-btn">
-          <span className="far fa-plus" />
+          <span className="far fa-arrow-right hover-arrow-down" />
         </div>
       </li>
       <li className="dropdown ">
@@ -239,7 +239,7 @@ const DaskTopMenu = () => {
           </li>
         </ul>
         <div className="dropdown-btn">
-          <span className="far fa-plus" />
+          <span className="far fa-arrow-right hover-arrow-down" />
         </div>
       </li>
     </ul>
@@ -300,7 +300,7 @@ const MobileMenu = () => {
               className="dropdown-btn"
               onClick={() => multiMenuSet("multiPage")}
             >
-              <span className="far fa-plus" />
+              <span className="far fa-arrow-right hover-arrow-down" />
             </div>
           </li>
           <li className="dropdown">
@@ -341,12 +341,12 @@ const MobileMenu = () => {
               className="dropdown-btn"
               onClick={() => multiMenuSet("OnePage")}
             >
-              <span className="far fa-plus" />
+              <span className="far fa-arrow-right hover-arrow-down" />
             </div>
           </li>
         </ul>
         <div className="dropdown-btn" onClick={() => activeMenuSet("home")}>
-          <span className="far fa-plus" />
+          <span className="far fa-arrow-right hover-arrow-down" />
         </div>
       </li>
       <li>
@@ -380,7 +380,7 @@ const MobileMenu = () => {
               className="dropdown-btn"
               onClick={() => multiMenuSet("Products")}
             >
-              <span className="far fa-plus" />
+              <span className="far fa-arrow-right hover-arrow-down" />
             </div>
           </li>
           <li className="dropdown">
@@ -398,7 +398,7 @@ const MobileMenu = () => {
               </li>
             </ul>
             <div className="dropdown-btn" onClick={() => multiMenuSet("Team")}>
-              <span className="far fa-plus" />
+              <span className="far fa-arrow-right hover-arrow-down" />
             </div>
           </li>
           <li>
@@ -418,7 +418,7 @@ const MobileMenu = () => {
           </li>
         </ul>
         <div className="dropdown-btn" onClick={() => activeMenuSet("pages")}>
-          <span className="far fa-plus" />
+          <span className="far fa-arrow-right hover-arrow-down" />
         </div>
       </li>
       <li className="dropdown">
@@ -441,7 +441,7 @@ const MobileMenu = () => {
           </li>
         </ul>
         <div className="dropdown-btn" onClick={() => activeMenuSet("Services")}>
-          <span className="far fa-plus" />
+          <span className="far fa-arrow-right hover-arrow-down" />
         </div>
       </li>
       <li className="dropdown">
@@ -464,7 +464,7 @@ const MobileMenu = () => {
           </li>
         </ul>
         <div className="dropdown-btn" onClick={() => activeMenuSet("Projects")}>
-          <span className="far fa-plus" />
+          <span className="far fa-arrow-right hover-arrow-down" />
         </div>
       </li>
       <li className="dropdown">
@@ -487,7 +487,7 @@ const MobileMenu = () => {
           </li>
         </ul>
         <div className="dropdown-btn" onClick={() => activeMenuSet("blog")}>
-          <span className="far fa-plus" />
+          <span className="far fa-arrow-right hover-arrow-down" />
         </div>
       </li>
     </ul>
