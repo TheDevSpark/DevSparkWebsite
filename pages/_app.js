@@ -1,6 +1,7 @@
 import PreLoader from "@/src/layout/PreLoader";
-import "@/styles/globals.css";
+// import "@/styles/globals.css";
 import "@/public/assets/sass/style.sass";
+import "@/public/assets/sass/_variables.sass";
 
 import Head from "next/head";
 import { Fragment, useEffect, useState } from "react";
