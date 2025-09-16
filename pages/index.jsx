@@ -17,8 +17,6 @@ const Counter = dynamic(() => import("@/src/components/Counter"), {
 });
 
 const fistHeadlines = [
-
-  
   {
     title: "Web Design",
   },
@@ -87,9 +85,6 @@ const Index = () => {
       {/* Why Choose Us start */}
       <WhyUs />
       {/* Why Choose Us end */}
-      {/* Pricing style three start */}
-      <Pricing />
-      {/* Pricing style three end */}
       {/* Headline area start */}
       <Headline headlines={secondHeadlines} />
       {/* Headline Area end */}

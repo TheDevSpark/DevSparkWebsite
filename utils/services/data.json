@@ -1,0 +1,962 @@
+[
+  {
+    "slug": "web-development",
+    "title": "Web Development",
+    "tagline": "Crafting fast, secure, and scalable websites that grow your business online.",
+    "offer": [
+      "Custom Website Development",
+      "Responsive & Mobile-Friendly Design",
+      "E-Commerce Solutions",
+      "CMS Development (WordPress, Shopify, etc.)",
+      "Web Applications & Portals",
+      "API Integration & Backend Development",
+      "Website Maintenance & Support",
+      "SEO-Friendly Website Structure"
+    ],
+    "whatWeDo": {
+      "tagline": "Turning ideas into powerful, user-friendly websites.",
+      "description": "We design and develop websites that are modern, responsive, and tailored to your business needs – built to engage users and drive results.",
+      "steps": [
+        {
+          "title": "Planning",
+          "text": "We understand your goals and create a solid roadmap."
+        },
+        {
+          "title": "Design",
+          "text": "Crafting clean, modern, and user-friendly layouts."
+        },
+        {
+          "title": "Development",
+          "text": "Building fast, secure, and scalable websites."
+        },
+        {
+          "title": "Testing",
+          "text": "Ensuring flawless performance across all devices."
+        },
+        {
+          "title": "Launch",
+          "text": "Delivering your website ready to shine online."
+        }
+      ]
+    },
+    "pricing": [
+      {
+        "package": "Regular",
+        "desc": "Best for startups & small businesses",
+        "price": 199,
+        "features": [
+          "3 Pages Responsive Website",
+          "Basic Design & Layout",
+          "Mobile-Friendly Structure",
+          "Contact Form Integration",
+          "Free SSL Setup",
+          "1 Month Free Support"
+        ]
+      },
+      {
+        "package": "Silver",
+        "desc": "Ideal for growing businesses",
+        "price": 499,
+        "features": [
+          "Up to 8 Pages Custom Website",
+          "Modern UI/UX Design",
+          "E-Commerce Functionality (Optional)",
+          "SEO-Friendly Structure",
+          "Social Media Integration",
+          "3 Months Free Support"
+        ]
+      },
+      {
+        "package": "Golden",
+        "desc": "Perfect for enterprises & scaling brands",
+        "price": 999,
+        "features": [
+          "Unlimited Pages Dynamic Website",
+          "Premium UI/UX with Animations",
+          "Advanced E-Commerce Functionality",
+          "SEO + Speed Optimization",
+          "API & Third-Party Integrations",
+          "6 Months Priority Support"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How long does it take to build a website?",
+        "a": "Depending on complexity, most websites take 2–6 weeks to design and develop."
+      },
+      {
+        "q": "Will my website be mobile-friendly?",
+        "a": "Yes, all our websites are responsive and optimized for mobile, tablet, and desktop."
+      },
+      {
+        "q": "Do you provide website hosting and domain services?",
+        "a": "We guide you with hosting/domain and can integrate them with your website."
+      },
+      {
+        "q": "Can I update my website after it’s built?",
+        "a": "Absolutely! We build CMS-based websites so you can manage content easily."
+      },
+      {
+        "q": "Do you offer website maintenance?",
+        "a": "Yes, we provide ongoing support and maintenance plans."
+      }
+    ]
+  },
+  {
+    "slug": "app-development",
+    "title": "App Development",
+    "tagline": "Building fast, scalable, and engaging mobile apps that users love.",
+    "offer": [
+      "Native App Development (iOS & Android)",
+      "Cross-Platform Apps (React Native, Flutter)",
+      "UI/UX Design for Mobile",
+      "API & Backend Integration",
+      "App Testing & QA",
+      "App Store Submission & Support",
+      "Performance & Security Optimization",
+      "Ongoing Maintenance & Updates"
+    ],
+    "whatWeDo": {
+      "tagline": "From concept to launch – we bring your app idea to life.",
+      "description": "Our process ensures your app is user-friendly, high-performing, and built to scale – delivering real value to your business.",
+      "steps": [
+        { "title": "Planning", "text": "Define your goals and app features." },
+        {
+          "title": "Design",
+          "text": "Create intuitive and engaging user experiences."
+        },
+        {
+          "title": "Development",
+          "text": "Build robust, scalable mobile applications."
+        },
+        {
+          "title": "Testing",
+          "text": "Ensure flawless performance across devices."
+        },
+        {
+          "title": "Launch",
+          "text": "Deploy your app to App Stores with support."
+        }
+      ]
+    },
+    "pricing": [
+      {
+        "package": "Regular",
+        "desc": "Best for simple apps & startups",
+        "price": 399,
+        "features": [
+          "Basic Cross-Platform App",
+          "Up to 5 Screens",
+          "Simple UI Design",
+          "API Integration (Basic)",
+          "App Store Submission",
+          "1 Month Free Support"
+        ]
+      },
+      {
+        "package": "Silver",
+        "desc": "Ideal for mid-sized apps & businesses",
+        "price": 899,
+        "features": [
+          "Native/Hybrid App (iOS or Android)",
+          "Up to 12 Screens",
+          "Modern UI/UX Design",
+          "API & Database Integration",
+          "Push Notifications",
+          "3 Months Free Support"
+        ]
+      },
+      {
+        "package": "Golden",
+        "desc": "Perfect for complex apps & enterprises",
+        "price": 1499,
+        "features": [
+          "Fully Custom Native App (iOS + Android)",
+          "Unlimited Screens",
+          "Premium UI/UX with Animations",
+          "Advanced Features (Chat, Payments, Maps, etc.)",
+          "API & Third-Party Integrations",
+          "6 Months Priority Support"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Do you develop both iOS and Android apps?",
+        "a": "Yes, we develop native and cross-platform apps for iOS and Android."
+      },
+      {
+        "q": "How much does app development cost?",
+        "a": "Costs vary based on features; our packages start from $399."
+      },
+      {
+        "q": "Can you integrate APIs into my app?",
+        "a": "Yes, we integrate third-party APIs, payment gateways, maps, and more."
+      },
+      {
+        "q": "Do you handle App Store/Play Store submission?",
+        "a": "Yes, we handle the complete submission and approval process."
+      },
+      {
+        "q": "Will my app be scalable in the future?",
+        "a": "Absolutely! We build apps that can grow with your business."
+      }
+    ]
+  },
+  {
+    "slug": "mvp-development",
+    "title": "MVP Development",
+    "tagline": "Validate your startup idea fast with a lean, scalable MVP.",
+    "offer": [
+      "Rapid Prototyping & Wireframing",
+      "Lean Product Development",
+      "Scalable Architecture",
+      "Core Feature Implementation",
+      "API & Third-Party Integrations",
+      "User Testing & Feedback Loop",
+      "Agile Development Approach",
+      "Continuous Improvements"
+    ],
+    "whatWeDo": {
+      "tagline": "From idea to market – we help you launch smarter, faster.",
+      "description": "Our MVP process ensures you launch a functional product quickly, validate it with real users, and scale with confidence.",
+      "steps": [
+        {
+          "title": "Discovery",
+          "text": "Analyze your idea & define core features."
+        },
+        { "title": "Design", "text": "Create wireframes & user-friendly UI." },
+        { "title": "Build", "text": "Develop a functional, scalable MVP." },
+        { "title": "Test", "text": "Validate with users & gather feedback." },
+        { "title": "Launch", "text": "Release your MVP and prepare to scale." }
+      ]
+    },
+    "pricing": [
+      {
+        "package": "Regular",
+        "desc": "Best for early-stage ideas",
+        "price": 499,
+        "features": [
+          "Simple MVP with Core Features",
+          "Up to 5 Screens",
+          "Basic UI Design",
+          "API Integration (Basic)",
+          "User Testing Support",
+          "1 Month Free Support"
+        ]
+      },
+      {
+        "package": "Silver",
+        "desc": "Ideal for growing startups",
+        "price": 1099,
+        "features": [
+          "Feature-Rich MVP Development",
+          "Up to 12 Screens",
+          "Modern UI/UX Design",
+          "Scalable Architecture",
+          "API & Database Integration",
+          "3 Months Free Support"
+        ]
+      },
+      {
+        "package": "Golden",
+        "desc": "Perfect for investor-ready startups",
+        "price": 1999,
+        "features": [
+          "Full MVP with Advanced Features",
+          "Unlimited Screens & Modules",
+          "Premium UI/UX with Animations",
+          "Cloud & Third-Party Integrations",
+          "User Analytics & Feedback System",
+          "6 Months Priority Support"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is an MVP?",
+        "a": "An MVP (Minimum Viable Product) is a simplified version of your product with core features to test your idea."
+      },
+      {
+        "q": "Why should I start with an MVP?",
+        "a": "It helps validate your idea, save money, and get user feedback before scaling."
+      },
+      {
+        "q": "How long does MVP development take?",
+        "a": "Typically 4–8 weeks depending on features."
+      },
+      {
+        "q": "Can I expand my MVP later?",
+        "a": "Yes, we build MVPs with scalability in mind."
+      },
+      {
+        "q": "Do you help with investor-ready MVPs?",
+        "a": "Yes, we design MVPs tailored for pitching to investors and stakeholders."
+      }
+    ]
+  },
+  {
+    "slug": "saas-development",
+    "title": "SaaS Development",
+    "tagline": "We build scalable SaaS products that empower businesses worldwide.",
+    "offer": [
+      "Custom SaaS Product Development",
+      "Multi-Tenant Architecture",
+      "Cloud Deployment & Hosting",
+      "API-First SaaS Solutions",
+      "Subscription & Payment Integration",
+      "Data Analytics & Reporting",
+      "Role-Based Access Control",
+      "Ongoing Maintenance & Scaling"
+    ],
+    "whatWeDo": {
+      "tagline": "From idea to scalable SaaS platform – we’ve got you covered.",
+      "description": "We design and build SaaS products that are secure, scalable, and revenue-driven. Whether it’s a SaaS MVP or a full-featured platform, we bring your vision to life.",
+      "steps": [
+        {
+          "title": "Discovery",
+          "text": "Understand your SaaS idea & market fit."
+        },
+        {
+          "title": "Design",
+          "text": "Craft user flows and intuitive interfaces."
+        },
+        {
+          "title": "Development",
+          "text": "Build scalable SaaS solutions with multi-tenancy."
+        },
+        {
+          "title": "Deployment",
+          "text": "Deploy on cloud with security & compliance."
+        },
+        {
+          "title": "Scale",
+          "text": "Add features & optimize based on feedback."
+        }
+      ]
+    },
+    "pricing": [
+      {
+        "package": "Regular",
+        "desc": "For MVP SaaS projects",
+        "price": 999,
+        "features": [
+          "Basic SaaS MVP",
+          "Core Feature Implementation",
+          "Cloud Hosting Setup",
+          "Basic User Authentication",
+          "Simple Dashboard",
+          "1 Month Support"
+        ]
+      },
+      {
+        "package": "Silver",
+        "desc": "For mid-sized SaaS startups",
+        "price": 2499,
+        "features": [
+          "Feature-Rich SaaS App",
+          "Multi-Tenant Architecture",
+          "API Integrations",
+          "Subscription & Payments",
+          "Analytics Dashboard",
+          "3 Months Support"
+        ]
+      },
+      {
+        "package": "Golden",
+        "desc": "For enterprise SaaS products",
+        "price": 4999,
+        "features": [
+          "Enterprise-Grade SaaS Platform",
+          "Advanced Role Management",
+          "Premium UI/UX with Animations",
+          "3rd-Party Integrations",
+          "Cloud Scaling & Optimization",
+          "6 Months Priority Support"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Do you develop SaaS from scratch?",
+        "a": "Yes, we build SaaS products from ideation to launch."
+      },
+      {
+        "q": "Can you handle scaling for SaaS?",
+        "a": "Absolutely, we use cloud-native solutions for scaling."
+      },
+      {
+        "q": "Do you integrate payment gateways?",
+        "a": "Yes, we integrate Stripe, PayPal, and subscription billing systems."
+      },
+      {
+        "q": "Can I get an MVP SaaS first?",
+        "a": "Yes, we recommend starting with an MVP for faster market validation."
+      },
+      {
+        "q": "Do you provide long-term support?",
+        "a": "Yes, we offer ongoing support and feature updates."
+      }
+    ]
+  },
+  {
+    "slug": "digital-marketing",
+    "title": "Digital Marketing",
+    "tagline": "Grow your business with ROI-focused digital marketing strategies.",
+    "offer": [
+      "Social Media Marketing",
+      "Content Marketing",
+      "PPC Campaigns",
+      "Email Marketing",
+      "Influencer Marketing",
+      "Conversion Rate Optimization",
+      "Performance Analytics & Reporting",
+      "Marketing Automation"
+    ],
+    "whatWeDo": {
+      "tagline": "We help you reach the right audience with the right message.",
+      "description": "Our digital marketing solutions are designed to build brand awareness, generate leads, and maximize ROI with measurable results.",
+      "steps": [
+        {
+          "title": "Research",
+          "text": "Understand your audience & competitors."
+        },
+        { "title": "Strategy", "text": "Plan data-driven campaigns." },
+        {
+          "title": "Execution",
+          "text": "Run multi-channel campaigns for reach."
+        },
+        {
+          "title": "Optimization",
+          "text": "Refine campaigns for better performance."
+        },
+        { "title": "Reporting", "text": "Track KPIs and deliver insights." }
+      ]
+    },
+    "pricing": [
+      {
+        "package": "Regular",
+        "desc": "Best for small businesses",
+        "price": 199,
+        "features": [
+          "1 Social Media Platform",
+          "Basic Content Strategy",
+          "5 Posts Per Month",
+          "Performance Report",
+          "Email Support"
+        ]
+      },
+      {
+        "package": "Silver",
+        "desc": "For growing businesses",
+        "price": 599,
+        "features": [
+          "3 Social Media Platforms",
+          "SEO + Content Strategy",
+          "Ad Campaign Setup",
+          "Email & Newsletter Marketing",
+          "Bi-Weekly Reports"
+        ]
+      },
+      {
+        "package": "Golden",
+        "desc": "For scaling brands",
+        "price": 1299,
+        "features": [
+          "Full Marketing Strategy",
+          "Multi-Channel Ads (Google, FB, IG)",
+          "Influencer Collaboration",
+          "Conversion Optimization",
+          "Advanced Analytics Dashboard",
+          "Weekly Reports"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Do you guarantee sales?",
+        "a": "We guarantee high-quality leads & traffic, but sales depend on multiple factors."
+      },
+      {
+        "q": "Which platforms do you market on?",
+        "a": "We cover Facebook, Instagram, Google Ads, LinkedIn, and more."
+      },
+      {
+        "q": "Do you provide content creation?",
+        "a": "Yes, we create graphics, copy, and video snippets."
+      },
+      {
+        "q": "How do you measure success?",
+        "a": "Through KPIs such as traffic, leads, and conversions."
+      },
+      {
+        "q": "Do you run ad campaigns?",
+        "a": "Yes, we handle full campaign management."
+      }
+    ]
+  },
+  {
+    "slug": "graphic-design",
+    "title": "Graphic Design",
+    "tagline": "Creative visuals that make your brand stand out.",
+    "offer": [
+      "Logo & Branding",
+      "Business Cards & Stationery",
+      "Posters & Flyers",
+      "Social Media Graphics",
+      "UI/UX Mockups",
+      "Infographics",
+      "Packaging Design",
+      "Custom Illustrations"
+    ],
+    "whatWeDo": {
+      "tagline": "Designs that speak louder than words.",
+      "description": "We create eye-catching designs that reflect your brand’s identity and grab audience attention.",
+      "steps": [
+        { "title": "Research", "text": "Understand your brand and audience." },
+        { "title": "Concept", "text": "Create design ideas and mockups." },
+        { "title": "Design", "text": "Craft polished graphics and branding." },
+        { "title": "Review", "text": "Incorporate feedback & improvements." },
+        { "title": "Deliver", "text": "Provide high-quality assets for use." }
+      ]
+    },
+    "pricing": [
+      {
+        "package": "Regular",
+        "desc": "Best for startups",
+        "price": 99,
+        "features": [
+          "Basic Logo Design",
+          "1 Revision",
+          "Social Media Template",
+          "Source File (JPEG/PNG)"
+        ]
+      },
+      {
+        "package": "Silver",
+        "desc": "For small businesses",
+        "price": 299,
+        "features": [
+          "Logo + Branding Kit",
+          "Business Card Design",
+          "5 Social Media Graphics",
+          "3 Revisions",
+          "Editable Source Files"
+        ]
+      },
+      {
+        "package": "Golden",
+        "desc": "For established brands",
+        "price": 799,
+        "features": [
+          "Full Branding Package",
+          "Custom Illustrations",
+          "UI/UX Mockups",
+          "Marketing Collateral",
+          "Unlimited Revisions",
+          "All File Formats"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Do you provide source files?",
+        "a": "Yes, we provide editable source files in AI, PSD, or Figma."
+      },
+      {
+        "q": "Can you design for print?",
+        "a": "Yes, we design print-ready graphics."
+      },
+      {
+        "q": "Do you offer unlimited revisions?",
+        "a": "Golden package includes unlimited revisions."
+      },
+      {
+        "q": "Can I get a custom package?",
+        "a": "Yes, we tailor packages to your needs."
+      },
+      {
+        "q": "Do you design for social media?",
+        "a": "Yes, we provide social media graphics and branding."
+      }
+    ]
+  },
+  {
+    "slug": "seo-services",
+    "title": "SEO Services",
+    "tagline": "Rank higher, get found, and grow your organic traffic.",
+    "offer": [
+      "On-Page SEO",
+      "Off-Page SEO & Backlinking",
+      "Technical SEO",
+      "Local SEO",
+      "Keyword Research",
+      "Competitor Analysis",
+      "Content Optimization",
+      "SEO Audits & Reports"
+    ],
+    "whatWeDo": {
+      "tagline": "We optimize your website for search engines and users.",
+      "description": "Our SEO services help you climb search rankings, attract qualified traffic, and boost conversions.",
+      "steps": [
+        { "title": "Audit", "text": "Check site performance & SEO issues." },
+        { "title": "Research", "text": "Find profitable keywords & gaps." },
+        {
+          "title": "Optimize",
+          "text": "Improve site structure, speed, and content."
+        },
+        { "title": "Promote", "text": "Build quality backlinks & authority." },
+        { "title": "Report", "text": "Track rankings and traffic growth." }
+      ]
+    },
+    "pricing": [
+      {
+        "package": "Regular",
+        "desc": "Best for local businesses",
+        "price": 199,
+        "features": [
+          "On-Page SEO",
+          "Basic Keyword Research",
+          "Meta Tags Optimization",
+          "SEO Report",
+          "1 Month Support"
+        ]
+      },
+      {
+        "package": "Silver",
+        "desc": "For small/medium businesses",
+        "price": 499,
+        "features": [
+          "On-Page + Off-Page SEO",
+          "10 High-Quality Backlinks",
+          "Content Optimization",
+          "Speed Optimization",
+          "Bi-Weekly Reports"
+        ]
+      },
+      {
+        "package": "Golden",
+        "desc": "For scaling brands & enterprises",
+        "price": 999,
+        "features": [
+          "Full SEO Strategy",
+          "Advanced Technical SEO",
+          "Local + Global SEO",
+          "30+ Backlinks",
+          "Advanced Analytics",
+          "Weekly Reporting"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "When will I see SEO results?",
+        "a": "SEO usually shows results in 3–6 months depending on competition."
+      },
+      {
+        "q": "Do you guarantee #1 ranking?",
+        "a": "We guarantee growth in rankings & traffic, but not #1 overnight."
+      },
+      {
+        "q": "Do you do local SEO?",
+        "a": "Yes, we specialize in Google Maps & local business ranking."
+      },
+      {
+        "q": "Can you handle eCommerce SEO?",
+        "a": "Yes, we optimize product pages, categories, and schema markup."
+      },
+      {
+        "q": "Do you provide SEO reports?",
+        "a": "Yes, we provide detailed reports with progress tracking."
+      }
+    ]
+  },
+  {
+    "slug": "ui-ux-design",
+    "title": "UI/UX Design",
+    "tagline": "Designs that deliver seamless user experiences.",
+    "offer": [
+      "Wireframing & Prototyping",
+      "Mobile App UI Design",
+      "Web UI Design",
+      "User Journey Mapping",
+      "Interactive Prototypes",
+      "Design Systems & Style Guides",
+      "Usability Testing",
+      "Responsive Design"
+    ],
+    "whatWeDo": {
+      "tagline": "We design interfaces users love to interact with.",
+      "description": "Our UI/UX process ensures intuitive, attractive, and user-friendly designs that keep users engaged.",
+      "steps": [
+        { "title": "Research", "text": "Understand user needs & behaviors." },
+        { "title": "Wireframe", "text": "Create layouts & flows." },
+        { "title": "Design", "text": "Craft beautiful & functional UIs." },
+        {
+          "title": "Prototype",
+          "text": "Build interactive prototypes for testing."
+        },
+        { "title": "Validate", "text": "Test with users & refine designs." }
+      ]
+    },
+    "pricing": [
+      {
+        "package": "Regular",
+        "desc": "Best for startups",
+        "price": 149,
+        "features": [
+          "Basic Mobile App UI",
+          "Up to 3 Screens",
+          "Wireframes Only",
+          "1 Revision",
+          "Exported Screens"
+        ]
+      },
+      {
+        "package": "Silver",
+        "desc": "For growing apps & websites",
+        "price": 399,
+        "features": [
+          "Up to 10 Screens",
+          "Clickable Prototype",
+          "Modern UI Elements",
+          "3 Revisions",
+          "Design System Setup"
+        ]
+      },
+      {
+        "package": "Golden",
+        "desc": "For enterprise apps & SaaS",
+        "price": 899,
+        "features": [
+          "Unlimited Screens",
+          "Full App/Web UI Kit",
+          "Interactive Prototype",
+          "Usability Testing",
+          "Unlimited Revisions",
+          "Figma Source Files"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Do you design in Figma?",
+        "a": "Yes, we design using Figma and Adobe XD."
+      },
+      {
+        "q": "Do you deliver prototypes?",
+        "a": "Yes, we deliver interactive prototypes for testing."
+      },
+      {
+        "q": "Can you redesign my app/website?",
+        "a": "Yes, we specialize in redesigning existing apps/websites."
+      },
+      {
+        "q": "Do you follow design systems?",
+        "a": "Yes, we create scalable design systems and style guides."
+      },
+      {
+        "q": "Do you offer revisions?",
+        "a": "Yes, depending on package, revisions are included."
+      }
+    ]
+  },
+  {
+    "slug": "software-development",
+    "title": "Software Development",
+    "tagline": "Custom software solutions that solve real business problems.",
+    "offer": [
+      "Enterprise Software Development",
+      "Custom ERP & CRM Solutions",
+      "Cloud-Based Applications",
+      "Desktop App Development",
+      "API Development & Integration",
+      "Database Management",
+      "DevOps & CI/CD Setup",
+      "Software Maintenance & Support"
+    ],
+    "whatWeDo": {
+      "tagline": "We build software that transforms businesses.",
+      "description": "Our custom software solutions are tailored to meet your business needs with a focus on efficiency, scalability, and performance.",
+      "steps": [
+        { "title": "Analysis", "text": "Gather requirements & define scope." },
+        {
+          "title": "Architecture",
+          "text": "Design system architecture & databases."
+        },
+        {
+          "title": "Development",
+          "text": "Build robust and scalable software."
+        },
+        {
+          "title": "Testing",
+          "text": "Ensure bug-free performance & security."
+        },
+        { "title": "Deployment", "text": "Deliver and maintain the solution." }
+      ]
+    },
+    "pricing": [
+      {
+        "package": "Regular",
+        "desc": "For small business tools",
+        "price": 499,
+        "features": [
+          "Basic Desktop/Web App",
+          "Core Features Only",
+          "Database Setup",
+          "API Integration (Basic)",
+          "1 Month Support"
+        ]
+      },
+      {
+        "package": "Silver",
+        "desc": "For mid-sized businesses",
+        "price": 1499,
+        "features": [
+          "Custom ERP/CRM Module",
+          "Cloud Hosting Setup",
+          "Advanced API Integrations",
+          "Database Optimization",
+          "3 Months Support"
+        ]
+      },
+      {
+        "package": "Golden",
+        "desc": "For enterprise-level software",
+        "price": 3999,
+        "features": [
+          "Full Enterprise Software",
+          "Advanced Security & Encryption",
+          "Cloud-Native Architecture",
+          "CI/CD Pipeline",
+          "Priority Scaling Support",
+          "6 Months Priority Support"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What type of software do you build?",
+        "a": "We build enterprise apps, ERP, CRM, cloud apps, and more."
+      },
+      {
+        "q": "Do you offer SaaS software?",
+        "a": "Yes, we also develop SaaS platforms."
+      },
+      {
+        "q": "Do you handle integrations?",
+        "a": "Yes, we integrate APIs, payment systems, and 3rd party tools."
+      },
+      {
+        "q": "Do you provide maintenance?",
+        "a": "Yes, all packages include support and maintenance."
+      },
+      {
+        "q": "Do you build cross-platform apps?",
+        "a": "Yes, we build web, mobile, and desktop software."
+      }
+    ]
+  },
+  {
+    "slug": "3d-modeling",
+    "title": "3D Modeling",
+    "tagline": "Bring your ideas to life with stunning, realistic 3D models.",
+    "offer": [
+      "3D Product Modeling",
+      "3D Architectural Visualization",
+      "Character & Game Asset Modeling",
+      "3D Animation & Rendering",
+      "AR/VR-Ready Models",
+      "Industrial & Mechanical Modeling",
+      "Texturing, Lighting & Shading",
+      "High-Resolution Renders"
+    ],
+    "whatWeDo": {
+      "tagline": "From concept to creation – we deliver high-quality 3D assets.",
+      "description": "Our 3D modeling process transforms sketches and concepts into detailed, realistic, and optimized models for products, games, and businesses.",
+      "steps": [
+        {
+          "title": "Concept",
+          "text": "Understand project scope & references."
+        },
+        {
+          "title": "Modeling",
+          "text": "Create detailed 3D models from scratch."
+        },
+        {
+          "title": "Texturing",
+          "text": "Add realistic materials & details."
+        },
+        {
+          "title": "Rendering",
+          "text": "Produce high-quality visuals & animations."
+        },
+        {
+          "title": "Delivery",
+          "text": "Provide final models in required formats."
+        }
+      ]
+    },
+    "pricing": [
+      {
+        "package": "Regular",
+        "desc": "Best for simple projects & startups",
+        "price": 149,
+        "features": [
+          "Basic 3D Product Model / Object",
+          "Low-Poly Modeling (Game/AR Ready)",
+          "Standard Texturing & Lighting",
+          "1 Render Image (HD)",
+          "1 Revision"
+        ]
+      },
+      {
+        "package": "Silver",
+        "desc": "Ideal for mid-level projects & businesses",
+        "price": 399,
+        "features": [
+          "Detailed 3D Models (Products/Interiors)",
+          "High-Quality Textures & Materials",
+          "3 Render Images (4K Quality)",
+          "Basic Animation (Optional)",
+          "3 Revisions"
+        ]
+      },
+      {
+        "package": "Golden",
+        "desc": "Perfect for enterprises, architects & studios",
+        "price": 799,
+        "features": [
+          "Complex & Realistic 3D Models (Architecture, Characters, etc.)",
+          "Advanced Texturing, Lighting & Shading",
+          "360° Renders + Animation (Video Walkthrough)",
+          "Unlimited Camera Angles",
+          "6 Revisions + Priority Support"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What industries do you serve with 3D modeling?",
+        "a": "We work across architecture, real estate, gaming, product design, manufacturing, and advertising."
+      },
+      {
+        "q": "Can you create animations along with 3D models?",
+        "a": "Yes! We provide short 3D animations, walk-throughs, and product explainer videos."
+      },
+      {
+        "q": "What file formats do you deliver?",
+        "a": "We provide files in OBJ, FBX, STL, or any format requested."
+      },
+      {
+        "q": "How do you ensure quality?",
+        "a": "Every project goes through a detailed review process with lighting, texture, and rendering optimization."
+      },
+      {
+        "q": "Do you offer custom pricing for bulk projects?",
+        "a": "Yes, we provide discounts and flexible pricing for large-scale or long-term projects."
+      }
+    ]
+  }
+]

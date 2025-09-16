@@ -16,6 +16,39 @@ const technologies = [
   { name: "Laravel" },
   { name: "Shopify" },
 ];
+const services = [
+  {
+    slug: "/service-details?service=web-development",
+    title: "Web Development",
+  },
+  {
+    slug: "/service-details?service=app-development",
+    title: "App Development",
+  },
+  {
+    slug: "/service-details?service=mvp-development",
+    title: "MVP Development",
+  },
+  {
+    slug: "/service-details?service=saas-development",
+    title: "SaaS Development",
+  },
+  {
+    slug: "/service-details?service=digital-marketing",
+    title: "Digital Marketing",
+  },
+  { slug: "/service-details?service=graphic-design", title: "Graphic Design" },
+  { slug: "/service-details?service=seo-services", title: "SEO Services" },
+  { slug: "/service-details?service=ui-ux-design", title: "UI/UX Design" },
+  {
+    slug: "/service-details?q=software-development",
+    title: "Software Development",
+  },
+  {
+    slug: "/service-details?q=3d-modeling",
+    title: "3D Modeling",
+  },
+];
 const Menu = ({ singleMenu }) => {
   return (
     <Fragment>
@@ -38,6 +71,11 @@ const DaskTopMenu = () => {
       <li>
         <Link legacyBehavior href="about">
           About Us
+        </Link>
+      </li>
+      <li>
+        <Link legacyBehavior href="contact">
+          Contact us
         </Link>
       </li>
       <li className="dropdown">
@@ -85,11 +123,6 @@ const DaskTopMenu = () => {
             </div>
           </li>
           <li>
-            <Link legacyBehavior href="contact">
-              Contact us
-            </Link>
-          </li>
-          <li>
             <Link legacyBehavior href="pricing">
               Pricing Plan
             </Link>
@@ -107,21 +140,13 @@ const DaskTopMenu = () => {
       <li className="dropdown">
         <a href="#">Services</a>
         <ul>
-          <li>
-            <Link legacyBehavior href="services">
-              Our Services
-            </Link>
-          </li>
-          <li>
-            <Link legacyBehavior href="service-details">
-              Service Details One
-            </Link>
-          </li>
-          <li>
-            <Link legacyBehavior href="service-details2">
-              Service Details Two
-            </Link>
-          </li>
+          {services.map((service, index) => (
+            <li key={index}>
+              <Link legacyBehavior href={service.slug}>
+                {service.title}
+              </Link>
+            </li>
+          ))}
         </ul>
         <div className="dropdown-btn">
           <span className="far fa-arrow-right hover-arrow-down" />
