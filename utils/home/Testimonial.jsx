@@ -43,7 +43,6 @@ function Testimonial() {
                       </div>
                       <div className="author-info">
                         <h4>James N. Johnson</h4>
-                        <span className="designation">CEO &amp; Founder</span>
                       </div>
                     </div>
                     <div className="ratting style-two">

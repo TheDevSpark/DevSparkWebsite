@@ -166,9 +166,9 @@ const DefaultFooter = ({ dark }) => {
             <div className="col-xl-4 col-lg-6">
               <div className="copyright-text text-lg-end pt-40 pb-35 rpt-10 wow fadeInLeft delay-0-2s animated">
                 <p>
-                  Copyright @2023,{" "}
+                  Copyright @2025,{" "}
                   <Link legacyBehavior href="/">
-                    <a>Ygency</a>
+                    <a>The Devspark</a>
                   </Link>{" "}
                   All Rights Reserved
                 </p>

@@ -16,6 +16,39 @@ const technologies = [
   { name: "Laravel" },
   { name: "Shopify" },
 ];
+const services = [
+  {
+    slug: "/service-details?service=web-development",
+    title: "Web Development",
+  },
+  {
+    slug: "/service-details?service=app-development",
+    title: "App Development",
+  },
+  {
+    slug: "/service-details?service=mvp-development",
+    title: "MVP Development",
+  },
+  {
+    slug: "/service-details?service=saas-development",
+    title: "SaaS Development",
+  },
+  {
+    slug: "/service-details?service=digital-marketing",
+    title: "Digital Marketing",
+  },
+  { slug: "/service-details?service=graphic-design", title: "Graphic Design" },
+  { slug: "/service-details?service=seo-services", title: "SEO Services" },
+  { slug: "/service-details?service=ui-ux-design", title: "UI/UX Design" },
+  {
+    slug: "/service-details?q=software-development",
+    title: "Software Development",
+  },
+  {
+    slug: "/service-details?q=3d-modeling",
+    title: "3D Modeling",
+  },
+];
 const Menu = ({ singleMenu }) => {
   return (
     <Fragment>
@@ -40,134 +73,22 @@ const DaskTopMenu = () => {
           About Us
         </Link>
       </li>
+      <li>
+        <Link legacyBehavior href="contact">
+          Contact us
+        </Link>
+      </li>
+      {/* Pages */}
+      <li className="dropdown">
       {/* <li className="dropdown">
-        <a href="#">pages</a>
-        <ul>
-          <li>
-            <Link legacyBehavior href="faqs">
-              faqs
-            </Link>
-          </li>
-          <li className="dropdown">
-            <a href="#">Products</a>
-            <ul>
-              <li>
-                <Link legacyBehavior href="shop">
-                  our Products
-                </Link>
-              </li>
-              <li>
-                <Link legacyBehavior href="product-details">
-                  Product Details
-                </Link>
-              </li>
-            </ul>
-            <div className="dropdown-btn">
-              <span className="far fa-arrow-right hover-arrow-down" />
-            </div>
-          </li>
-          <li className="dropdown">
-            <a href="#">Team</a>
-            <ul>
-              <li>
-                <Link legacyBehavior href="team">
-                  Team Members
-                </Link>
-              </li>
-              <li>
-                <Link legacyBehavior href="team-details">
-                  Team Details
-                </Link>
-              </li>
-            </ul>
-            <div className="dropdown-btn">
-              <span className="far fa-arrow-right hover-arrow-down" />
-            </div>
-          </li>
-          <li>
-            <Link legacyBehavior href="contact">
-              Contact us
-            </Link>
-          </li>
-          <li>
-            <Link legacyBehavior href="pricing">
-              Pricing Plan
-            </Link>
-          </li>
-          <li>
-            <Link legacyBehavior href="404">
-              404 error
-            </Link>
-          </li>
-        </ul>
-        <div className="dropdown-btn">
-          <span className="far fa-arrow-right hover-arrow-down" />
-        </div>
-      </li> */}
+      </li>
+      {/* Technology */}
       {/* <li className="dropdown">
-        <a href="#">Services</a>
-        <ul>
-          <li>
-            <Link legacyBehavior href="services">
-              Our Services
-            </Link>
-          </li>
-          <li>
-            <Link legacyBehavior href="service-details">
-              Service Details One
-            </Link>
-          </li>
-          <li>
-            <Link legacyBehavior href="service-details2">
-              Service Details Two
-            </Link>
-          </li>
-        </ul>
-        <div className="dropdown-btn">
-          <span className="far fa-arrow-right hover-arrow-down" />
-        </div>
       </li> */}
       <li className="dropdown">
-        <a href="#">Technologies</a>
-        <ul className="tech-dropdown">
-          {technologies.map((tech, index) => (
-            <li key={index}>
-              <Link legacyBehavior href={tech.name}>
-                {tech.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-        <div className="dropdown-btn">
-          <span className="far fa-arrow-right hover-arrow-down" />
-        </div>
-      </li>
-      {/* <li className="dropdown">
-        <a href="#">Projects</a>
-        <ul>
-          <li>
-            <Link legacyBehavior href="projects">
-              Project Grid
-            </Link>
-          </li>
-          <li>
-            <Link legacyBehavior href="project-list">
-              Project List
-            </Link>
-          </li>
-          <li>
-            <Link legacyBehavior href="project-details">
-              Project Details
-            </Link>
-          </li>
-        </ul>
-        <div className="dropdown-btn">
-          <span className="far fa-arrow-right hover-arrow-down" />
-        </div>
       </li> */}
-    </ul>
-  );
-};
+      {/* Projects : */}
+      </li>
 
 const MobileMenu = () => {
   const [activeMenu, setActiveMenu] = useState("");

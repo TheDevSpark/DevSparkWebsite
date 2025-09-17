@@ -96,9 +96,9 @@ const Footer2 = ({ dark }) => {
                 </button>
               </form>
               <p>
-                Copyright @2023,{" "}
+                Copyright @2025,{" "}
                 <Link legacyBehavior href="/">
-                  <a>Ygency</a>
+                  <a>The DevSpark</a>
                 </Link>{" "}
                 All Rights Reserved
               </p>

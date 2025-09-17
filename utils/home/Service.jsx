@@ -2,6 +2,74 @@ import Link from "next/link";
 import React from "react";
 
 function Service() {
+  const services = [
+    {
+      slug: "/service-details?service=web-development",
+      title: "Web Development",
+      icon: "fas fa-code",
+      image: "assets/images/services/service1.jpg",
+    },
+    {
+      slug: "/service-details?service=app-development",
+      title: "App Development",
+      icon: "fas fa-mobile-alt",
+      image: "assets/images/services/service2.jpg",
+    },
+    {
+      slug: "/service-details?service=mvp-development",
+      title: "MVP Development",
+      icon: "fas fa-rocket",
+      image: "assets/images/services/service8.jpg",
+    },
+    {
+      slug: "/service-details?service=saas-development",
+      title: "SaaS Development",
+      icon: "fas fa-cloud",
+      image: "assets/images/services/service5.jpg",
+    },
+    {
+      slug: "/service-details?service=digital-marketing",
+      title: "Digital Marketing",
+      icon: "fas fa-chart-line",
+      image: "assets/images/services/service4.jpg",
+    },
+    {
+      slug: "/service-details?service=graphic-design",
+      title: "Graphic Design",
+      icon: "fas fa-paint-brush",
+      image: "assets/images/services/service4.jpg",
+    },
+    {
+      slug: "/service-details?service=seo-services",
+      title: "SEO Services",
+      icon: "fas fa-search",
+      image: "assets/images/services/service6.jpg",
+    },
+    {
+      slug: "/service-details?service=ui-ux-design",
+      title: "UI/UX Design",
+      icon: "fas fa-pencil-ruler",
+      image: "assets/images/services/service4.jpg",
+    },
+    {
+      slug: "/service-details?service=software-development",
+      title: "Software Development",
+      icon: "fas fa-laptop-code",
+      image: "assets/images/services/service5.jpg",
+    },
+    {
+      slug: "/service-details?service=3d-modeling",
+      title: "3D Modeling",
+      icon: "fas fa-cube",
+      image: "assets/images/services/service3.jpg",
+    },
+  ];
+
+  // Animation classes for alternating effects
+  const getAnimationClass = (index) => {
+    return index % 2 === 0 ? "fadeInUp" : "fadeInDown";
+  };
+
   return (
     <section
       className="service-area-four pt-110 rpt-85 pb-100 rpb-70"
@@ -17,182 +85,34 @@ function Service() {
           </div>
         </div>
         <div className="row">
-          <div className="col-xl-3 col-lg-4 col-sm-6">
-            <div className="service-four-item wow fadeInUp delay-0-2s">
-              <div className="content">
-                <div className="icon-btn">
-                  <i className="flaticon-development" />
-                  <Link legacyBehavior href="/service-details">
-                    <a className="more-btn">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
+          {services.map((service, index) => (
+            <div key={index} className="col-xl-3 col-lg-4 col-sm-6">
+              <div
+                className={`service-four-item wow ${getAnimationClass(
+                  index
+                )} delay-0-2s`}
+              >
+                <div className="content">
+                  <div className="icon-btn">
+                    <i className={service.icon} />
+                    <Link legacyBehavior href={service.slug}>
+                      <a className="more-btn">
+                        <i className="far fa-arrow-right" />
+                      </a>
+                    </Link>
+                  </div>
+                  <h5>
+                    <Link legacyBehavior href={service.slug}>
+                      <a>{service.title}</a>
+                    </Link>
+                  </h5>
                 </div>
-                <h5>
-                  <Link legacyBehavior href="/service-details">
-                    <a>Web Development</a>
-                  </Link>
-                </h5>
-              </div>
-              <div className="image">
-                <img src="assets/images/services/service1.jpg" alt="Service" />
+                <div className="image">
+                  <img src={service.image} alt={service.title} />
+                </div>
               </div>
             </div>
-          </div>
-          <div className="col-xl-3 col-lg-4 col-sm-6">
-            <div className="service-four-item wow fadeInDown delay-0-2s">
-              <div className="content">
-                <div className="icon-btn">
-                  <i className="flaticon-mobile-development" />
-                  <Link legacyBehavior href="/service-details">
-                    <a className="more-btn">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-                <h5>
-                  <Link legacyBehavior href="/service-details">
-                    <a>Mobile Application</a>
-                  </Link>
-                </h5>
-              </div>
-              <div className="image">
-                <img src="assets/images/services/service2.jpg" alt="Service" />
-              </div>
-            </div>
-          </div>
-          <div className="col-xl-3 col-lg-4 col-sm-6">
-            <div className="service-four-item wow fadeInUp delay-0-2s">
-              <div className="content">
-                <div className="icon-btn">
-                  <i className="flaticon-brainstorming" />
-                  <Link legacyBehavior href="/service-details">
-                    <a className="more-btn">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-                <h5>
-                  <Link legacyBehavior href="/service-details">
-                    <a>Team Agumentation</a>
-                  </Link>
-                </h5>
-              </div>
-              <div className="image">
-                <img src="assets/images/services/service3.jpg" alt="Service" />
-              </div>
-            </div>
-          </div>
-          <div className="col-xl-3 col-lg-4 col-sm-6">
-            <div className="service-four-item wow fadeInDown delay-0-2s">
-              <div className="content">
-                <div className="icon-btn">
-                  <i className="flaticon-brainstorming" />
-                  <Link legacyBehavior href="/service-details">
-                    <a className="more-btn">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-                <h5>
-                  <Link legacyBehavior href="/service-details">
-                    <a>Design &amp; Branding</a>
-                  </Link>
-                </h5>
-              </div>
-              <div className="image">
-                <img src="assets/images/services/service4.jpg" alt="Service" />
-              </div>
-            </div>
-          </div>
-          <div className="col-xl-3 col-lg-4 col-sm-6">
-            <div className="service-four-item wow fadeInUp delay-0-2s">
-              <div className="content">
-                <div className="icon-btn">
-                  <i className="flaticon-abstract" />
-                  <Link legacyBehavior href="/service-details">
-                    <a className="more-btn">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-                <h5>
-                  <Link legacyBehavior href="/service-details">
-                    <a>React Js Development</a>
-                  </Link>
-                </h5>
-              </div>
-              <div className="image">
-                <img src="assets/images/services/service5.jpg" alt="Service" />
-              </div>
-            </div>
-          </div>
-          <div className="col-xl-3 col-lg-4 col-sm-6">
-            <div className="service-four-item wow fadeInDown delay-0-2s">
-              <div className="content">
-                <div className="icon-btn">
-                  <i className="flaticon-ux" />
-                  <Link legacyBehavior href="/service-details">
-                    <a className="more-btn">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-                <h5>
-                  <Link legacyBehavior href="/service-details">
-                    <a>Front-end development</a>
-                  </Link>
-                </h5>
-              </div>
-              <div className="image">
-                <img src="assets/images/services/service6.jpg" alt="Service" />
-              </div>
-            </div>
-          </div>
-          <div className="col-xl-3 col-lg-4 col-sm-6">
-            <div className="service-four-item wow fadeInUp delay-0-2s">
-              <div className="content">
-                <div className="icon-btn">
-                  <i className="flaticon-optimization" />
-                  <Link legacyBehavior href="/service-details">
-                    <a className="more-btn">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-                <h5>
-                  <Link legacyBehavior href="/service-details">
-                    <a>Jamstack Development</a>
-                  </Link>
-                </h5>
-              </div>
-              <div className="image">
-                <img src="assets/images/services/service7.jpg" alt="Service" />
-              </div>
-            </div>
-          </div>
-          <div className="col-xl-3 col-lg-4 col-sm-6">
-            <div className="service-four-item wow fadeInDown delay-0-2s">
-              <div className="content">
-                <div className="icon-btn">
-                  <i className="flaticon-goal" />
-                  <Link legacyBehavior href="/service-details">
-                    <a className="more-btn">
-                      <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
-                <h5>
-                  <Link legacyBehavior href="/service-details">
-                    <a>MVP Development</a>
-                  </Link>
-                </h5>
-              </div>
-              <div className="image">
-                <img src="assets/images/services/service8.jpg" alt="Service" />
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
