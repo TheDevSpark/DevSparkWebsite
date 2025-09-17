@@ -79,16 +79,123 @@ const DaskTopMenu = () => {
         </Link>
       </li>
       {/* Pages */}
-      <li className="dropdown">
       {/* <li className="dropdown">
+        <a href="#">pages</a>
+        <ul>
+          <li>
+            <Link legacyBehavior href="faqs">
+              faqs
+            </Link>
+          </li>
+          <li className="dropdown">
+            <a href="#">Products</a>
+            <ul>
+              <li>
+                <Link legacyBehavior href="shop">
+                  our Products
+                </Link>
+              </li>
+              <li>
+                <Link legacyBehavior href="product-details">
+                  Product Details
+                </Link>
+              </li>
+            </ul>
+            <div className="dropdown-btn">
+              <span className="far fa-arrow-right hover-arrow-down" />
+            </div>
+          </li>
+          <li className="dropdown">
+            <a href="#">Team</a>
+            <ul>
+              <li>
+                <Link legacyBehavior href="team">
+                  Team Members
+                </Link>
+              </li>
+              <li>
+                <Link legacyBehavior href="team-details">
+                  Team Details
+                </Link>
+              </li>
+            </ul>
+            <div className="dropdown-btn">
+              <span className="far fa-arrow-right hover-arrow-down" />
+            </div>
+          </li>
+          <li>
+            <Link legacyBehavior href="pricing">
+              Pricing Plan
+            </Link>
+          </li>
+          <li>
+            <Link legacyBehavior href="404">
+              404 error
+            </Link>
+          </li>
+        </ul>
+        <div className="dropdown-btn">
+          <span className="far fa-arrow-right hover-arrow-down" />
+        </div>
+      </li> */}
+      <li className="dropdown">
+        <a href="#">Services</a>
+        <ul>
+          {services.map((service, index) => (
+            <li key={index}>
+              <Link legacyBehavior href={service.slug}>
+                {service.title}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <div className="dropdown-btn">
+          <span className="far fa-arrow-right hover-arrow-down" />
+        </div>
       </li>
       {/* Technology */}
       {/* <li className="dropdown">
-      </li> */}
-      <li className="dropdown">
+        <a href="#">Technologies</a>
+        <ul className="tech-dropdown">
+          {technologies.map((tech, index) => (
+            <li key={index}>
+              <Link legacyBehavior href={tech.name}>
+                {tech.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <div className="dropdown-btn">
+          <span className="far fa-arrow-right hover-arrow-down" />
+        </div>
       </li> */}
       {/* Projects : */}
-      </li>
+      {/* <li className="dropdown">
+        <a href="#">Projects</a>
+        <ul>
+          <li>
+            <Link legacyBehavior href="projects">
+              Project Grid
+            </Link>
+          </li>
+          <li>
+            <Link legacyBehavior href="project-list">
+              Project List
+            </Link>
+          </li>
+          <li>
+            <Link legacyBehavior href="project-details">
+              Project Details
+            </Link>
+          </li>
+        </ul>
+        <div className="dropdown-btn">
+          <span className="far fa-arrow-right hover-arrow-down" />
+        </div>
+      </li> */}
+    </ul>
+  );
+};
 
 const MobileMenu = () => {
   const [activeMenu, setActiveMenu] = useState("");
