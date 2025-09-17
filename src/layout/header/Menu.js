@@ -78,7 +78,8 @@ const DaskTopMenu = () => {
           Contact us
         </Link>
       </li>
-      <li className="dropdown">
+      {/* Pages */}
+      {/* <li className="dropdown">
         <a href="#">pages</a>
         <ul>
           <li>
@@ -136,7 +137,7 @@ const DaskTopMenu = () => {
         <div className="dropdown-btn">
           <span className="far fa-arrow-right hover-arrow-down" />
         </div>
-      </li>
+      </li> */}
       <li className="dropdown">
         <a href="#">Services</a>
         <ul>
@@ -152,7 +153,8 @@ const DaskTopMenu = () => {
           <span className="far fa-arrow-right hover-arrow-down" />
         </div>
       </li>
-      <li className="dropdown">
+      {/* Technology */}
+      {/* <li className="dropdown">
         <a href="#">Technologies</a>
         <ul className="tech-dropdown">
           {technologies.map((tech, index) => (
@@ -166,8 +168,9 @@ const DaskTopMenu = () => {
         <div className="dropdown-btn">
           <span className="far fa-arrow-right hover-arrow-down" />
         </div>
-      </li>
-      <li className="dropdown">
+      </li> */}
+      {/* Projects : */}
+      {/* <li className="dropdown">
         <a href="#">Projects</a>
         <ul>
           <li>
@@ -189,7 +192,7 @@ const DaskTopMenu = () => {
         <div className="dropdown-btn">
           <span className="far fa-arrow-right hover-arrow-down" />
         </div>
-      </li>
+      </li> */}
     </ul>
   );
 };
