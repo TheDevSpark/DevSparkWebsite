@@ -60,7 +60,7 @@ const secondHeadlines = [
 
 const Index = () => {
   return (
-    <Layout footer={2} dark>
+    <Layout footer={2} footer={2} dark>
       {/* Hero Section Start */}
       <Hero />
       {/* Hero Section End */}

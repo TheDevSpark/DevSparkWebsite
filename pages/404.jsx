@@ -2,7 +2,7 @@ import Layout from "@/src/layout/Layout";
 import Link from "next/link";
 const E404 = () => {
   return (
-    <Layout dark>
+    <Layout footer={2} dark>
       <section
         className="error-section pt-220 rpt-120 pb-100 rpb-80 rel z-1"
         style={{ backgroundImage: "url(assets/images/hero/hero-two-bg.png)" }}

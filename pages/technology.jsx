@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
+// Import your JSON data (you might need to adjust the path)
+import techStacks from "@/utils/technologies/data.json";
+import Layout from "@/src/layout/Layout";
 
 const TechnologyStack = () => {
   const searchParams = useSearchParams();
@@ -10,158 +13,102 @@ const TechnologyStack = () => {
   // Icon mapping for tools
   const toolIcons = {
     // FrontEnd
+    HTML: "fab fa-html5",
     HTML5: "fab fa-html5",
     CSS3: "fab fa-css3-alt",
     "SASS/SCSS": "fab fa-sass",
     Bootstrap: "fab fa-bootstrap",
+    "Tailwind CSS": "fab fa-css3-alt",
+    JavaScript: "fab fa-js-square",
     React: "fab fa-react",
+    "React.js": "fab fa-react",
     TypeScript: "fab fa-js-square",
-    "React Hooks": "fab fa-react",
-    "SASS/CSS": "fab fa-sass",
+    "Next.js": "fas fa-server",
+    "Vue.js": "fab fa-vuejs",
+    Angular: "fab fa-angular",
+    Svelte: "fas fa-code",
+    Expo: "fas fa-mobile",
 
     // BackEnd
     "Node.js": "fab fa-node-js",
+    "Express.js": "fas fa-server",
     Express: "fas fa-server",
+    NestJS: "fas fa-server",
+    PHP: "fab fa-php",
+    Laravel: "fab fa-laravel",
+    CodeIgniter: "fas fa-server",
+    MySQL: "fas fa-database",
+    MariaDB: "fas fa-database",
+    PostgreSQL: "fas fa-database",
     MongoDB: "fas fa-database",
-    Prisma: "fas fa-database",
+    GraphQL: "fas fa-project-diagram",
+    Firebase: "fas fa-database",
+    Supabase: "fas fa-database",
+    "RESTful APIs": "fas fa-server",
 
     // Tooling
     Webpack: "fas fa-cube",
     Babel: "fas fa-code",
     ESLint: "fas fa-check-circle",
-    PostCSS: "fab fa-css3-alt",
     Vite: "fas fa-bolt",
+    "npm & Yarn": "fab fa-npm",
+    Composer: "fas fa-code",
+    Docker: "fab fa-docker",
+    "Git / GitHub": "fab fa-github",
+    "Shopify CLI": "fas fa-terminal",
+    "Flutter SDK": "fas fa-mobile",
+    "Android Studio / Xcode": "fas fa-code",
+    Fastlane: "fas fa-tachometer-alt",
+    "MongoDB Atlas": "fas fa-database",
+    "Mongoose (ODM)": "fas fa-database",
+    "MySQL Workbench": "fas fa-database",
+    phpMyAdmin: "fas fa-database",
+    "Firebase CLI": "fas fa-terminal",
+    "Supabase CLI": "fas fa-terminal",
+    PM2: "fas fa-server",
 
     // Testing
     Jest: "fas fa-vial",
-    "React Testing Library": "fas fa-flask",
+    "Mocha & Chai": "fas fa-flask",
     Cypress: "fas fa-check-double",
     Jasmine: "fas fa-vial",
-    "Testing Library": "fas fa-flask",
-  };
+    "React Testing Library": "fas fa-flask",
+    Enzyme: "fas fa-flask",
+    Playwright: "fas fa-theater-masks",
+    PHPUnit: "fas fa-vial",
+    Pest: "fas fa-bug",
+    Codeception: "fas fa-vial",
+    Selenium: "fas fa-vial",
+    Detox: "fas fa-mobile",
+    Appium: "fas fa-mobile",
+    Supertest: "fas fa-vial",
+    "Flutter Test": "fas fa-vial",
+    Mockito: "fas fa-vial",
+    "Integration Test": "fas fa-vial",
 
-  // Sample data - in real app, this would come from an API or database
-  const techData = {
-    html: {
-      name: "HTML/CSS",
-      logo: "/images/html-css-logo.png",
-      description: "The foundation of all web development",
-      benefits: [
-        "Universal browser support",
-        "Easy to learn and implement",
-        "Lightweight and fast loading",
-        "Excellent SEO capabilities",
-      ],
-      tools: {
-        FrontEnd: ["HTML5", "CSS3", "SASS/SCSS", "Bootstrap"],
-        BackEnd: ["Node.js", "Express", "MongoDB", "Prisma"],
-        Tooling: ["Webpack", "Babel", "ESLint", "PostCSS"],
-        Testing: ["Jest", "React Testing Library", "Cypress", "Jasmine"],
-      },
-      qualities: [
-        "Semantic markup for better accessibility",
-        "Clean, maintainable code structure",
-        "Cross-browser compatibility",
-        "Performance optimization",
-      ],
-      process: [
-        {
-          step: "Planning",
-          description:
-            "We analyze your requirements and create a detailed project plan",
-        },
-        {
-          step: "Design",
-          description:
-            "Our designers create wireframes and mockups for your approval",
-        },
-        {
-          step: "Development",
-          description:
-            "We build your application using best practices and modern techniques",
-        },
-        {
-          step: "Testing",
-          description:
-            "Rigorous testing ensures your application works flawlessly",
-        },
-        {
-          step: "Deployment",
-          description: "We deploy your application and provide ongoing support",
-        },
-      ],
-    },
-    react: {
-      name: "React",
-      logo: "/images/react-logo.png",
-      description: "A JavaScript library for building user interfaces",
-      benefits: [
-        "Component-based architecture for reusability",
-        "Virtual DOM for improved performance",
-        "Strong community support and ecosystem",
-        "Excellent for single-page applications",
-      ],
-      tools: {
-        FrontEnd: ["React", "TypeScript", "SASS/CSS", "React Hooks"],
-        BackEnd: ["Node.js", "Express", "MongoDB", "Prisma"],
-        Tooling: ["Webpack", "Babel", "ESLint", "Vite"],
-        Testing: [
-          "Jest",
-          "React Testing Library",
-          "Cypress",
-          "Testing Library",
-        ],
-      },
-      qualities: [
-        "Custom hooks for logic reuse",
-        "Optimized rendering performance",
-        "Server-side rendering capabilities",
-        "Comprehensive testing approach",
-      ],
-      process: [
-        {
-          step: "Component Analysis",
-          description: "We break down your UI into reusable components",
-        },
-        {
-          step: "State Planning",
-          description: "We design efficient state management strategy",
-        },
-        {
-          step: "Development",
-          description: "We build your application with React best practices",
-        },
-        {
-          step: "Optimization",
-          description:
-            "We optimize performance with code splitting and lazy loading",
-        },
-        {
-          step: "Deployment",
-          description: "We deploy with appropriate SSR or SSG strategies",
-        },
-      ],
-    },
+    // State Management
+    "Redux / Zustand": "fas fa-sitemap",
+    "Provider / Riverpod": "fas fa-sitemap",
+    "Bloc State Management": "fas fa-sitemap",
+
+    // Default
+    Default: "fas fa-code",
   };
 
   useEffect(() => {
-    if (stack) {
-      setTechnology(techData[stack] || techData.html);
+    if (stack && techStacks[stack]) {
+      setTechnology(techStacks[stack]);
+    } else if (stack) {
+      // Fallback to JavaScript if the stack doesn't exist
+      setTechnology(techStacks.javascript);
     }
   }, [stack]);
 
   // Show loading state while determining the technology
   if (!technology) {
     return (
-      <div
-        className="d-flex justify-content-center align-items-center"
-        style={{ height: "50vh", background: "#02050A" }}
-      >
-        <div
-          className="spinner-border"
-          style={{ color: "#55E6A5" }}
-          role="status"
-        >
+      <div className="loading-container">
+        <div className="spinner" role="status">
           <span className="visually-hidden">Loading...</span>
         </div>
       </div>
@@ -169,445 +116,193 @@ const TechnologyStack = () => {
   }
 
   return (
-    <div
-      className="technology-page"
-      style={{ background: "#02050A", color: "rgba(255, 255, 255, 0.75)" }}
-    >
-      {/* Hero Section */}
-      <section
-        className="tech-hero"
-        style={{
-          padding: "120px 0 80px",
-          background: "#02050A",
-          borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
-        }}
-      >
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-md-6">
-              <h1
-                className="tech-title"
-                style={{
-                  fontSize: "80px",
-                  fontWeight: "700",
-                  marginBottom: "1.5rem",
-                  color: "#ffffff",
-                }}
-              >
-                {technology.name}{" "}
-                <span style={{ color: "#55E6A5" }}>Development</span>
-              </h1>
-              <p
-                className="tech-description"
-                style={{
-                  fontSize: "20px",
-                  color: "rgba(255, 255, 255, 0.75)",
-                  marginBottom: "2rem",
-                  lineHeight: "1.6",
-                }}
-              >
-                {technology.description}
-              </p>
-              <div className="hero-buttons">
-                <button
-                  className="btn btn-primary me-3"
-                  style={{
-                    background: "#55E6A5",
-                    border: "none",
-                    color: "#02050A",
-                    fontWeight: "600",
-                    padding: "12px 30px",
-                    borderRadius: "4px",
-                  }}
-                >
-                  Start a Project
-                </button>
-                <button
-                  className="btn btn-outline"
-                  style={{
-                    background: "transparent",
-                    border: "1px solid #55E6A5",
-                    color: "#55E6A5",
-                    fontWeight: "600",
-                    padding: "12px 30px",
-                    borderRadius: "4px",
-                  }}
-                >
-                  Learn More
-                </button>
+    <Layout footer={2} dark>
+      <div className="technology-page">
+        {/* Hero Section */}
+        <section className="tech-hero">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-md-6">
+                <h1 className="tech-title">
+                  {technology.name}{" "}
+                  <span className="primary-color">Development</span>
+                </h1>
+                <p className="tech-description">{technology.description}</p>
+                <div className="hero-buttons">
+                  <button className="primary-btn">Start a Project</button>
+                  <button className="outline-btn">Learn More</button>
+                </div>
               </div>
-            </div>
-            <div className="col-md-6 text-center">
-              <div
-                className="tech-logo-container"
-                style={{
-                  background: "#16161c",
-                  borderRadius: "8px",
-                  padding: "40px",
-                  display: "inline-block",
-                  border: "1px solid rgba(255, 255, 255, 0.1)",
-                }}
-              >
-                <img
-                  src={technology.logo}
-                  alt={technology.name}
-                  className="tech-logo"
-                  style={{ maxWidth: "200px", height: "auto" }}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Benefits Section */}
-      <section
-        className="benefits-section"
-        style={{ padding: "100px 0", background: "#02050A" }}
-      >
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-8 text-center">
-              <h2
-                className="section-title"
-                style={{
-                  fontSize: "48px",
-                  fontWeight: "700",
-                  marginBottom: "3rem",
-                  color: "#ffffff",
-                }}
-              >
-                Why Choose{" "}
-                <span style={{ color: "#55E6A5" }}>{technology.name}</span>
-              </h2>
-            </div>
-          </div>
-          <div className="row">
-            {technology.benefits.map((benefit, index) => (
-              <div key={index} className="col-md-6 col-lg-3 mb-4">
-                <div
-                  className="benefit-card"
-                  style={{
-                    textAlign: "center",
-                    padding: "30px 20px",
-                    height: "100%",
-                    background: "#16161c",
-                    borderRadius: "8px",
-                    border: "1px solid rgba(255, 255, 255, 0.1)",
-                    transition: "transform 0.3s ease, box-shadow 0.3s ease",
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.transform = "translateY(-5px)";
-                    e.currentTarget.style.boxShadow =
-                      "0 10px 25px rgba(85, 230, 165, 0.15)";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.transform = "translateY(0)";
-                    e.currentTarget.style.boxShadow = "none";
-                  }}
-                >
-                  <div
-                    className="benefit-icon"
-                    style={{
-                      width: "60px",
-                      height: "60px",
-                      background: "#55E6A5",
-                      borderRadius: "50%",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      margin: "0 auto 20px",
-                      fontSize: "1.5rem",
-                      color: "#02050A",
-                      fontWeight: "700",
-                    }}
-                  >
-                    {index + 1}
+              <div className="col-md-6 text-center">
+                <div className="tech-logo-container">
+                  <div className="tech-logo">
+                    <i
+                      className={technology.icon}
+                      style={{ fontSize: "50px" }}
+                    />
                   </div>
-                  <h5
-                    style={{
-                      fontWeight: "600",
-                      marginBottom: "15px",
-                      color: "#ffffff",
-                    }}
-                  >
-                    {benefit}
-                  </h5>
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Horizontal Tools Section */}
-      <section
-        className="tools-section"
-        style={{ padding: "100px 0", background: "#16161c" }}
-      >
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-8 text-center">
-              <h2
-                className="section-title"
-                style={{
-                  fontSize: "48px",
-                  fontWeight: "700",
-                  marginBottom: "3rem",
-                  color: "#ffffff",
-                }}
-              >
-                Technologies We Work With
-              </h2>
             </div>
           </div>
+        </section>
 
-          {/* Horizontal Category Cards */}
-          {Object.entries(technology.tools).map(([category, tools], index) => (
-            <div key={index} className="mb-5">
-              <div className="row align-items-center mb-4">
-                <div className="col-md-3">
-                  <h3
-                    style={{
-                      color: "#55E6A5",
-                      fontWeight: "700",
-                      fontSize: "24px",
-                      margin: 0,
-                    }}
-                  >
-                    {category}
-                  </h3>
-                </div>
-                <div className="col-md-9">
-                  <div
-                    style={{
-                      height: "2px",
-                      background: "rgba(85, 230, 165, 0.3)",
-                      width: "100%",
-                    }}
-                  ></div>
-                </div>
+        {/* Benefits Section */}
+        <section className="benefits-section">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-lg-8 text-center">
+                <h2 className="section-title">
+                  Why Choose{" "}
+                  <span className="primary-color">{technology.name}</span>
+                </h2>
               </div>
-
-              <div className="row">
-                {tools?.map((tool, toolIndex) => (
+            </div>
+            <div className="row">
+              {technology.benefits.map((benefit, index) => (
+                <div key={index} className="col-md-6 col-lg-3 mb-4">
                   <div
-                    key={toolIndex}
-                    className="col-xl-3 col-lg-4 col-md-6 mb-3"
+                    className="benefit-card"
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.transform = "translateY(-5px)";
+                      e.currentTarget.style.boxShadow =
+                        "0 10px 25px rgba(var(--ygency-primary-rgb), 0.15)";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = "translateY(0)";
+                      e.currentTarget.style.boxShadow = "none";
+                    }}
                   >
-                    <div
-                      className="tool-item"
-                      style={{
-                        background: "#02050A",
-                        padding: "20px",
-                        borderRadius: "8px",
-                        border: "1px solid rgba(255, 255, 255, 0.1)",
-                        display: "flex",
-                        alignItems: "center",
-                        transition: "all 0.3s ease",
-                        height: "100%",
-                      }}
-                      onMouseEnter={(e) => {
-                        e.currentTarget.style.transform = "translateY(-3px)";
-                        e.currentTarget.style.boxShadow =
-                          "0 8px 20px rgba(0, 0, 0, 0.2)";
-                        e.currentTarget.style.borderColor =
-                          "rgba(85, 230, 165, 0.3)";
-                      }}
-                      onMouseLeave={(e) => {
-                        e.currentTarget.style.transform = "translateY(0)";
-                        e.currentTarget.style.boxShadow = "none";
-                        e.currentTarget.style.borderColor =
-                          "rgba(255, 255, 255, 0.1)";
-                      }}
-                    >
-                      <div
-                        style={{
-                          width: "40px",
-                          height: "40px",
-                          background: "rgba(85, 230, 165, 0.1)",
-                          borderRadius: "8px",
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                          marginRight: "15px",
-                          color: "#55E6A5",
-                          fontSize: "18px",
-                          flexShrink: 0,
-                        }}
-                      >
-                        <i className={toolIcons[tool] || "fas fa-code"}></i>
-                      </div>
-                      <span
-                        style={{
-                          color: "rgba(255, 255, 255, 0.9)",
-                          fontWeight: "500",
-                          fontSize: "16px",
-                        }}
-                      >
-                        {tool}
-                      </span>
+                    <div className="benefit-icon">{index + 1}</div>
+                    <h5 className="benefit-title">{benefit}</h5>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Horizontal Tools Section */}
+        <section className="tools-section">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-lg-8 text-center">
+                <h2 className="section-title">Technologies We Work With</h2>
+              </div>
+            </div>
+
+            {/* Horizontal Category Cards */}
+            {Object.entries(technology.tools).map(
+              ([category, tools], index) => (
+                <div key={index} className="mb-5">
+                  <div className="row align-items-center mb-4">
+                    <div className="col-md-3">
+                      <h3 className="tools-category">{category}</h3>
+                    </div>
+                    <div className="col-md-9">
+                      <div className="category-divider"></div>
                     </div>
                   </div>
-                ))}
-              </div>
 
-              {index < Object.entries(technology.tools).length - 1 && (
-                <div className="row">
-                  <div className="col-12">
-                    <div
-                      style={{
-                        height: "1px",
-                        background: "rgba(255, 255, 255, 0.05)",
-                        width: "100%",
-                        margin: "40px 0",
-                      }}
-                    ></div>
+                  <div className="row">
+                    {tools?.map((tool, toolIndex) => (
+                      <div
+                        key={toolIndex}
+                        className="col-xl-3 col-lg-4 col-md-6 mb-3"
+                      >
+                        <div
+                          className="tool-item"
+                          onMouseEnter={(e) => {
+                            e.currentTarget.style.transform =
+                              "translateY(-3px)";
+                            e.currentTarget.style.boxShadow =
+                              "0 8px 20px rgba(0, 0, 0, 0.2)";
+                            e.currentTarget.style.borderColor =
+                              "rgba(var(--ygency-primary-rgb), 0.3)";
+                          }}
+                          onMouseLeave={(e) => {
+                            e.currentTarget.style.transform = "translateY(0)";
+                            e.currentTarget.style.boxShadow = "none";
+                            e.currentTarget.style.borderColor =
+                              "var(--ygency-border-color)";
+                          }}
+                        >
+                          <div className="tool-icon">
+                            <i
+                              className={toolIcons[tool] || toolIcons.Default}
+                            ></i>
+                          </div>
+                          <span className="tool-name">{tool}</span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+
+                  {index < Object.entries(technology.tools).length - 1 && (
+                    <div className="row">
+                      <div className="col-12">
+                        <div className="section-divider"></div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              )
+            )}
+          </div>
+        </section>
+
+        {/* Process Section */}
+        <section className="process-section">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-lg-8 text-center">
+                <h2 className="section-title">Our Development Process</h2>
+              </div>
+            </div>
+            <div className="process-steps">
+              {technology.process.map((step, index) => (
+                <div key={index} className="process-step">
+                  <div className="step-number">{index + 1}</div>
+                  <div className="step-content">
+                    <h4 className="step-title">{step.step}</h4>
+                    <p className="step-description">{step.description}</p>
                   </div>
                 </div>
-              )}
+              ))}
             </div>
-          ))}
-        </div>
-      </section>
+          </div>
+        </section>
 
-      {/* Process Section */}
-      <section
-        className="process-section"
-        style={{ padding: "100px 0", background: "#02050A" }}
-      >
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-8 text-center">
-              <h2
-                className="section-title"
-                style={{
-                  fontSize: "48px",
-                  fontWeight: "700",
-                  marginBottom: "3rem",
-                  color: "#ffffff",
-                }}
-              >
-                Our Development Process
+        {/* CTA Section */}
+        <section className="cta-section">
+          <div className="container">
+            <div className="cta-content">
+              <h2 className="cta-title">
+                Ready to Build with {technology.name}?
               </h2>
-            </div>
-          </div>
-          <div className="process-steps">
-            {technology.process.map((step, index) => (
-              <div
-                key={index}
-                className="process-step"
-                style={{
-                  display: "flex",
-                  alignItems: "flex-start",
-                  marginBottom: "40px",
-                  position: "relative",
+              <p className="cta-description">
+                Contact us today to discuss your project requirements
+              </p>
+              <button
+                className="cta-button"
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "translateY(-2px)";
+                  e.currentTarget.style.boxShadow =
+                    "0 8px 20px rgba(var(--ygency-primary-rgb), 0.4)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.boxShadow =
+                    "0 5px 15px rgba(var(--ygency-primary-rgb), 0.3)";
                 }}
               >
-                <div
-                  className="step-number"
-                  style={{
-                    background: "#55E6A5",
-                    color: "#02050A",
-                    width: "50px",
-                    height: "50px",
-                    borderRadius: "50%",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    fontSize: "1.2rem",
-                    fontWeight: "700",
-                    flexShrink: "0",
-                    marginRight: "25px",
-                    boxShadow: "0 5px 15px rgba(85, 230, 165, 0.3)",
-                  }}
-                >
-                  {index + 1}
-                </div>
-                <div className="step-content">
-                  <h4
-                    style={{
-                      fontWeight: "700",
-                      marginBottom: "10px",
-                      color: "#ffffff",
-                    }}
-                  >
-                    {step.step}
-                  </h4>
-                  <p
-                    style={{
-                      color: "rgba(255, 255, 255, 0.75)",
-                      lineHeight: "1.6",
-                    }}
-                  >
-                    {step.description}
-                  </p>
-                </div>
-              </div>
-            ))}
+                Get in Touch
+              </button>
+            </div>
           </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section
-        className="cta-section"
-        style={{
-          padding: "100px 0",
-          background: "#16161c",
-          color: "#ffffff",
-          textAlign: "center",
-          borderTop: "1px solid rgba(255, 255, 255, 0.1)",
-        }}
-      >
-        <div className="container">
-          <div
-            className="cta-content"
-            style={{ maxWidth: "700px", margin: "0 auto" }}
-          >
-            <h2
-              style={{
-                fontSize: "48px",
-                fontWeight: "700",
-                marginBottom: "20px",
-              }}
-            >
-              Ready to Build with {technology.name}?
-            </h2>
-            <p
-              style={{ fontSize: "20px", marginBottom: "30px", opacity: "0.9" }}
-            >
-              Contact us today to discuss your project requirements
-            </p>
-            <button
-              className="btn btn-light"
-              style={{
-                background: "#55E6A5",
-                color: "#02050A",
-                border: "none",
-                fontWeight: "600",
-                padding: "12px 30px",
-                borderRadius: "4px",
-                transition: "all 0.3s ease",
-                boxShadow: "0 5px 15px rgba(85, 230, 165, 0.3)",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = "translateY(-2px)";
-                e.currentTarget.style.boxShadow =
-                  "0 8px 20px rgba(85, 230, 165, 0.4)";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = "translateY(0)";
-                e.currentTarget.style.boxShadow =
-                  "0 5px 15px rgba(85, 230, 165, 0.3)";
-              }}
-            >
-              Get in Touch
-            </button>
-          </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
+    </Layout>
   );
 };
 

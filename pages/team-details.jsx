@@ -2,7 +2,7 @@ import TeamSkills from "@/src/components/TeamSkills";
 import Layout from "@/src/layout/Layout";
 const TeamDetails = () => {
   return (
-    <Layout dark>
+    <Layout footer={2} dark>
       {/* Team Profile Area start */}
       <section
         className="team-profile-area pt-220 rpt-150 pb-130 rpb-100 rel"

@@ -15,7 +15,7 @@ const ServiceDetails = () => {
   // If service not found, show fallback
   if (!currentService) {
     return (
-      <Layout dark>
+      <Layout footer={2} dark>
         <section
           className="page-banner pt-210 rpt-150 pb-25 rel z-1"
           style={{ backgroundImage: "url(assets/images/hero/hero-two-bg.png)" }}
@@ -55,7 +55,7 @@ const ServiceDetails = () => {
   };
 
   return (
-    <Layout dark>
+    <Layout footer={2} dark>
       {/* Page Banner Section Start */}
       <section
         className="page-banner pt-210 rpt-150 pb-25 rel z-1"
@@ -81,7 +81,7 @@ const ServiceDetails = () => {
       {/* Services Page About Area start */}
       <section className="service-page-about py-130 rpy-100 rel z-1">
         <div className="container">
-          <div className="row gap-90 align-items-center">
+          <div className="row align-items-center">
             <div className="col-lg-6">
               <div className="service-about-image rmb-55 wow fadeInUp delay-0-2s">
                 <img
@@ -108,7 +108,7 @@ const ServiceDetails = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-5 col-lg-6 mx-xl-auto">
+            <div className="col-xl-5 col-lg-6 ">
               <div className="about-content wow fadeInUp delay-0-4s">
                 <div className="section-title mb-40">
                   <span className="sub-title mb-15">What We Do</span>
@@ -121,11 +121,6 @@ const ServiceDetails = () => {
                       <li key={index}>{item}</li>
                     ))}
                   </ul>
-                  <Link legacyBehavior href="/about">
-                    <a className="read-more mt-10 color-primary">
-                      Learn More <i className="far fa-arrow-right" />
-                    </a>
-                  </Link>
                 </div>
               </div>
             </div>
@@ -140,15 +135,6 @@ const ServiceDetails = () => {
           <div className="section-title mb-40 wow fadeInUp delay-0-2s">
             <span className="sub-title mb-15">How We Works</span>
             <h2>Simple Step Follow to Complete Work</h2>
-            <div className="text mt-30">
-              <p>
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                blanditiis praesentium voluptatum deleniti atque corrupti quos
-                dolores et quas molestias excepturi sint occaecati cupiditate
-                non provident, similique sunt in culpa qui officia deserunt
-                mollitia animi, id est laborum
-              </p>
-            </div>
           </div>
           <div className="row gap-90">
             {whatWeDo.steps.map((step, index) => (
@@ -184,7 +170,7 @@ const ServiceDetails = () => {
         <div className="container container-1290">
           <div className="row justify-content-center">
             <div className="col-xl-8 col-lg-10">
-              <div className="section-title text-center mb-60 wow fadeInUp delay-0-2s">
+              <div className="section-title text-center mb-60 wow fadeInUp delay-0-2s ">
                 <span className="sub-title mb-20">Pricing Package</span>
                 <h2>Best Pricing Package For {title} Solutions</h2>
               </div>

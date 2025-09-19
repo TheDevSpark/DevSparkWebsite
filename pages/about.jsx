@@ -9,7 +9,7 @@ const Counter = dynamic(() => import("@/src/components/Counter"), {
 });
 const About = () => {
   return (
-    <Layout dark>
+    <Layout footer={2} dark>
       {/* Page Banner Section Start */}
       <section
         className="page-banner pt-210 rpt-150 pb-45 rpb-50 rel z-1"

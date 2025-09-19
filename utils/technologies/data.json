@@ -1,0 +1,807 @@
+{
+  "javascript": {
+    "name": "JavaScript",
+    "logo": "/images/javascript-logo.png",
+    "icon": "fab fa-js-square",
+    "description": "JavaScript is the backbone of interactive and dynamic web experiences, powering everything from simple UI enhancements to advanced single-page applications.",
+    "benefits": [
+      "Dynamic & Interactive Interfaces",
+      "Fast & Scalable Solutions",
+      "Cross-Browser Compatibility",
+      "Rich Framework Ecosystem"
+    ],
+    "tools": {
+      "Frontend": ["HTML", "JavaScript", "React", "Bootstrap/Tailwind CSS"],
+      "Backend": ["Node.js", "Express.js", "Next.js", "NestJS"],
+      "Tooling & Build Systems": ["Webpack", "Babel", "npm & Yarn", "ESLint"],
+      "Testing Frameworks": ["Jest", "Mocha & Chai", "Cypress", "Jasmine"]
+    },
+    "qualities": [
+      "Versatile language for frontend and backend",
+      "Extensive library and framework support",
+      "Strong community and ecosystem",
+      "Continuous evolution with new features"
+    ],
+    "process": [
+      {
+        "step": "Requirement Analysis",
+        "description": "Identify app features and goals."
+      },
+      {
+        "step": "UI/UX Design",
+        "description": "Create engaging and intuitive interfaces."
+      },
+      {
+        "step": "Development",
+        "description": "Build apps with modern JavaScript frameworks."
+      },
+      {
+        "step": "Testing & QA",
+        "description": "Ensure smooth, bug-free user experience."
+      },
+      {
+        "step": "Deployment & Support",
+        "description": "Deliver and maintain your application."
+      }
+    ]
+  },
+  "react": {
+    "name": "React.js",
+    "logo": "/images/react-logo.png",
+    "icon": "fab fa-react",
+    "description": "React.js is a powerful frontend JavaScript library for building fast, dynamic, and scalable user interfaces.",
+    "benefits": [
+      "Reusable UI Components",
+      "High Performance Rendering",
+      "Scalable Single-Page Apps",
+      "Strong Community Support"
+    ],
+    "tools": {
+      "Frontend": ["React.js", "Redux / Zustand", "Next.js", "Tailwind CSS"],
+      "Backend": ["Node.js", "Express.js", "Firebase", "GraphQL"],
+      "Tooling & Build Systems": ["Vite", "Webpack", "Babel", "npm & Yarn"],
+      "Testing Frameworks": [
+        "Jest",
+        "React Testing Library",
+        "Cypress",
+        "Enzyme"
+      ]
+    },
+    "qualities": [
+      "Component-based architecture",
+      "Virtual DOM for performance",
+      "Unidirectional data flow",
+      "Extensive ecosystem"
+    ],
+    "process": [
+      {
+        "step": "Requirement Analysis",
+        "description": "Understand project needs and goals."
+      },
+      {
+        "step": "UI/UX Design",
+        "description": "Plan engaging, component-based layouts."
+      },
+      {
+        "step": "Development",
+        "description": "Build with React.js and modern libraries."
+      },
+      {
+        "step": "Testing & QA",
+        "description": "Validate performance and user experience."
+      },
+      {
+        "step": "Deployment & Support",
+        "description": "Launch and maintain with updates."
+      }
+    ]
+  },
+  "nextjs": {
+    "name": "Next.js",
+    "logo": "/images/nextjs-logo.png",
+    "icon": "fas fa-server",
+    "description": "Next.js is a React-based framework that enables building high-performance, SEO-friendly, and scalable web applications.",
+    "benefits": [
+      "SEO-Friendly Server-Side Rendering",
+      "Blazing Fast Performance",
+      "Scalable & Secure Architecture",
+      "API Routes & Integrations"
+    ],
+    "tools": {
+      "Frontend": ["Next.js", "React.js", "Tailwind CSS", "Redux / Zustand"],
+      "Backend": ["Node.js", "Express.js", "GraphQL", "Firebase"],
+      "Tooling & Build Systems": ["Vite", "Webpack", "Babel", "npm & Yarn"],
+      "Testing Frameworks": [
+        "Jest",
+        "Cypress",
+        "Playwright",
+        "React Testing Library"
+      ]
+    },
+    "qualities": [
+      "Server-side rendering capabilities",
+      "Automatic code splitting",
+      "File-based routing system",
+      "API routes integration"
+    ],
+    "process": [
+      {
+        "step": "Requirement Analysis",
+        "description": "Define goals and technical requirements."
+      },
+      {
+        "step": "UI/UX Design",
+        "description": "Craft optimized, responsive user experiences."
+      },
+      {
+        "step": "Development",
+        "description": "Build apps with Next.js & React ecosystem."
+      },
+      {
+        "step": "Testing & QA",
+        "description": "Ensure speed, security, and functionality."
+      },
+      {
+        "step": "Deployment & Support",
+        "description": "Deploy on Vercel/Cloud with ongoing updates."
+      }
+    ]
+  },
+  "nodejs": {
+    "name": "Node.js",
+    "logo": "/images/nodejs-logo.png",
+    "icon": "fab fa-node-js",
+    "description": "Node.js is a powerful backend runtime environment built on Chrome's V8 engine, designed for creating fast, scalable, and real-time applications.",
+    "benefits": [
+      "High Performance & Speed",
+      "Real-Time Data Handling",
+      "Scalable Application Architecture",
+      "Rich NPM Ecosystem"
+    ],
+    "tools": {
+      "Frontend": ["React.js", "Next.js"],
+      "Backend": ["Node.js", "Express.js", "NestJS", "GraphQL"],
+      "Tooling & Build Systems": ["Docker", "PM2", "Webpack", "Babel"],
+      "Testing Frameworks": ["Jest", "Mocha & Chai", "Supertest", "Cypress"]
+    },
+    "qualities": [
+      "Non-blocking I/O model",
+      "Event-driven architecture",
+      "Large package ecosystem",
+      "Cross-platform compatibility"
+    ],
+    "process": [
+      {
+        "step": "Requirement Analysis",
+        "description": "Gather project scope and technical needs."
+      },
+      {
+        "step": "Architecture Design",
+        "description": "Plan backend structure and workflows."
+      },
+      {
+        "step": "Development",
+        "description": "Build APIs and features using Node.js."
+      },
+      {
+        "step": "Testing & QA",
+        "description": "Validate performance, security, and stability."
+      },
+      {
+        "step": "Deployment & Support",
+        "description": "Deploy to cloud with ongoing monitoring."
+      }
+    ]
+  },
+  "laravel": {
+    "name": "PHP / Laravel",
+    "logo": "/images/laravel-logo.png",
+    "icon": "fab fa-laravel",
+    "description": "Laravel, built on PHP, is one of the most popular frameworks for developing secure, scalable, and high-performing web applications.",
+    "benefits": [
+      "Fast & Scalable Development",
+      "Secure Authentication System",
+      "MVC & RESTful Architecture",
+      "Large Community Support"
+    ],
+    "tools": {
+      "Frontend": [
+        "React.js",
+        "JavaScript",
+        "HTML",
+        "Bootstrap / Tailwind CSS"
+      ],
+      "Backend": ["PHP", "Laravel", "CodeIgniter", "MySQL / MariaDB"],
+      "Tooling & Build Systems": [
+        "Composer",
+        "Docker",
+        "Git / GitHub",
+        "npm & Yarn"
+      ],
+      "Testing Frameworks": ["PHPUnit", "Pest", "Codeception", "Selenium"]
+    },
+    "qualities": [
+      "Elegant syntax and expressive code",
+      "Built-in authentication system",
+      "Artisan command-line tool",
+      "Database migration system"
+    ],
+    "process": [
+      {
+        "step": "Requirement Analysis",
+        "description": "Identify goals and define project scope."
+      },
+      {
+        "step": "Architecture Design",
+        "description": "Plan database and backend structure."
+      },
+      {
+        "step": "Development",
+        "description": "Build apps with Laravel & PHP ecosystem."
+      },
+      {
+        "step": "Testing & QA",
+        "description": "Ensure security, performance, and stability."
+      },
+      {
+        "step": "Deployment & Support",
+        "description": "Deploy on cloud servers with maintenance."
+      }
+    ]
+  },
+  "reactnative": {
+    "name": "React Native",
+    "logo": "/images/reactnative-logo.png",
+    "icon": "fab fa-react",
+    "description": "React Native is a powerful cross-platform framework that enables building mobile apps for iOS and Android using a single codebase.",
+    "benefits": [
+      "Cross-Platform Development Efficiency",
+      "Faster Time to Market",
+      "Native-Like Performance",
+      "Reusable Codebase"
+    ],
+    "tools": {
+      "Frontend / Mobile": [
+        "React Native",
+        "Redux / Zustand",
+        "TypeScript",
+        "Expo"
+      ],
+      "Backend": ["Node.js", "Supabase", "Firebase", "GraphQL"],
+      "Tooling & Build Systems": [
+        "Metro Bundler",
+        "Babel",
+        "npm & Yarn",
+        "Fastlane"
+      ],
+      "Testing Frameworks": ["Jest", "Detox", "Appium", "Cypress"]
+    },
+    "qualities": [
+      "Hot reloading for faster development",
+      "Native components and APIs",
+      "Third-party plugin compatibility",
+      "Strong community support"
+    ],
+    "process": [
+      {
+        "step": "Requirement Analysis",
+        "description": "Define app goals and core features."
+      },
+      {
+        "step": "UI/UX Design",
+        "description": "Create mobile-first, user-friendly interfaces."
+      },
+      {
+        "step": "Development",
+        "description": "Build cross-platform apps using React Native."
+      },
+      {
+        "step": "Testing & QA",
+        "description": "Ensure performance, compatibility, and security."
+      },
+      {
+        "step": "Deployment & Support",
+        "description": "Publish to App Store & Google Play."
+      }
+    ]
+  },
+  "flutter": {
+    "name": "Flutter",
+    "logo": "/images/flutter-logo.png",
+    "icon": "fas fa-mobile",
+    "description": "Flutter is Google's UI toolkit for building cross-platform mobile, web, and desktop applications from a single codebase.",
+    "benefits": [
+      "Single Codebase for All",
+      "High Performance & Speed",
+      "Beautiful Custom UI",
+      "Faster Development Cycles"
+    ],
+    "tools": {
+      "Frontend / Mobile": [
+        "Flutter",
+        "Dart",
+        "Provider / Riverpod",
+        "Bloc State Management"
+      ],
+      "Backend": ["Supabase", "Firebase", "GraphQL", "RESTful APIs"],
+      "Tooling & Build Systems": [
+        "Android Studio / Xcode",
+        "Flutter SDK",
+        "Fastlane",
+        "Git / GitHub"
+      ],
+      "Testing Frameworks": [
+        "Flutter Test",
+        "Mockito",
+        "Integration Test",
+        "Appium"
+      ]
+    },
+    "qualities": [
+      "Hot reload for instant updates",
+      "Rich set of customizable widgets",
+      "Native performance on all platforms",
+      "Strong typing with Dart language"
+    ],
+    "process": [
+      {
+        "step": "Requirement Analysis",
+        "description": "Define app features and target platforms."
+      },
+      {
+        "step": "UI/UX Design",
+        "description": "Craft intuitive and engaging Flutter interfaces."
+      },
+      {
+        "step": "Development",
+        "description": "Build multi-platform apps with one codebase."
+      },
+      {
+        "step": "Testing & QA",
+        "description": "Ensure flawless performance on all devices."
+      },
+      {
+        "step": "Deployment & Support",
+        "description": "Launch apps with ongoing maintenance."
+      }
+    ]
+  },
+  "wordpress": {
+    "name": "WordPress",
+    "logo": "/images/wordpress-logo.png",
+    "icon": "fab fa-wordpress",
+    "description": "WordPress is the world's most popular content management system (CMS), powering millions of websites globally.",
+    "benefits": [
+      "Easy Content Management",
+      "SEO-Friendly Websites",
+      "Wide Range of Plugins",
+      "Customizable & Scalable Solutions"
+    ],
+    "tools": {
+      "Frontend": [
+        "HTML5 & CSS3",
+        "JavaScript / jQuery",
+        "React (Gutenberg Blocks)",
+        "Bootstrap / Tailwind CSS"
+      ],
+      "Backend": [
+        "WordPress CMS",
+        "PHP",
+        "Laravel (Custom Integrations)",
+        "MySQL"
+      ],
+      "Tooling & Build Systems": [
+        "Composer",
+        "Git / GitHub",
+        "Docker",
+        "npm & Yarn"
+      ],
+      "Testing Frameworks": ["PHPUnit", "Codeception", "Cypress", "Selenium"]
+    },
+    "qualities": [
+      "User-friendly admin interface",
+      "Extensive theme and plugin ecosystem",
+      "Strong SEO capabilities",
+      "Regular security updates"
+    ],
+    "process": [
+      {
+        "step": "Requirement Analysis",
+        "description": "Identify website goals and functionality."
+      },
+      {
+        "step": "UI/UX Design",
+        "description": "Create responsive and engaging layouts."
+      },
+      {
+        "step": "Development",
+        "description": "Build custom themes and plugins in WordPress."
+      },
+      {
+        "step": "Testing & QA",
+        "description": "Ensure performance, speed, and security."
+      },
+      {
+        "step": "Deployment & Support",
+        "description": "Launch and maintain with updates."
+      }
+    ]
+  },
+  "woocommerce": {
+    "name": "WooCommerce",
+    "logo": "/images/woocommerce-logo.png",
+    "icon": "fas fa-shopping-cart",
+    "description": "WooCommerce is the most popular eCommerce plugin for WordPress, trusted by millions of businesses worldwide.",
+    "benefits": [
+      "Seamless WordPress Integration",
+      "Highly Customizable Stores",
+      "Secure Payment Gateways",
+      "Scalable for Any Business"
+    ],
+    "tools": {
+      "Frontend": [
+        "HTML5 & CSS3",
+        "JavaScript / jQuery",
+        "React (Custom Blocks)",
+        "Tailwind CSS / Bootstrap"
+      ],
+      "Backend": ["WordPress", "WooCommerce", "PHP", "MySQL"],
+      "Tooling & Build Systems": [
+        "Composer",
+        "Git / GitHub",
+        "npm & Yarn",
+        "Docker"
+      ],
+      "Testing Frameworks": ["PHPUnit", "Codeception", "Cypress", "Selenium"]
+    },
+    "qualities": [
+      "Extensive payment gateway options",
+      "Inventory management system",
+      "Shipping and tax configuration",
+      "Marketing and analytics tools"
+    ],
+    "process": [
+      {
+        "step": "Requirement Analysis",
+        "description": "Define eCommerce goals and store features."
+      },
+      {
+        "step": "UI/UX Design",
+        "description": "Create engaging, mobile-friendly shopping layouts."
+      },
+      {
+        "step": "Development",
+        "description": "Build custom WooCommerce stores & plugins."
+      },
+      {
+        "step": "Testing & QA",
+        "description": "Ensure security, speed, and functionality."
+      },
+      {
+        "step": "Deployment & Support",
+        "description": "Launch store with ongoing maintenance."
+      }
+    ]
+  },
+  "shopify": {
+    "name": "Shopify",
+    "logo": "/images/shopify-logo.png",
+    "icon": "fas fa-store",
+    "description": "Shopify is a leading eCommerce platform that enables businesses to build secure, scalable, and customizable online stores quickly.",
+    "benefits": [
+      "All-in-One eCommerce Platform",
+      "Fast & Secure Stores",
+      "Customizable Themes & Apps",
+      "Seamless Payment Integration"
+    ],
+    "tools": {
+      "Frontend": [
+        "HTML5 & CSS3",
+        "JavaScript",
+        "Liquid (Shopify Templating)",
+        "Tailwind CSS / Bootstrap"
+      ],
+      "Backend": [
+        "Shopify Platform",
+        "Node.js",
+        "GraphQL (Shopify API)",
+        "Firebase / MySQL"
+      ],
+      "Tooling & Build Systems": [
+        "Shopify CLI",
+        "Git / GitHub",
+        "Webpack",
+        "npm & Yarn"
+      ],
+      "Testing Frameworks": ["Jest", "Mocha & Chai", "Cypress", "Selenium"]
+    },
+    "qualities": [
+      "Hosted solution with minimal setup",
+      "Built-in payment processing",
+      "App store with extensive integrations",
+      "Mobile commerce optimization"
+    ],
+    "process": [
+      {
+        "step": "Requirement Analysis",
+        "description": "Understand store goals and product needs."
+      },
+      {
+        "step": "UI/UX Design",
+        "description": "Craft engaging and conversion-focused designs."
+      },
+      {
+        "step": "Development",
+        "description": "Build custom Shopify themes and apps."
+      },
+      {
+        "step": "Testing & QA",
+        "description": "Ensure store performance and security."
+      },
+      {
+        "step": "Deployment & Support",
+        "description": "Launch with ongoing updates & support."
+      }
+    ]
+  },
+  "mongodb": {
+    "name": "MongoDB",
+    "logo": "/images/mongodb-logo.png",
+    "icon": "fas fa-database",
+    "description": "MongoDB is a leading NoSQL database designed for handling large-scale, high-performance applications.",
+    "benefits": [
+      "Flexible NoSQL Data Storage",
+      "High Performance & Scalability",
+      "Real-Time Data Processing",
+      "Secure & Reliable Solutions"
+    ],
+    "tools": {
+      "Frontend": ["React.js", "Angular", "Vue.js", "Next.js"],
+      "Backend": ["Node.js", "Express.js", "Django", "Laravel"],
+      "Tooling & Build Systems": [
+        "MongoDB Atlas",
+        "Mongoose (ODM)",
+        "Docker",
+        "Git / GitHub"
+      ],
+      "Testing Frameworks": ["Jest", "Mocha & Chai", "Cypress", "Supertest"]
+    },
+    "qualities": [
+      "Document-oriented data model",
+      "Horizontal scaling with sharding",
+      "Aggregation framework for analytics",
+      "Geospatial indexing and queries"
+    ],
+    "process": [
+      {
+        "step": "Requirement Analysis",
+        "description": "Define database needs and data models."
+      },
+      {
+        "step": "Architecture Design",
+        "description": "Plan collections, documents, and structure."
+      },
+      {
+        "step": "Development",
+        "description": "Implement backend with MongoDB integration."
+      },
+      {
+        "step": "Testing & QA",
+        "description": "Ensure data accuracy, speed, and security."
+      },
+      {
+        "step": "Deployment & Support",
+        "description": "Scale and optimize with ongoing support."
+      }
+    ]
+  },
+  "mysql": {
+    "name": "MySQL",
+    "logo": "/images/mysql-logo.png",
+    "icon": "fas fa-database",
+    "description": "MySQL is the world's most popular open-source relational database management system (RDBMS), trusted for speed, reliability, and scalability.",
+    "benefits": [
+      "Proven & Reliable RDBMS",
+      "High Security & Performance",
+      "Scalable for All Projects",
+      "Strong Community & Support"
+    ],
+    "tools": {
+      "Frontend": ["React.js", "Angular", "Vue.js", "Next.js"],
+      "Backend": [
+        "PHP / Laravel",
+        "Node.js",
+        "Python / Django",
+        "Java / Spring Boot"
+      ],
+      "Tooling & Build Systems": [
+        "phpMyAdmin",
+        "MySQL Workbench",
+        "Docker",
+        "Git / GitHub"
+      ],
+      "Testing Frameworks": ["PHPUnit", "Jest", "Mocha & Chai", "Cypress"]
+    },
+    "qualities": [
+      "ACID compliance for data integrity",
+      "Stored procedures and triggers",
+      "Comprehensive indexing options",
+      "Replication and high availability"
+    ],
+    "process": [
+      {
+        "step": "Requirement Analysis",
+        "description": "Identify data structure and queries."
+      },
+      {
+        "step": "Schema Design",
+        "description": "Build optimized relational database models."
+      },
+      {
+        "step": "Development",
+        "description": "Implement CRUD operations and integrations."
+      },
+      {
+        "step": "Testing & QA",
+        "description": "Validate queries, indexing, and security."
+      },
+      {
+        "step": "Deployment & Maintenance",
+        "description": "Optimize performance and monitor scaling."
+      }
+    ]
+  },
+  "firebase": {
+    "name": "Firebase",
+    "logo": "/images/firebase-logo.png",
+    "icon": "fas fa-fire",
+    "description": "Firebase is a powerful Backend-as-a-Service (BaaS) platform by Google, offering real-time databases, authentication, hosting, and cloud functions.",
+    "benefits": [
+      "Real-Time Data Sync",
+      "Built-in Authentication Services",
+      "Scalable Cloud Infrastructure",
+      "Cross-Platform Support (Web & Mobile)"
+    ],
+    "tools": {
+      "Frontend": ["React.js", "Angular", "Vue.js", "Next.js"],
+      "Backend": [
+        "Node.js",
+        "Express.js",
+        "Python (Flask/Django)",
+        "Java (Spring Boot)"
+      ],
+      "Tooling & Build Systems": [
+        "Firebase CLI",
+        "Git / GitHub",
+        "Docker",
+        "Visual Studio Code"
+      ],
+      "Testing Frameworks": ["Jest", "Mocha & Chai", "Cypress", "Jasmine"]
+    },
+    "qualities": [
+      "Serverless architecture with Cloud Functions",
+      "Real-time database synchronization",
+      "Built-in analytics and monitoring",
+      "Easy integration with Google services"
+    ],
+    "process": [
+      {
+        "step": "Requirement Analysis",
+        "description": "Define project goals and data flow."
+      },
+      {
+        "step": "Database Design",
+        "description": "Structure real-time or Firestore DB."
+      },
+      {
+        "step": "Development",
+        "description": "Implement authentication, hosting, and APIs."
+      },
+      {
+        "step": "Testing & QA",
+        "description": "Validate security rules and performance."
+      },
+      {
+        "step": "Deployment & Support",
+        "description": "Launch apps with scalable cloud hosting."
+      }
+    ]
+  },
+  "supabase": {
+    "name": "Supabase",
+    "logo": "/images/supabase-logo.png",
+    "icon": "fas fa-database",
+    "description": "Supabase is an open-source Firebase alternative that provides a powerful backend with PostgreSQL at its core.",
+    "benefits": [
+      "Open-Source & Transparent",
+      "Built on PostgreSQL Database",
+      "Real-Time APIs & Subscriptions",
+      "Easy Authentication & Storage"
+    ],
+    "tools": {
+      "Frontend": ["React.js", "Next.js", "Vue.js", "Svelte"],
+      "Backend": ["Node.js", "Express.js", "Python (FastAPI/Django)", "Go"],
+      "Tooling & Build Systems": [
+        "Supabase CLI",
+        "Docker",
+        "Git / GitHub",
+        "Visual Studio Code"
+      ],
+      "Testing Frameworks": ["Jest", "Mocha & Chai", "Cypress", "Playwright"]
+    },
+    "qualities": [
+      "PostgreSQL-based with full SQL capabilities",
+      "Real-time subscriptions for data changes",
+      "Row-level security policies",
+      "Open source with self-hosting option"
+    ],
+    "process": [
+      {
+        "step": "Requirement Analysis",
+        "description": "Define business goals and workflows."
+      },
+      {
+        "step": "Database Setup",
+        "description": "Configure PostgreSQL with Supabase tools."
+      },
+      {
+        "step": "Development",
+        "description": "Implement APIs, authentication, and storage."
+      },
+      {
+        "step": "Testing & QA",
+        "description": "Ensure real-time sync and security rules."
+      },
+      {
+        "step": "Deployment & Support",
+        "description": "Launch with scalability and monitoring."
+      }
+    ]
+  },
+  "mern": {
+    "name": "MERN Stack",
+    "logo": "/images/mern-logo.png",
+    "icon": "fas fa-layer-group",
+    "description": "The MERN Stack (MongoDB, Express.js, React, Node.js) is a powerful full-stack JavaScript framework for building modern web and mobile applications.",
+    "benefits": [
+      "Full JavaScript Technology Stack",
+      "Fast & Scalable Development",
+      "Rich Ecosystem & Libraries",
+      "Seamless Frontend & Backend Integration"
+    ],
+    "tools": {
+      "Frontend": ["React.js", "Next.js", "Redux Toolkit", "Tailwind CSS"],
+      "Backend": ["Node.js", "Express.js", "GraphQL", "REST APIs"],
+      "Tooling & Build Systems": ["Webpack", "Babel", "Docker", "Git / GitHub"],
+      "Testing Frameworks": ["Jest", "Mocha & Chai", "Cypress", "Supertest"]
+    },
+    "qualities": [
+      "End-to-end JavaScript development",
+      "JSON-based data exchange throughout",
+      "Component-based UI architecture",
+      "Non-blocking I/O for high performance"
+    ],
+    "process": [
+      {
+        "step": "Requirement Analysis",
+        "description": "Understand project scope and features."
+      },
+      {
+        "step": "UI/UX Design",
+        "description": "Build modern, responsive user interfaces."
+      },
+      {
+        "step": "Development",
+        "description": "Implement frontend, backend, and database."
+      },
+      {
+        "step": "Testing & QA",
+        "description": "Ensure performance and bug-free apps."
+      },
+      {
+        "step": "Deployment & Support",
+        "description": "Launch with scalability and maintenance."
+      }
+    ]
+  }
+}

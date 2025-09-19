@@ -2,7 +2,7 @@ import Layout from "@/src/layout/Layout";
 import Link from "next/link";
 const BlogDetails = () => {
   return (
-    <Layout dark>
+    <Layout footer={2} dark>
       {/* Page Banner Start */}
       <section
         className="page-banner-area overlay pt-250 pb-50 rel z-1 bgs-cover"

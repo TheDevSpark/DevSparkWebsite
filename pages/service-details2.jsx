@@ -13,7 +13,7 @@ const ServiceDetails2 = () => {
   ];
   const [active, setActive] = useState("collapse0");
   return (
-    <Layout dark>
+    <Layout footer={2} dark>
       {/* Page Banner Start */}
       <PageBanner pageName={"Web Development"} />
       {/* Page Banner End */}

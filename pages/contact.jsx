@@ -2,7 +2,7 @@ import PageBanner from "@/src/components/PageBanner";
 import Layout from "@/src/layout/Layout";
 const Contact = () => {
   return (
-    <Layout dark>
+    <Layout footer={2} dark>
       {/* Page Banner Start */}
       <PageBanner pageName={"Contact"} />
       {/* Page Banner End */}
@@ -23,45 +23,35 @@ const Contact = () => {
                 <div className="row gap-80 pb-30">
                   <div className="col-sm-6">
                     <div className="our-location-address mb-40">
-                      <h5>New York</h5>
+                      <h5>England</h5>
                       <p>
-                        55 One State Road, 2nd Block New York, United States
+                        Bartle House 9 Oxford Court Manchester England M2 3WQ
                       </p>
-                      <a className="mailto" href="mailto:support@gmail.com">
-                        support@gmail.com
+                      <a
+                        className="mailto"
+                        href="mailto:contact@thedevspark.com"
+                      >
+                        contact@thedevspark.com
                       </a>
                       <br />
-                      <a className="callto" href="callto:+00012345688">
-                        <i className="fas fa-phone" /> +000 (123) 456 88
-                      </a>
-                    </div>
-                  </div>
-                  <div className="col-sm-6">
-                    <div className="our-location-address mb-40">
-                      <h5>Australia</h5>
-                      <p>67 One State Road, 2nd Block Melbourne, Australia</p>
-                      <a className="mailto" href="mailto:support@gmail.com">
-                        support@gmail.com
-                      </a>
-                      <br />
-                      <a className="callto" href="callto:+00012345688">
-                        <i className="fas fa-phone" /> +000 (123) 456 88
+                      <a className="callto" href="callto:+92303-2051930">
+                        <i className="fas fa-phone" /> +92303-2051930
                       </a>
                     </div>
                   </div>
                 </div>
                 <h4>Follow Us</h4>
                 <div className="social-style-two pt-15">
-                  <a href="#">
+                  <a href="https://www.facebook.com/share/1WQcTihJ69/">
                     <i className="fab fa-facebook-f" />
                   </a>
-                  <a href="#">
+                  <a href="https://x.com/TheDevSpark">
                     <i className="fab fa-twitter" />
                   </a>
-                  <a href="#">
+                  <a href="https://www.instagram.com/dev_spark_agency?igsh=MTg2eHF6M25saXY0bw==">
                     <i className="fab fa-instagram" />
                   </a>
-                  <a href="#">
+                  <a href="https://www.linkedin.com/company/the-devspark/">
                     <i className="fab fa-linkedin-in" />
                   </a>
                 </div>

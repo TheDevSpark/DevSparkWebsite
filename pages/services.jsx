@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 const Services = () => {
   return (
-    <Layout dark>
+    <Layout footer={2} dark>
       {/* Page Banner Section Start */}
       <section
         className="page-banner pt-210 rpt-150 pb-45 rpb-50 rel z-1"

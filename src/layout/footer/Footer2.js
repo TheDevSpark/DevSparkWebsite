@@ -9,12 +9,13 @@ const Footer2 = ({ dark }) => {
       }}
     >
       <div className="container container-1290">
-        <div className="row gp-100 pb-20 align-items-center justify-content-between">
+        <div className="row gp-100 pb-20 align-items-start justify-content-between">
           <div className="col-xl-6 col-lg-7">
             <div className="footer-left-title mb-35 wow fadeInLeft delay-0-2s">
               Your Vision, Our Spark — Together We Create
             </div>
           </div>
+          {/* Send Us Message */}
           <div className="col-lg-5 col-sm-7 col-6 col-small wow fadeInRight delay-0-2s">
             <div className="footer-right-btn mb-35 text-lg-end">
               <Link legacyBehavior href="/contact">
@@ -25,49 +26,69 @@ const Footer2 = ({ dark }) => {
               </Link>
             </div>
           </div>
-          <div className="col-lg-3 col-6 col-small order-lg-3">
+          {/* Get In Touch */}
+          <div className="col-lg-3 col-md-6 col-6 col-small order-lg-3">
             <div className="footer-widget footer-text wow fadeInUp delay-0-4s">
               <h5 className="footer-title">Get In Touch</h5>
               <div className="text">
-                <p>55 Main Street, 2nd block Malborne, Australia</p>
-                <a href="mailto:support@gmail.com">support@gmail.com</a>
+                <p>BARTLE HOUSE 9 OXFORD COURT MANCHESTER ENGLAND M2 3WQ</p>
+                <a href="mailto:contact@thedevspark.com">
+                  contact@thedevspark.com
+                </a>
                 <br />
-                <a href="callto:+000(123)45688">+000 (123) 456 88</a>
+                <a href="callto:+92303-2051930">+92303-2051930</a>
               </div>
             </div>
           </div>
-          <div className="col-lg-3 order-lg-4 col-sm-6">
+          {/* Links */}
+          <div className="col-lg-3 col-md-6 order-lg-4 col-sm-6">
             <div className="footer-widget footer-links wow fadeInUp delay-0-6s">
               <h5 className="footer-title">Links</h5>
-              <div className="footer-widget widget_nav_menu">
-                <ul className="list-style-two">
+              <div className="footer-widget ">
+                <ul className="social-icons">
                   <li>
-                    <Link legacyBehavior href="/">
-                      <a>Home</a>
-                    </Link>
+                    <a
+                      href="https://www.instagram.com/dev_spark_agency?igsh=MTg2eHF6M25saXY0bw=="
+                      target="_blank"
+                    >
+                      <i
+                        className="fab fa-instagram"
+                        style={{ fontSize: "25px" }}
+                      />
+                    </a>
                   </li>
                   <li>
-                    <Link legacyBehavior href="/about">
-                      <a>About</a>
-                    </Link>
+                    <a href="https://x.com/TheDevSpark" target="_blank">
+                      <i
+                        className="fab fa-twitter"
+                        style={{ fontSize: "25px" }}
+                      />
+                    </a>
                   </li>
                   <li>
-                    <Link legacyBehavior href="/services">
-                      Services
-                    </Link>
+                    <a
+                      href="https://www.facebook.com/share/1WQcTihJ69/"
+                      target="_blank"
+                    >
+                      <i
+                        className="fab fa-facebook"
+                        style={{ fontSize: "25px" }}
+                      />
+                    </a>
                   </li>
                   <li>
-                    <Link legacyBehavior href="/contact">
-                      <a>Career ?</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link legacyBehavior href="/faqs">
-                      <a>FAQs</a>
-                    </Link>
+                    <a
+                      href="https://www.linkedin.com/company/the-devspark/"
+                      target="_blank"
+                    >
+                      <i
+                        className="fab fa-linkedin"
+                        style={{ fontSize: "25px" }}
+                      />
+                    </a>
                   </li>
                 </ul>
-                <ul className="list-style-two">
+                {/* <ul className="list-style-two">
                   <li>
                     <Link legacyBehavior href="/about">
                       Setting
@@ -83,10 +104,11 @@ const Footer2 = ({ dark }) => {
                       Contact Us
                     </Link>
                   </li>
-                </ul>
+                </ul> */}
               </div>
             </div>
           </div>
+          {/* Copyright */}
           <div className="col-lg-5 me-auto order-lg-2 align-self-center">
             <div className="footer-widget newsletter-widget wow fadeInUp delay-0-2s">
               <form className="footer-newsletter" action="#">
