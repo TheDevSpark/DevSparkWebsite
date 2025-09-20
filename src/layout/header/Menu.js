@@ -44,10 +44,10 @@ const services = [
   { slug: "/service-details?service=seo-services", title: "SEO Services" },
   { slug: "/service-details?service=ui-ux-design", title: "UI/UX Design" },
   {
-    slug: "/service-details?q=software-development",
+    slug: "/service-details?service=software-development",
     title: "Software Development",
   },
-  { slug: "/service-details?q=3d-modeling", title: "3D Modeling" },
+  { slug: "/service-details?service=3d-modeling", title: "3D Modeling" },
 ];
 
 const Menu = ({ singleMenu }) => {
