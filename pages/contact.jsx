@@ -1,6 +1,60 @@
 import PageBanner from "@/src/components/PageBanner";
 import Layout from "@/src/layout/Layout";
+import { useState } from "react";
+import emailjs from "emailjs-com";
+
 const Contact = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState({
+    success: false,
+    message: "",
+  });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus({ success: false, message: "" });
+
+    try {
+      // Replace these with your actual EmailJS credentials
+      const serviceID = process.env.NEXT_PUBLIC_SERVICE_ID;
+      const templateID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+      const userID = process.env.NEXT_PUBLIC_USER_ID;
+
+      const formData = new FormData(e.target);
+      const formProps = Object.fromEntries(formData);
+
+      await emailjs.send(
+        serviceID,
+        templateID,
+        {
+          from_name: formProps.name,
+          from_email: formProps.email,
+          phone_number: formProps.phone_number,
+          message: formProps.message,
+          to_name: "The DevSpark Team",
+        },
+        userID
+      );
+
+      setSubmitStatus({
+        success: true,
+        message: "Message sent successfully! We will get back to you soon.",
+      });
+
+      // Reset form
+      e.target.reset();
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+      setSubmitStatus({
+        success: false,
+        message: "Failed to send message. Please try again later.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <Layout footer={2} dark>
       {/* Page Banner Start */}
@@ -23,7 +77,7 @@ const Contact = () => {
                 <div className="row gap-80 pb-30">
                   <div className="col-sm-6">
                     <div className="our-location-address mb-40">
-                      <h5>England</h5>
+                      <h5>Pakistan</h5>
                       <p>
                         Bartle House 9 Oxford Court Manchester England M2 3WQ
                       </p>
@@ -37,6 +91,21 @@ const Contact = () => {
                       <a className="callto" href="callto:+92303-2051930">
                         <i className="fas fa-phone" /> +92303-2051930
                       </a>
+                    </div>
+                  </div>
+                  <div className="col-sm-6">
+                    <div className="our-location-address mb-40">
+                      <h5>England</h5>
+                      <p>
+                        Bartle House 9 Oxford Court Manchester England M2 3WQ
+                      </p>
+                      <a
+                        className="mailto"
+                        href="mailto:contact@thedevspark.com"
+                      >
+                        contact@thedevspark.com
+                      </a>
+                      <br />
                     </div>
                   </div>
                 </div>
@@ -63,12 +132,23 @@ const Contact = () => {
                   <span className="sub-title mb-15">Get Free Quote</span>
                   <h3>Drop Us a Message</h3>
                 </div>
+
+                {/* Status Message */}
+                {submitStatus.message && (
+                  <div
+                    className={`alert ${
+                      submitStatus.success ? "alert-success" : "alert-danger"
+                    } mb-4`}
+                  >
+                    {submitStatus.message}
+                  </div>
+                )}
+
                 <form
                   id="contactForm"
                   className="contactForm"
-                  action="assets/php/form-process.php"
+                  onSubmit={handleSubmit}
                   name="contactForm"
-                  method="post"
                 >
                   <div className="row gap-60 pt-15">
                     <div className="col-md-12">
@@ -81,7 +161,6 @@ const Contact = () => {
                           id="name"
                           name="name"
                           className="form-control"
-                          defaultValue
                           placeholder="Full Name"
                           required
                           data-error="Please enter your name"
@@ -99,7 +178,6 @@ const Contact = () => {
                           id="phone_number"
                           name="phone_number"
                           className="form-control"
-                          defaultValue
                           placeholder="Phone"
                           required
                           data-error="Please enter your Number"
@@ -117,7 +195,6 @@ const Contact = () => {
                           id="email"
                           name="email"
                           className="form-control"
-                          defaultValue
                           placeholder="Email Address"
                           required
                           data-error="Please enter your Email Address"
@@ -148,8 +225,10 @@ const Contact = () => {
                         <button
                           type="submit"
                           className="theme-btn style-two w-100"
+                          disabled={isSubmitting}
                         >
-                          Send Message us <i className="far fa-arrow-right" />
+                          {isSubmitting ? "Sending..." : "Send Message us"}{" "}
+                          <i className="far fa-arrow-right" />
                         </button>
                         <div id="msgSubmit" className="hidden" />
                       </div>
@@ -167,7 +246,7 @@ const Contact = () => {
         <div className="container-fluid">
           <div className="our-location">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m12!1m10!1m3!1d142190.2862584524!2d-74.01298319978558!3d40.721725351435126!2m1!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sbd!4v1663473911885!5m2!1sen!2sbd"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2374.5471242411695!2d-2.2465254242916046!3d53.476553364974265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb1ea183342fd%3A0x2f9daf0df37fb41e!2sBartle%20House%2C%209%20Oxford%20Ct%2C%20Manchester%20M2%203WQ%2C%20UK!5e0!3m2!1sen!2s!4v1758796483736!5m2!1sen!2s&t=p"
               style={{ border: 0, width: "100%" }}
               allowFullScreen
               loading="lazy"

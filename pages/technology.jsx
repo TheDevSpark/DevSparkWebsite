@@ -129,8 +129,9 @@ const TechnologyStack = () => {
                 </h1>
                 <p className="tech-description">{technology.description}</p>
                 <div className="hero-buttons">
-                  <button className="primary-btn">Start a Project</button>
-                  <button className="outline-btn">Learn More</button>
+                  <Link href="/contact" className="primary-btn">
+                    Hire a developer!
+                  </Link>
                 </div>
               </div>
               <div className="col-md-6 text-center">
@@ -138,7 +139,7 @@ const TechnologyStack = () => {
                   <div className="tech-logo">
                     <i
                       className={technology.icon}
-                      style={{ fontSize: "50px" }}
+                      style={{ fontSize: "50px", color: technology.color }}
                     />
                   </div>
                 </div>

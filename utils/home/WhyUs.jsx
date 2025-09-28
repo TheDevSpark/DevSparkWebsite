@@ -72,13 +72,13 @@ function WhyUs() {
                 alt="Why Choose Right"
               />
               <div className="why-choose-border-shape" />
-              <div className="text-shape">
+              {/* <div className="text-shape">
                 <img
                   className="text"
                   src="assets/images/services/web-design-text.svg"
                   alt="Web Design Text"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

@@ -7,12 +7,12 @@ function Advertise() {
         <div className="row">
           <div className="col-lg-7 wow fadeInUp delay-0-2s">
             <div
-              className="advertise-banner style-one bgc-primary"
+              className="advertise-banner style-one bgc-black"
               style={{
-                backgroundImage: "url(assets/images/banner/add-banner-bg.png)",
+                backgroundImage: "url(assets/images/banner/ad-banner.png)",
               }}
             >
-              <div className="image">
+              {/* <div className="image">
                 <img src="assets/images/banner/add-banner.png" alt="Banner" />
               </div>
               <div className="content mt-20">
@@ -20,7 +20,7 @@ function Advertise() {
                 <h6>Project Complete</h6>
                 <hr />
                 <p>Delivering impactful digital solutions</p>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="col-lg-5 wow fadeInUp delay-0-4s">

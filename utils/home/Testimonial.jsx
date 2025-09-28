@@ -1,8 +1,45 @@
 import { sliderProps } from "@/src/sliderProps";
 import React from "react";
 import { SwiperSlide, Swiper } from "swiper/react";
+import data from "@/utils/testimonials/data.json";
 
 function Testimonial() {
+  const formatStars = (rating) => {
+    if (!rating) return { full: 0, half: 0, empty: 0 };
+
+    // Round to nearest 0.5
+    const roundedRating = Math.round(rating * 2) / 2;
+
+    const full = Math.floor(roundedRating);
+    const half = roundedRating % 1 !== 0 ? 1 : 0;
+    const empty = 5 - full - half;
+
+    return { full, half, empty };
+  };
+
+  const renderStars = (rating) => {
+    const { full, half, empty } = formatStars(rating);
+
+    const stars = [];
+
+    // Full stars
+    for (let i = 0; i < full; i++) {
+      stars.push(<i key={`full-${i}`} className="fas fa-star" />);
+    }
+
+    // Half star
+    if (half) {
+      stars.push(<i key="half" className="fas fa-star-half-alt" />);
+    }
+
+    // Empty stars
+    for (let i = 0; i < empty; i++) {
+      stars.push(<i key={`empty-${i}`} className="far fa-star" />);
+    }
+
+    return stars;
+  };
+
   return (
     <section className="testimonial-section pt-130 rpt-90 mb-110">
       <div className="container container-1210">
@@ -10,7 +47,7 @@ function Testimonial() {
           <div className="col-lg-6">
             <div className="image-border-shape rmb-20 wow fadeInRight delay-0-2s">
               <img
-                src="assets/images/testimonials/testimonials-four.jpg"
+                src="assets/images/testimonials/testimonials-four.png"
                 alt="Testimonial Left Image"
               />
               <div className="bottom-border" />
@@ -22,137 +59,37 @@ function Testimonial() {
                 {...sliderProps.testimonialsActiveSwiper}
                 className="testimonials-active wow fadeInUp delay-0-2s"
               >
-                <SwiperSlide className="testimonial-item">
-                  <div className="author-speech">
-                    <p>
-                      <span className="quote">“</span> On the other hand we
-                      denounce with see righteous indignation and dislike men
-                      who are beguiled and demoralized by the charms offset
-                      pleasure moments line desire that they cannot foresee pain
-                      and trouble that are bound ensue and equal blame belongs
-                      their duty <span className="quote right-quote">“</span>
-                    </p>
-                  </div>
-                  <div className="testimonial-footer">
-                    <div className="testimonial-author">
-                      <div className="author-image">
-                        <img
-                          src="assets/images/testimonials/author1.png"
-                          alt="Author Image"
-                        />
-                      </div>
-                      <div className="author-info">
-                        <h4>James N. Johnson</h4>
-                      </div>
+                {data.map((testimonial, index) => (
+                  <SwiperSlide key={index} className="testimonial-item">
+                    <div className="author-speech">
+                      <p>
+                        <span className="quote">"</span>
+                        {testimonial.review.text}
+                        <span className="quote right-quote">"</span>
+                      </p>
                     </div>
-                    <div className="ratting style-two">
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star-half-alt" />
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide className="testimonial-item">
-                  <div className="author-speech">
-                    <p>
-                      <span className="quote">“</span> On the other hand we
-                      denounce with see righteous indignation and dislike men
-                      who are beguiled and demoralized by the charms offset
-                      pleasure moments line desire that they cannot foresee pain
-                      and trouble that are bound ensue and equal blame belongs
-                      their duty <span className="quote right-quote">“</span>
-                    </p>
-                  </div>
-                  <div className="testimonial-footer">
-                    <div className="testimonial-author">
-                      <div className="author-image">
-                        <img
-                          src="assets/images/testimonials/author1.png"
-                          alt="Author Image"
-                        />
+                    <div className="testimonial-footer">
+                      <div className="testimonial-author">
+                        <div className="author-image">
+                          <img
+                            src={testimonial.user.dp}
+                            alt={testimonial.user.name}
+                            onError={(e) => {
+                              e.target.src =
+                                "assets/images/testimonials/author1.png";
+                            }}
+                          />
+                        </div>
+                        <div className="author-info">
+                          <h4>{testimonial.user.name}</h4>
+                        </div>
                       </div>
-                      <div className="author-info">
-                        <h4>James N. Johnson</h4>
-                        <span className="designation">CEO &amp; Founder</span>
+                      <div className="ratting style-two">
+                        {renderStars(testimonial.review.rating)}
                       </div>
                     </div>
-                    <div className="ratting style-two">
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star-half-alt" />
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide className="testimonial-item">
-                  <div className="author-speech">
-                    <p>
-                      <span className="quote">“</span> On the other hand we
-                      denounce with see righteous indignation and dislike men
-                      who are beguiled and demoralized by the charms offset
-                      pleasure moments line desire that they cannot foresee pain
-                      and trouble that are bound ensue and equal blame belongs
-                      their duty <span className="quote right-quote">“</span>
-                    </p>
-                  </div>
-                  <div className="testimonial-footer">
-                    <div className="testimonial-author">
-                      <div className="author-image">
-                        <img
-                          src="assets/images/testimonials/author1.png"
-                          alt="Author Image"
-                        />
-                      </div>
-                      <div className="author-info">
-                        <h4>James N. Johnson</h4>
-                        <span className="designation">CEO &amp; Founder</span>
-                      </div>
-                    </div>
-                    <div className="ratting style-two">
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star-half-alt" />
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide className="testimonial-item">
-                  <div className="author-speech">
-                    <p>
-                      <span className="quote">“</span> On the other hand we
-                      denounce with see righteous indignation and dislike men
-                      who are beguiled and demoralized by the charms offset
-                      pleasure moments line desire that they cannot foresee pain
-                      and trouble that are bound ensue and equal blame belongs
-                      their duty <span className="quote right-quote">“</span>
-                    </p>
-                  </div>
-                  <div className="testimonial-footer">
-                    <div className="testimonial-author">
-                      <div className="author-image">
-                        <img
-                          src="assets/images/testimonials/author1.png"
-                          alt="Author Image"
-                        />
-                      </div>
-                      <div className="author-info">
-                        <h4>James N. Johnson</h4>
-                        <span className="designation">CEO &amp; Founder</span>
-                      </div>
-                    </div>
-                    <div className="ratting style-two">
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star" />
-                      <i className="fas fa-star-half-alt" />
-                    </div>
-                  </div>
-                </SwiperSlide>
+                  </SwiperSlide>
+                ))}
               </Swiper>
               <div className="testimonial-controls mt-75 rmt-40 wow fadeInUp delay-0-2s">
                 <button className="testimonial-prev slick-arrow">

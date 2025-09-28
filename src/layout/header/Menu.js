@@ -50,6 +50,74 @@ const services = [
   { slug: "/service-details?service=3d-modeling", title: "3D Modeling" },
 ];
 
+const projects = [
+  {
+    title: "Learning Management System",
+    route: "/project-details?project=EduProPlus",
+    images: "EduProPlus",
+  },
+  {
+    title: "Inventory Management System",
+    route: "/project-details?project=InventoryMS",
+    images: "InventoryMS",
+  },
+  {
+    title: "Human Resource Management System",
+    route: "/project-details?project=HRMS",
+    images: "HRMS",
+  },
+  {
+    title: "Hospital Management System",
+    route: "/project-details?project=HospitalMS",
+    images: "HospitalMS",
+  },
+  {
+    title: "Automobile Management System",
+    route: "/project-details?project=AutoMS",
+    images: "AutoMS",
+  },
+  {
+    title: "Smart Reservation & Order Management System",
+    route: "/project-details?project=HotelMS",
+    images: "HotelMS",
+  },
+  {
+    title: "Real Estate Management Platform",
+    route: "/project-details?project=RealEstateMS",
+    images: "RealEstateMS",
+  },
+  {
+    title: "Gym Management System",
+    route: "/project-details?project=GymMS",
+    images: "GymMS",
+  },
+  {
+    title: "FinTech Platform",
+    route: "/project-details?project=FintechMS",
+    images: "FintechMS",
+  },
+  {
+    title: "Courier Management System",
+    route: "/project-details?project=DeliveryMS",
+    images: "DeliveryMS",
+  },
+  {
+    title: "Construction Management Tool",
+    route: "/project-details?project=ConstructionMS",
+    images: "ConstructionMS",
+  },
+  {
+    title: "Travel Booking System",
+    route: "/project-details?project=TravelBooking",
+    images: "TravelBooking",
+  },
+  {
+    title: "Lawyer Management System",
+    route: "/project-details?project=LawyerMS",
+    images: "LawyerMS",
+  },
+];
+
 const Menu = ({ singleMenu }) => {
   return (
     <Fragment>
@@ -86,6 +154,21 @@ const DaskTopMenu = () => {
             <li key={index}>
               <Link legacyBehavior href={service.slug}>
                 {service.title}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <div className="dropdown-btn">
+          <span className="far fa-arrow-right hover-arrow-down" />
+        </div>
+      </li>
+      <li className="dropdown">
+        <a href="#">Our work</a>
+        <ul className="tech-dropdown">
+          {projects.map((project, index) => (
+            <li key={index}>
+              <Link legacyBehavior href={project.route}>
+                {project.title}
               </Link>
             </li>
           ))}

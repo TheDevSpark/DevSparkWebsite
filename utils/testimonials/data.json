@@ -1,0 +1,183 @@
+[
+  {
+    "user": {
+      "dp": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_original/v1/attachments/profile/photo/a2f417d1b59136a2f8eed93cc3f6a13a-1676139513260/027cd12b-ae57-40e8-91de-f72c1d5dd7b5.png",
+      "name": "leilakbari",
+      "country": "Canada"
+    },
+    "review": {
+      "rating": 4.5,
+      "time_ago": "2 months ago",
+      "text": "Working with The Devspark Agency on our LMS project was an excellent experience. We needed a secure, scalable, and user-friendly platform that could serve both web and mobile users, and their team delivered beyond expectations. I highly recommend them!"
+    }
+  },
+  {
+    "user": {
+      "dp": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_original/v1/attachments/profile/photo/547c597b785e6756ad5f8fa5c53501f2-961380331707080441.993/086990DC-B501-429A-94AA-C4A4A13EC879",
+      "name": "codytays",
+      "status": "Repeat Client",
+      "country": "United States"
+    },
+    "review": {
+      "rating": 4,
+      "time_ago": "2 months ago",
+      "text": "Our experience working with The Devspark Agency on the Inventory Management System was outstanding. The system they delivered gives us complete visibility into inventory with seamless integrations and reliable data."
+    }
+  },
+  {
+    "user": {
+      "dp": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_original/v1/attachments/profile/photo/9a1b952f711e3dda801ba39c56570dd9-1750838416125/7fc49cbb-9a8d-45d9-9127-2bb786012d37.png",
+      "name": "timothygenius",
+      "country": "United States"
+    },
+    "review": {
+      "rating": 5,
+      "time_ago": "2 months ago",
+      "text": "We partnered with The Devspark Agency to develop a Human Resource Management System that automated payroll, attendance, and compliance. Their solution has transformed the way our HR team operates."
+    }
+  },
+  {
+    "user": {
+      "dp": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_original/v1/attachments/profile/photo/c61b063f10faaec21255a4193181e049-1684091006616/54bc828f-9e7c-4d67-b6b7-993024c41548.png",
+      "name": "Jonas_rognes",
+      "country": "Norway"
+    },
+    "review": {
+      "rating": 4.5,
+      "time_ago": "2 months ago",
+      "text": "Working with The Devspark Agency on our Hotel Management System was a game-changer. Reservations, billing, and staff management are now seamless and scalable."
+    }
+  },
+  {
+    "user": {
+      "name": "louis_george1",
+      "country": "France",
+      "dp": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_original/v1/attachments/profile/photo/b1ad96960e593ca5b1811399476c59f8-1738306834888/e84ec322-ff20-4449-9d5e-30f971c82fc6.png"
+    },
+    "review": {
+      "rating": 4,
+      "time_ago": "2 months ago",
+      "text": "We worked with The Devspark Agency to build a Hospital Management System that improved patient data security, smart appointment scheduling, and streamlined billing. Highly satisfied!"
+    }
+  },
+  {
+    "user": {
+      "name": "breath_lee",
+      "dp": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_original/v1/attachments/profile/photo/c383d6f1067f5a968b7388b88b4b639d-1730896699637/53112bf9-2620-491c-bb83-928dd9b575a4.jpeg",
+      "country": "United States"
+    },
+    "review": {
+      "rating": 5,
+      "time_ago": "3 months ago",
+      "text": "Partnering with The Devspark Agency to develop our Automobile Management System was fantastic. With real-time inventory tracking and integrated CRM, our efficiency skyrocketed."
+    }
+  },
+  {
+    "user": {
+      "name": "andersonricotta",
+      "country": "United Kingdom",
+      "dp": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_original/v1/attachments/profile/photo/b97f5a53cc368f02ead501a8723a3a75-1681141530262/1f7e7b10-81fe-400c-b294-dc2c8511b885.png"
+    },
+    "review": {
+      "rating": 4.5,
+      "time_ago": "3 months ago",
+      "text": "We partnered with The Devspark Agency to create a Smart Reservation & Order Management System. It centralized reservations, orders, staff, and inventory seamlessly."
+    }
+  },
+  {
+    "user": {
+      "name": "asas476",
+      "country": "Hong Kong",
+      "dp": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_original/v1/attachments/profile/photo/3d49b036a8cf204de57d6c51279d15f9-1512833361683927042169/JPEG_20230513_023039_3297476701747286171.jpg"
+    },
+    "review": {
+      "rating": 4,
+      "time_ago": "4 months ago",
+      "text": "Partnering with this team to develop our Real Estate Property & Lead Management Platform was a turning point. Our agents now manage everything from listings to contracts in one place."
+    }
+  },
+  {
+    "user": {
+      "name": "Imranrafaqat32",
+      "country": "Finland",
+      "dp": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/attachments/profile/photo/0d947a73108f14e25f93c8f79c32f093-1376350151748281661272/JPEG_20250526_134740_8629885515070411273.jpg"
+    },
+    "review": {
+      "rating": 5,
+      "time_ago": "4 months ago",
+      "text": "The Sports Club & Academy Management System developed by The Devspark Agency has streamlined scheduling, attendance, and payments while engaging players and parents."
+    }
+  },
+  {
+    "user": {
+      "name": "rizwanrafaqat1",
+      "country": "United Kingdom",
+      "dp": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/attachments/profile/photo/77aeb7ff749693f7c6cb6d31815454cd-1730635510990/25df8b36-93e5-4113-b27f-3156db6128f3.JPG"
+    },
+    "review": {
+      "rating": 4.5,
+      "time_ago": "4 months ago",
+      "text": "Working with The Devspark Agency has been a game-changer for our FinTech project. Secure payments, AI-driven fraud detection, and scalability set us apart in the market."
+    }
+  },
+  {
+    "user": {
+      "name": "suffman_",
+      "country": "United States",
+      "dp": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/attachments/profile/photo/9dbe513c1126026eac536e4ea2d49b1a-1758416897422/1f225aed-17ff-4c13-a486-f13ab18b895c.jpeg"
+    },
+    "review": {
+      "rating": 4,
+      "time_ago": "1 week ago",
+      "text": "The courier and last-mile delivery software by The Devspark Agency transformed our business with real-time tracking, route optimization, and proof of delivery."
+    }
+  },
+  {
+    "user": {
+      "name": "soheyl_amz",
+      "country": "Germany",
+      "dp": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/attachments/profile/photo/c22acaa5456a2cbea675feec1b51ae21-1739935398334/3e848b29-2418-4111-a275-2d4735a2386a.jpg"
+    },
+    "review": {
+      "rating": 5,
+      "time_ago": "1 week ago",
+      "text": "The Project Management & Estimation Tool delivered by The Devspark Agency has streamlined scheduling, forecasting, and communication across our construction projects."
+    }
+  },
+  {
+    "user": {
+      "name": "leoharrison285",
+      "country": "United Kingdom",
+      "dp": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/attachments/profile/photo/90c0254d97a3bb2fda0d7f1312b5d579-1756038227966/960b712f-3f36-480b-a04c-2d5fb8dfa7fe.jpeg"
+    },
+    "review": {
+      "rating": 4,
+      "time_ago": "3 weeks ago",
+      "text": "Working with The Devspark Agency on our Travel Booking Engine has been a game-changer. Real-time seat availability and secure global payments improved customer satisfaction."
+    }
+  },
+  {
+    "user": {
+      "name": "nalncash",
+      "country": "United States",
+      "dp": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/attachments/profile/photo/7eee9ca528240962c2f777819102f30d-1741303113891/0c413156-d60f-4494-9a2d-7afcb5f17d2d.png"
+    },
+    "review": {
+      "rating": 4.5,
+      "time_ago": "1 month ago",
+      "text": "The Devspark Agency built a Case & Client Management Software for my law practice. It streamlined case tracking, documents, and billing securely. A huge time-saver!"
+    }
+  },
+  {
+    "user": {
+      "name": "theo_finley",
+      "country": "United Kingdom",
+      "dp": "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/attachments/profile/photo/4096ac6c1809d47c5d47f5d3aa5a0ee4-1758653732093/b768a41d-463f-42c7-afbd-955b823fba3c.jpeg"
+    },
+    "review": {
+      "rating": 5,
+      "time_ago": "1 month ago",
+      "text": "The Devspark Agency combined professionalism and technical expertise to deliver our HRMS. Payroll, compliance, and performance tracking are now fully automated."
+    }
+  }
+]

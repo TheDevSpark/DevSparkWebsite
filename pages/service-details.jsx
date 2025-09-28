@@ -43,7 +43,8 @@ const ServiceDetails = () => {
   }
 
   // Use the service data to populate your page
-  const { title, tagline, offer, whatWeDo, faqs, pricing } = currentService;
+  const { title, tagline, offer, whatWeDo, faqs, pricing, image } =
+    currentService;
 
   const [active, setActive] = useState("collapse0");
 
@@ -85,8 +86,11 @@ const ServiceDetails = () => {
             <div className="col-lg-6">
               <div className="service-about-image rmb-55 wow fadeInUp delay-0-2s">
                 <img
-                  src="assets/images/about/service-page-about.jpg"
+                  src={image}
                   alt="About"
+                  style={{
+                    margin: "0 0 20% 0",
+                  }}
                 />
                 <div
                   className="service-about-box bgc-primary"

@@ -3,6 +3,7 @@
     "name": "JavaScript",
     "logo": "/images/javascript-logo.png",
     "icon": "fab fa-js-square",
+    "color": "#F7DF1E",
     "description": "JavaScript is the backbone of interactive and dynamic web experiences, powering everything from simple UI enhancements to advanced single-page applications.",
     "benefits": [
       "Dynamic & Interactive Interfaces",
@@ -49,6 +50,7 @@
     "name": "React.js",
     "logo": "/images/react-logo.png",
     "icon": "fab fa-react",
+    "color": "#61DAFB",
     "description": "React.js is a powerful frontend JavaScript library for building fast, dynamic, and scalable user interfaces.",
     "benefits": [
       "Reusable UI Components",
@@ -100,6 +102,7 @@
     "name": "Next.js",
     "logo": "/images/nextjs-logo.png",
     "icon": "fas fa-server",
+    "color": "#000000",
     "description": "Next.js is a React-based framework that enables building high-performance, SEO-friendly, and scalable web applications.",
     "benefits": [
       "SEO-Friendly Server-Side Rendering",
@@ -151,6 +154,7 @@
     "name": "Node.js",
     "logo": "/images/nodejs-logo.png",
     "icon": "fab fa-node-js",
+    "color": "#339933",
     "description": "Node.js is a powerful backend runtime environment built on Chrome's V8 engine, designed for creating fast, scalable, and real-time applications.",
     "benefits": [
       "High Performance & Speed",
@@ -197,6 +201,7 @@
     "name": "PHP / Laravel",
     "logo": "/images/laravel-logo.png",
     "icon": "fab fa-laravel",
+    "color": "#777BB4",
     "description": "Laravel, built on PHP, is one of the most popular frameworks for developing secure, scalable, and high-performing web applications.",
     "benefits": [
       "Fast & Scalable Development",
@@ -253,6 +258,7 @@
     "name": "React Native",
     "logo": "/images/reactnative-logo.png",
     "icon": "fab fa-react",
+    "color": "#61DAFB",
     "description": "React Native is a powerful cross-platform framework that enables building mobile apps for iOS and Android using a single codebase.",
     "benefits": [
       "Cross-Platform Development Efficiency",
@@ -309,6 +315,7 @@
     "name": "Flutter",
     "logo": "/images/flutter-logo.png",
     "icon": "fas fa-mobile",
+    "color": "#02569B",
     "description": "Flutter is Google's UI toolkit for building cross-platform mobile, web, and desktop applications from a single codebase.",
     "benefits": [
       "Single Codebase for All",
@@ -370,6 +377,7 @@
     "name": "WordPress",
     "logo": "/images/wordpress-logo.png",
     "icon": "fab fa-wordpress",
+    "color": "#21759B",
     "description": "WordPress is the world's most popular content management system (CMS), powering millions of websites globally.",
     "benefits": [
       "Easy Content Management",
@@ -431,6 +439,7 @@
     "name": "WooCommerce",
     "logo": "/images/woocommerce-logo.png",
     "icon": "fas fa-shopping-cart",
+    "color": "#96588A",
     "description": "WooCommerce is the most popular eCommerce plugin for WordPress, trusted by millions of businesses worldwide.",
     "benefits": [
       "Seamless WordPress Integration",
@@ -487,6 +496,7 @@
     "name": "Shopify",
     "logo": "/images/shopify-logo.png",
     "icon": "fas fa-store",
+    "color": "#95BF47",
     "description": "Shopify is a leading eCommerce platform that enables businesses to build secure, scalable, and customizable online stores quickly.",
     "benefits": [
       "All-in-One eCommerce Platform",
@@ -548,6 +558,7 @@
     "name": "MongoDB",
     "logo": "/images/mongodb-logo.png",
     "icon": "fas fa-database",
+    "color": "#47A248",
     "description": "MongoDB is a leading NoSQL database designed for handling large-scale, high-performance applications.",
     "benefits": [
       "Flexible NoSQL Data Storage",
@@ -599,6 +610,7 @@
     "name": "MySQL",
     "logo": "/images/mysql-logo.png",
     "icon": "fas fa-database",
+    "color": "#4479A1",
     "description": "MySQL is the world's most popular open-source relational database management system (RDBMS), trusted for speed, reliability, and scalability.",
     "benefits": [
       "Proven & Reliable RDBMS",
@@ -655,6 +667,7 @@
     "name": "Firebase",
     "logo": "/images/firebase-logo.png",
     "icon": "fas fa-fire",
+    "color": "#FFCA28",
     "description": "Firebase is a powerful Backend-as-a-Service (BaaS) platform by Google, offering real-time databases, authentication, hosting, and cloud functions.",
     "benefits": [
       "Real-Time Data Sync",
@@ -711,6 +724,7 @@
     "name": "Supabase",
     "logo": "/images/supabase-logo.png",
     "icon": "fas fa-database",
+    "color": "#3ECF8E",
     "description": "Supabase is an open-source Firebase alternative that provides a powerful backend with PostgreSQL at its core.",
     "benefits": [
       "Open-Source & Transparent",
@@ -762,6 +776,7 @@
     "name": "MERN Stack",
     "logo": "/images/mern-logo.png",
     "icon": "fas fa-layer-group",
+    "color": "#000000",
     "description": "The MERN Stack (MongoDB, Express.js, React, Node.js) is a powerful full-stack JavaScript framework for building modern web and mobile applications.",
     "benefits": [
       "Full JavaScript Technology Stack",

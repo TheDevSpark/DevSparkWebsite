@@ -8,6 +8,7 @@ import Pricing from "@/utils/home/Pricing";
 import Projects from "@/utils/home/Projects";
 import Service from "@/utils/home/Service";
 import Skills from "@/utils/home/Skills";
+import Team from "@/utils/home/Team";
 import Testimonial from "@/utils/home/Testimonial";
 import WhyUs from "@/utils/home/WhyUs";
 import dynamic from "next/dynamic";
@@ -60,7 +61,7 @@ const secondHeadlines = [
 
 const Index = () => {
   return (
-    <Layout footer={2} footer={2} dark>
+    <Layout footer={2} dark>
       {/* Hero Section Start */}
       <Hero />
       {/* Hero Section End */}
@@ -77,7 +78,7 @@ const Index = () => {
       <Service />
       {/* Service Style Four end */}
       {/* Headline area start */}
-      <Headline headlines={fistHeadlines} />
+      {/* <Headline headlines={fistHeadlines} /> */}
       {/* Headline Area end */}
       {/* Project Timeline-two Area start */}
       <Projects />
@@ -86,8 +87,11 @@ const Index = () => {
       <WhyUs />
       {/* Why Choose Us end */}
       {/* Headline area start */}
-      <Headline headlines={secondHeadlines} />
+      {/* <Headline headlines={secondHeadlines} /> */}
       {/* Headline Area end */}
+      {/* Team Area Starts  */}
+      <Team />
+      {/* Team Area Ends */}
       {/* Testimonial Area start */}
       <Testimonial />
       {/* Testimonial Area end */}

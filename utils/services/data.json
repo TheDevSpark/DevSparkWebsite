@@ -2,6 +2,7 @@
   {
     "slug": "web-development",
     "title": "Web Development",
+    "image": "assets/images/services/service-page/web_dev.png",
     "tagline": "Crafting fast, secure, and scalable websites that grow your business online.",
     "offer": [
       "Custom Website Development",
@@ -106,6 +107,7 @@
   {
     "slug": "app-development",
     "title": "App Development",
+    "image": "assets/images/services/service-page/app_dev.png",
     "tagline": "Building fast, scalable, and engaging mobile apps that users love.",
     "offer": [
       "Native App Development (iOS & Android)",
@@ -207,6 +209,7 @@
   {
     "slug": "mvp-development",
     "title": "MVP Development",
+    "image": "assets/images/services/service-page/mvp_dev.png",
     "tagline": "Validate your startup idea fast with a lean, scalable MVP.",
     "offer": [
       "Rapid Prototyping & Wireframing",
@@ -299,6 +302,7 @@
   {
     "slug": "saas-development",
     "title": "SaaS Development",
+    "image": "assets/images/services/service-page/saas_dev.png",
     "tagline": "We build scalable SaaS products that empower businesses worldwide.",
     "offer": [
       "Custom SaaS Product Development",
@@ -403,6 +407,7 @@
   {
     "slug": "digital-marketing",
     "title": "Digital Marketing",
+    "image": "assets/images/services/service-page/digital_maketing.png",
     "tagline": "Grow your business with ROI-focused digital marketing strategies.",
     "offer": [
       "Social Media Marketing",
@@ -499,6 +504,7 @@
   {
     "slug": "graphic-design",
     "title": "Graphic Design",
+    "image": "assets/images/services/service-page/graphic_designing.png",
     "tagline": "Creative visuals that make your brand stand out.",
     "offer": [
       "Logo & Branding",
@@ -585,6 +591,7 @@
   {
     "slug": "seo-services",
     "title": "SEO Services",
+    "image": "assets/images/services/service-page/seo_optimization.png",
     "tagline": "Rank higher, get found, and grow your organic traffic.",
     "offer": [
       "On-Page SEO",
@@ -675,6 +682,7 @@
   {
     "slug": "ui-ux-design",
     "title": "UI/UX Design",
+    "image": "assets/images/services/service-page/Uiux_designing.png",
     "tagline": "Designs that deliver seamless user experiences.",
     "offer": [
       "Wireframing & Prototyping",
@@ -765,6 +773,7 @@
   {
     "slug": "software-development",
     "title": "Software Development",
+    "image": "assets/images/services/service-page/software_dev.png",
     "tagline": "Custom software solutions that solve real business problems.",
     "offer": [
       "Enterprise Software Development",
@@ -861,6 +870,7 @@
   {
     "slug": "3d-modeling",
     "title": "3D Modeling",
+    "image": "assets/images/services/service-page/3d_modeling.png",
     "tagline": "Bring your ideas to life with stunning, realistic 3D models.",
     "offer": [
       "3D Product Modeling",

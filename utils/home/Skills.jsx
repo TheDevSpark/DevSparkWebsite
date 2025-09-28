@@ -2,20 +2,90 @@ import React from "react";
 
 function Skills() {
   const skills = [
-    { img: "assets/images/skills/skill2.png", name: "HTML" },
-    { img: "assets/images/skills/skill3.png", name: "CSS" },
-    { img: "assets/images/skills/skill4.png", name: "Javascript" },
-    { img: "assets/images/skills/skill5.png", name: "React" },
-    { img: "assets/images/skills/skill14.png", name: "Next.js" },
-    { img: "assets/images/skills/skill1.png", name: "Bootstrap" },
-    { img: "assets/images/skills/skill15.png", name: "Tailwind" },
-    { img: "assets/images/skills/skill8.png", name: "Node.js" },
-    { img: "assets/images/skills/skill9.png", name: "Sass" },
-    { img: "assets/images/skills/skill6.png", name: "WordPress" },
-    { img: "assets/images/skills/skill12.png", name: "Elementor" },
-    { img: "assets/images/skills/skill7.png", name: "php" },
-    { img: "assets/images/skills/skill16.png", name: "Laravel" },
-    { img: "assets/images/skills/skill11.png", name: "Shopify" },
+    {
+      icon: "fab fa-js",
+      name: "JavaScript",
+      route: "/technology?stack=html",
+      color: "#F7DF1E",
+    },
+    {
+      icon: "fab fa-react",
+      name: "React.js",
+      route: "/technology?stack=react",
+      color: "#61DAFB",
+    },
+    {
+      icon: "fab fa-react",
+      name: "Next.js",
+      route: "/technology?stack=nextjs",
+      color: "#000000",
+    },
+    {
+      icon: "fab fa-node-js",
+      name: "Node.js",
+      route: "/technology?stack=nodejs",
+      color: "#339933",
+    },
+    {
+      icon: "fab fa-php",
+      name: "PHP / Laravel",
+      route: "/technology?stack=laravel",
+      color: "#777BB4",
+    },
+    {
+      icon: "fab fa-react",
+      name: "React Native",
+      route: "/technology?stack=reactnative",
+      color: "#61DAFB",
+    },
+    {
+      icon: "fab fa-wordpress",
+      name: "WordPress",
+      route: "/technology?stack=wordpress",
+      color: "#21759B",
+    },
+    {
+      icon: "fab fa-wordpress",
+      name: "WooCommerce",
+      route: "/technology?stack=woocommerce",
+      color: "#96588A",
+    },
+    {
+      icon: "fas fa-store",
+      name: "Shopify",
+      route: "/technology?stack=shopify",
+      color: "#95BF47",
+    },
+    {
+      icon: "fas fa-database",
+      name: "MongoDB",
+      route: "/technology?stack=mongodb",
+      color: "#47A248",
+    },
+    {
+      icon: "fas fa-database",
+      name: "MySQL",
+      route: "/technology?stack=mysql",
+      color: "#4479A1",
+    },
+    {
+      icon: "fas fa-fire",
+      name: "Firebase",
+      route: "/technology?stack=firebase",
+      color: "#FFCA28",
+    },
+    {
+      icon: "fas fa-database",
+      name: "Supabase",
+      route: "/technology?stack=supabase",
+      color: "#3ECF8E",
+    },
+    {
+      icon: "fas fa-layer-group",
+      name: "MERN Stack",
+      route: "/technology?stack=mern",
+      color: "#000000",
+    },
   ];
 
   return (
@@ -30,10 +100,21 @@ function Skills() {
         </div>
         <div className="skills-wrap">
           {skills.map((skill, index) => (
-            <div className="skill-item" key={index}>
-              <img src={skill.img} alt={`${skill.name} Icon`} />
+            <a
+              className="skill-item"
+              key={index}
+              href={skill.route}
+              target="_blank"
+            >
+              <i
+                className={skill.icon}
+                style={{
+                  color: skill.color,
+                  fontSize: 24,
+                }}
+              ></i>
               <span className="text">{skill.name}</span>
-            </div>
+            </a>
           ))}
         </div>
       </div>
