@@ -32,10 +32,6 @@ function Team() {
                     <h4>{team.name}</h4>
                     <span>{team.role}</span>
                   </div>
-
-                  <div className="read-more">
-                    <i className="far fa-arrow-right" />
-                  </div>
                 </div>
               </div>
             </div>

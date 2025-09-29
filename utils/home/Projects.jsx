@@ -42,7 +42,7 @@ function Projects() {
                 <h4>
                   <Link
                     legacyBehavior
-                    href={`/project-details?image=${project.images}`}
+                    href={`/project-details?project=${project.images}`}
                   >
                     <a>{project.title}</a>
                   </Link>

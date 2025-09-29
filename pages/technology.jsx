@@ -119,7 +119,7 @@ const TechnologyStack = () => {
     <Layout footer={2} dark>
       <div className="technology-page">
         {/* Hero Section */}
-        <section className="tech-hero">
+        <section className="tech-hero mt-50">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-md-6">

@@ -34,13 +34,13 @@ function About() {
                   </div>
                   <div className="col-md-4 col-sm-6">
                     <div className="counter-item-two counter-text-wrap wow fadeInUp delay-0-3s">
-                      <Counter end={93} extraClass={"percent"} />
+                      <Counter end={95} extraClass={"percent"} />
                       <span className="counter-title">Success Rating</span>
                     </div>
                   </div>
                   <div className="col-md-4 col-sm-6">
                     <div className="counter-item-two counter-text-wrap wow fadeInUp delay-0-4s">
-                      <Counter end={35} extraClass={"percent"} />
+                      <Counter end={85} extraClass={"percent"} />
                       <span className="counter-title">Project Complete</span>
                     </div>
                   </div>

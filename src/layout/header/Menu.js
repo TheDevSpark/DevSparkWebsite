@@ -261,6 +261,26 @@ const MobileMenu = () => {
           <span className="far fa-arrow-right hover-arrow-down" />
         </div>
       </li>
+
+      {/* Projects Dropdown  */}
+      <li className="dropdown">
+        <a href="#">Technologies</a>
+        <ul style={activeLi("technologies")} className="tech-dropdown">
+          {technologies.map((tech, index) => (
+            <li key={index}>
+              <Link legacyBehavior href={tech.route}>
+                {tech.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <div
+          className="dropdown-btn"
+          onClick={() => activeMenuSet("technologies")}
+        >
+          <span className="far fa-arrow-right hover-arrow-down" />
+        </div>
+      </li>
     </ul>
   );
 };
