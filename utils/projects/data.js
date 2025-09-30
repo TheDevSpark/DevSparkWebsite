@@ -294,7 +294,7 @@ export const projects = [
     ],
     callToAction:
       "Looking to build a Smart Reservation & Order Management System for your restaurant or chain? Get in touch with us today to create a scalable, customer-friendly solution tailored to your business.",
-    images: "HotelMS",
+    images: "RestaurantMS",
     testimonial: {
       user: {
         name: "andersonricotta",
@@ -671,6 +671,58 @@ export const projects = [
         rating: 4.5,
         time_ago: "1 month ago",
         text: "The Devspark Agency built a Case & Client Management Software for my law practice. It streamlined case tracking, documents, and billing securely. A huge time-saver!",
+      },
+    },
+  },
+  {
+    title:
+      "Hotel Management System – Streamlined Hospitality & Guest Experience",
+    intro:
+      "Our Hotel Management System (HMS) project is designed to automate hotel operations and enhance guest satisfaction. From room booking and reservations to billing, staff management, and reporting, this system simplifies daily tasks for hotel staff while ensuring a smooth experience for guests. With a modern interface and integrated features, our HMS helps hotels save time, reduce errors, and increase overall efficiency.",
+    projectInfo: {
+      client: "[Add Client Name]",
+      category: "Web and App Development",
+      date: "[Add Date]",
+      location: "[Add Location]",
+    },
+    challenges: [
+      "Reservation Management: Handling real-time room bookings and cancellations without conflicts.",
+      "Billing & Payments: Creating a secure and accurate system for invoicing and multiple payment methods.",
+      "Staff & Housekeeping Coordination: Ensuring smooth communication between departments.",
+      "Data Security: Protecting sensitive guest information and financial records.",
+      "Scalability: Supporting small hotels as well as large chains with multiple properties.",
+    ],
+    solutions: [
+      "Real-Time Booking Engine – Automated reservations with instant availability updates.",
+      "Integrated Billing System – Secure payment gateways and automated invoice generation.",
+      "Staff & Housekeeping Module – Streamlined task assignment and communication.",
+      "Role-Based Access Control – Protected sensitive data with secure logins and permissions.",
+      "Multi-Property Support – Designed scalable architecture to manage multiple hotels from one dashboard.",
+    ],
+    results: [
+      "Efficient Operations – Reduced manual work and improved staff productivity.",
+      "Faster Payments – Simplified billing and supported multiple secure payment methods.",
+      "Better Guest Experience – Guests enjoyed smoother booking and check-in/out processes.",
+      "Increased Revenue – Optimized room availability and reduced booking errors.",
+      "Scalable Growth – The system supported expansion to multiple hotel branches.",
+    ],
+    futureEnhancements: [
+      "AI-powered guest preference analysis.",
+      "IoT integration for smart room controls.",
+    ],
+    callToAction:
+      "👉 Looking for a custom Hotel Management System to boost your hospitality business? Contact us today and let's build a solution that elevates your guest experience.",
+    images: "HotelMS",
+    testimonial: {
+      user: {
+        name: "[Client Name]",
+        country: "United States",
+        dp: "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/attachments/profile/photo/7eee9ca528240962c2f777819102f30d-1741303113891/0c413156-d60f-4494-9a2d-7afcb5f17d2d.png",
+      },
+      review: {
+        rating: 5,
+        time_ago: "1 month ago",
+        text: "Working with The Devspark Agency on our Hotel Management System was a game-changer. We needed a solution that could handle reservations, billing, staff management, and multi-property operations without complications. The team delivered a system that exceeded expectations. The real-time booking engine ensures no double bookings, the integrated billing system simplifies payments, and the staff/housekeeping module has improved internal communication dramatically. Guests now enjoy a smoother, more reliable experience from check-in to check-out, while our staff can focus on service rather than manual admin work. What impressed us most was the system's flexibility and scalability—it works perfectly for our current needs while being future-ready for expansion. We're grateful for the professionalism and technical expertise of The Devspark Agency and highly recommend them to anyone in the hospitality sector.",
       },
     },
   },

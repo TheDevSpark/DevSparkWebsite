@@ -231,9 +231,14 @@
             font-size: 22px
         
 /* Service Details */
-.service-about-image
-    padding-bottom: 15%
-    padding-right: 15%
+.service-about-image 
+  padding-bottom: 15%
+  padding-right: 15%
+  img 
+    +res-bl(sm) 
+      margin-bottom: 50%
+    +res-ab(lg)
+      margin-bottom: 25%
 
 .service-about-box
     max-width: 70%

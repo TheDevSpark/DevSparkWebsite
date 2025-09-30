@@ -78,9 +78,7 @@ const Contact = () => {
                   <div className="col-sm-6">
                     <div className="our-location-address mb-40">
                       <h5>Pakistan</h5>
-                      <p>
-                        Bartle House 9 Oxford Court Manchester England M2 3WQ
-                      </p>
+                      <p>A/509 Mehmoodabad PECHS Karachi Pakistan </p>
                       <a
                         className="mailto"
                         href="mailto:contact@thedevspark.com"

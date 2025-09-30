@@ -42,7 +42,9 @@ const ProjectDetails = () => {
 
     return stars;
   };
-
+  useEffect(() => {
+    console.log(projects.length);
+  });
   // find project data
   const projectData = projects.find((p) => p.images === project);
 

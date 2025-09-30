@@ -78,8 +78,8 @@ const projects = [
   },
   {
     title: "Smart Reservation & Order Management System",
-    route: "/project-details?project=HotelMS",
-    images: "HotelMS",
+    route: "/project-details?project=RestaurantMS",
+    images: "RestaurantMS",
   },
   {
     title: "Real Estate Management Platform",
@@ -116,6 +116,11 @@ const projects = [
     route: "/project-details?project=LawyerMS",
     images: "LawyerMS",
   },
+  {
+    title: "Hotel Management System",
+    route: "/project-details?project=HotelMS",
+    images: "HotelMS",
+  },
 ];
 
 const Menu = ({ singleMenu }) => {
@@ -137,16 +142,14 @@ export default Menu;
 const DaskTopMenu = () => {
   return (
     <ul className="navigation d-none d-lg-flex desktop-menu">
+      {/* About Us */}
       <li>
         <Link legacyBehavior href="about">
           About Us
         </Link>
       </li>
-      <li>
-        <Link legacyBehavior href="contact">
-          Contact us
-        </Link>
-      </li>
+
+      {/* Services */}
       <li className="dropdown">
         <a href="#">Services</a>
         <ul>
@@ -162,6 +165,7 @@ const DaskTopMenu = () => {
           <span className="far fa-arrow-right hover-arrow-down" />
         </div>
       </li>
+      {/* Our Work */}
       <li className="dropdown">
         <a href="#">Our work</a>
         <ul className="tech-dropdown">
@@ -177,6 +181,7 @@ const DaskTopMenu = () => {
           <span className="far fa-arrow-right hover-arrow-down" />
         </div>
       </li>
+      {/* Technologies */}
       <li className="dropdown">
         <a href="#">Technologies</a>
         <ul className="tech-dropdown">
@@ -191,6 +196,12 @@ const DaskTopMenu = () => {
         <div className="dropdown-btn">
           <span className="far fa-arrow-right hover-arrow-down" />
         </div>
+      </li>
+      {/* Contact Us */}
+      <li>
+        <Link legacyBehavior href="contact">
+          Contact us
+        </Link>
       </li>
     </ul>
   );
@@ -214,14 +225,10 @@ const MobileMenu = () => {
 
   return (
     <ul className="navigation d-block d-lg-none mobile-menu ">
+      {/* About Us */}
       <li>
         <Link legacyBehavior href="about">
           About Us
-        </Link>
-      </li>
-      <li>
-        <Link legacyBehavior href="contact">
-          Contact us
         </Link>
       </li>
 
@@ -277,6 +284,12 @@ const MobileMenu = () => {
         <div className="dropdown-btn" onClick={() => activeMenuSet("projects")}>
           <span className="far fa-arrow-right hover-arrow-down" />
         </div>
+      </li>
+      {/* Contact Us */}
+      <li>
+        <Link legacyBehavior href="contact">
+          Contact us
+        </Link>
       </li>
     </ul>
   );

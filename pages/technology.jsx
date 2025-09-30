@@ -139,7 +139,7 @@ const TechnologyStack = () => {
                   <div className="tech-logo">
                     <i
                       className={technology.icon}
-                      style={{ fontSize: "50px", color: technology.color }}
+                      style={{ fontSize: "45px", color: technology.color }}
                     />
                   </div>
                 </div>
@@ -255,12 +255,17 @@ const TechnologyStack = () => {
         {/* Process Section */}
         <section className="process-section">
           <div className="container">
-            <div className="row justify-content-center">
+            <div className="row justify-content-center align-items-center">
               <div className="col-lg-8 text-center">
                 <h2 className="section-title">Our Development Process</h2>
               </div>
             </div>
-            <div className="process-steps">
+            <div
+              className="process-steps d-flex  flex-column justify-content-center align-items-center "
+              style={{
+                width: "100vw",
+              }}
+            >
               {technology.process.map((step, index) => (
                 <div key={index} className="process-step">
                   <div className="step-number">{index + 1}</div>

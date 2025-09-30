@@ -88,9 +88,9 @@ const ServiceDetails = () => {
                 <img
                   src={image}
                   alt="About"
-                  style={{
-                    margin: "0 0 20% 0",
-                  }}
+                  // style={{
+                  //   margin: "0 0 50% 0",
+                  // }}
                 />
                 <div
                   className="service-about-box bgc-primary"

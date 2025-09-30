@@ -6,7 +6,7 @@
   color: $color-body
 
   .tech-hero
-    padding: 120px 0 80px
+    padding: 120px 0 
     background: $color-dark
     border-bottom: 1px solid $color-border
 
@@ -40,8 +40,9 @@
       padding: 40px
       display: inline-block
       border: 1px solid $color-border
-
+      margin: 50px 0px
       .tech-logo
+        
         max-width: 200px
         height: auto
 
@@ -155,9 +156,13 @@
 
     .process-step
       +flexcenter(flex-start)
-      margin-left: 30%
+      transform: translateX(calc( 30% ))
       margin-bottom: 40px
       position: relative
+      width: 100vw
+      margin-left: 0%
+      +res-ab(lg)
+      // margin-left: 30%
 
       .step-number
         +circle($color-primary, 50px)
