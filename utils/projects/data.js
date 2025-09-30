@@ -680,10 +680,10 @@ export const projects = [
     intro:
       "Our Hotel Management System (HMS) project is designed to automate hotel operations and enhance guest satisfaction. From room booking and reservations to billing, staff management, and reporting, this system simplifies daily tasks for hotel staff while ensuring a smooth experience for guests. With a modern interface and integrated features, our HMS helps hotels save time, reduce errors, and increase overall efficiency.",
     projectInfo: {
-      client: "[Add Client Name]",
+      client: "Jonas_rognes",
       category: "Web and App Development",
-      date: "[Add Date]",
-      location: "[Add Location]",
+      date: "2025",
+      location: "Norway",
     },
     challenges: [
       "Reservation Management: Handling real-time room bookings and cancellations without conflicts.",
@@ -715,14 +715,14 @@ export const projects = [
     images: "HotelMS",
     testimonial: {
       user: {
-        name: "[Client Name]",
-        country: "United States",
-        dp: "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/attachments/profile/photo/7eee9ca528240962c2f777819102f30d-1741303113891/0c413156-d60f-4494-9a2d-7afcb5f17d2d.png",
+        name: "Jonas_rognes",
+        country: "Norway",
+        dp: "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_original/v1/attachments/profile/photo/c61b063f10faaec21255a4193181e049-1684091006616/54bc828f-9e7c-4d67-b6b7-993024c41548.png",
       },
       review: {
-        rating: 5,
+        rating: 4.5,
         time_ago: "1 month ago",
-        text: "Working with The Devspark Agency on our Hotel Management System was a game-changer. We needed a solution that could handle reservations, billing, staff management, and multi-property operations without complications. The team delivered a system that exceeded expectations. The real-time booking engine ensures no double bookings, the integrated billing system simplifies payments, and the staff/housekeeping module has improved internal communication dramatically. Guests now enjoy a smoother, more reliable experience from check-in to check-out, while our staff can focus on service rather than manual admin work. What impressed us most was the system's flexibility and scalability—it works perfectly for our current needs while being future-ready for expansion. We're grateful for the professionalism and technical expertise of The Devspark Agency and highly recommend them to anyone in the hospitality sector.",
+        text: "Working with The Devspark Agency on our Hotel Management System was a game-changer. Reservations, billing, and staff management are now seamless and scalable.",
       },
     },
   },

@@ -41,8 +41,8 @@
       display: inline-block
       border: 1px solid $color-border
       margin: 50px 0px
+
       .tech-logo
-        
         max-width: 200px
         height: auto
 
@@ -155,14 +155,13 @@
     background: $color-dark
 
     .process-step
-      +flexcenter(flex-start)
-      transform: translateX(calc( 30% ))
-      margin-bottom: 40px
+      +flexcenter(center)
+      margin: 0 auto 40px
       position: relative
-      width: 100vw
-      margin-left: 0%
+      width: fit-content
+
       +res-ab(lg)
-      // margin-left: 30%
+        width: auto
 
       .step-number
         +circle($color-primary, 50px)
