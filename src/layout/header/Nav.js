@@ -23,9 +23,12 @@ const Nav = ({ singleMenu }) => {
             as={"button"}
             className="navbar-toggle"
             eventKey="navbar-collapse"
+            style={{
+              marginRight: "10px",
+            }}
           >
-            <span className="icon-bar" />
-            <span className="icon-bar" />
+            <span className="icon-bar " />
+            <span className="icon-bar " />
             <span className="icon-bar" />
           </Accordion.Toggle>
         </div>

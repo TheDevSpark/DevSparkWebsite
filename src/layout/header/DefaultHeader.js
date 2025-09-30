@@ -37,7 +37,7 @@ const DefaultHeader = ({ singleMenu, dark }) => {
             {/* Menu Button */}
             <div className="menu-btns">
               {/* menu sidbar */}
-              <div className="menu-sidebar">
+              <div className="menu-sidebar me-2">
                 <button>
                   <img src="assets/images/icons/toggler.svg" alt="Toggler" />
                 </button>
