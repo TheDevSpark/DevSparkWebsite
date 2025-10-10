@@ -36,7 +36,7 @@ const Footer2 = ({ dark }) => {
                   contact@thedevspark.com
                 </a>
                 <br />
-                <a href="callto:+92303-2051930">+92303-2051930</a>
+                <a href="callto:+92344-2681140">+92344-2681140</a>
               </div>
             </div>
           </div>
